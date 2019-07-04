@@ -1,0 +1,71 @@
+{
+  "pages": [
+        "fenbao/rankinglist/rankinglist",
+              "pages/index/index",
+              "pages/navbar/cup/cup",
+              "pages/qidong/qidong",
+              "pages/navbar/renwu/renwu",
+              "pages/navbar/my/my",
+
+      "fenbao/dynamic/dynamic",
+        "fenbao/cupjoin/cupjoin",
+   
+  
+     "fenbao/shopxq/shopxq",
+    "fenbao/shop/shop",
+
+ 
+    "fenbao/message/message",
+    "fenbao/credit/credit",
+    "fenbao/vip/vip",
+  
+
+    "fenbao/article/article",
+    "fenbao/play-by-play/play-by-play",
+
+    "fenbao/business card/business card",
+    "fenbao/share_card/share_card"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#041736",
+    "navigationBarTitleText": "行无疆创投空间",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#11142a"
+  },
+  "tabBar": {
+    "color": "#4e5675",
+    "selectedColor": "#be956a",
+    "backgroundColor": "#041736",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "创业",
+        "iconPath": "./img/cy.png",
+        "selectedIconPath": "./img/cy.png"
+      },
+      {
+        "pagePath": "pages/navbar/cup/cup",
+        "text": "俱乐部",
+        "iconPath": "./img/cup (1).png",
+        "selectedIconPath": "./img/cup (1).png"
+      },
+      {
+        "pagePath": "pages/navbar/renwu/renwu",
+        "text": "任务",
+        "iconPath": "./img/rw.png",
+        "selectedIconPath": "./img/rw.png"
+      },
+      {
+        "pagePath": "pages/navbar/my/my",
+        "text": "我的",
+        "iconPath": "./img/my.png",
+        "selectedIconPath": "./img/my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,268 @@
+/* pages/navbar/cup/cup.wxss */
+
+.font_color_a{
+    color: #6a7aa2;
+}
+.font_color_b{
+    color: #ebbd70;
+  }
+.fr{
+      float: right;
+  }
+  .pel_num{
+      margin-left: 10rpx;
+  }
+.vertop{
+    vertical-align: top;
+}
+.margin5{
+    margin: 10rpx 0px
+}
+.dsib{
+    display: inline-block;
+}
+.flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.flex2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.buttonstyle{
+    position: relative;
+    z-index: -1;
+    padding: 0px  10rpx !important;
+    height: 60rpx !important;
+    line-height:  60rpx !important;
+    width: 110rpx;
+    margin-left: 0px !important;
+    color: #041736 !important;
+    background-color:#e3b66b !important;
+    display: inline-block !important;
+}
+.buttonstyle2{
+    position: absolute !important;
+    top: 80rpx !important;
+    left: 0rpx !important;
+    z-index: 9999;
+    padding: 0px  10rpx !important;
+    height: 60rpx !important;
+    line-height:  60rpx !important;
+    width: 44%;
+    margin-left: 28% !important;
+    color: #041736 !important;
+    background-color:#e3b66b !important;
+    display: inline-block !important;
+}
+.veram{
+    vertical-align: middle;
+}
+.global_all{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    color: white;
+    position: relative;
+    padding: 5%;
+    font-family: "pingfang";
+    box-sizing: border-box;
+}
+.background_global{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.fl{
+    float: left;
+}
+.header_t{
+    font-size: 50rpx;
+}
+.small_t{
+    font-size: 20rpx;
+    margin-top: 15rpx;
+   
+}
+
+.message_s{
+    width: 100%;
+    height: 80rpx;
+    background-color: #1d2e4a;
+    border-radius: 30px;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    color: white;
+    text-align: left;
+    padding: 0px 30rpx;
+    box-sizing: border-box;
+    margin-top: 40rpx;
+  }
+
+  .text_info{
+    display: inline-block;
+    vertical-align: top
+  }
+  .img_num{
+    display: inline-block;
+    margin-top: 10rpx;
+    margin-left: 30rpx;
+    vertical-align: top
+  
+  }
+  .smalllog{
+    width: 50rpx;
+    height: 50rpx;
+    margin: 0 -10rpx;
+    
+  }
+  .icon_right{
+    width: 20rpx;
+    vertical-align: middle;
+    margin-left: 20rpx;
+  }
+  .rd_cup_list{
+      width: 100%;
+  }
+  .rd_cup_item{
+      width: 100%;
+      padding: 20rpx 0rpx;
+  }
+  .cup_left_k{
+      width: 25%;
+      margin-right: 5%;
+  }
+  .cup_image{
+      width: 100%;
+  }
+  .rd_cup_content{
+      width: 70%;
+  }
+  .rd_cup_title_top{
+      font-size: 35rpx;
+  }
+  .rd_cup_title_top2{
+    font-size: 30rpx;
+}
+  .icon_xiaoren{
+      width: 30rpx;
+  }
+  .title_top2_son{
+    max-width: 60%;
+  
+  }
+  .son_one{
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+  .rd_cup_title_top3{
+      font-size: 25rpx;
+  }
+  .rd_cup_item{
+      padding: 30rpx 0px;
+      border-bottom: 1px solid black;
+  }
+  .rd_cup_list{
+      margin-top: 50rpx;
+      margin-bottom: 190rpx;
+  }
+  .bottom_createcup{
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      left: 0px;
+  }
+  .back_fotter{
+      width: 100%;
+      float: left;
+  }
+  .otherchoose{
+      position: absolute;
+      top: 40rpx;
+      width: 100%;
+      text-align: center;
+      font-size: 24rpx;
+  }
+  .pull_down_all{
+    font-family: "pingfang";
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 99999;
+    
+  }
+  .backgroundcolor{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5555;
+  }
+  .back_topimg{
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      z-index: 5555;
+  }
+  .xl_top_title{
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      color: white;
+      z-index: 55555;
+
+  }
+  .title_text{
+      text-align: center;
+      margin-top: 80rpx;
+      margin-bottom: 80rpx;
+  }
+  .firstzj{
+      font-size: 24rpx;
+      margin-bottom: 30rpx;
+  }
+  .sedzj{
+    font-size: 24rpx;
+    margin-bottom: 30rpx;
+    margin-top: 10rpx;
+  }
+  .xl_content{
+      padding: 0px 6%;
+  }
+  .rm_label{
+      width: 25%;
+      text-align: center;
+      margin-bottom: 50rpx;
+
+     
+  }
+  .cup_logo{
+      width: 60%;
+      border-radius: 50%;
+  }
+  .rm_label_text{
+      font-size: 26rpx;
+      margin-top: 10rpx;
+      line-height: 26rpx
+  }
+  .kuang{
+      width: 70%;
+      text-align: center;
+  }
+
+     ::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+        color: transparent;
+        }
+       

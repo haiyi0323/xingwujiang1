@@ -1,0 +1,66 @@
+<!--fenbao/share card/share card.wxml-->
+<view class="share_all">
+    <image class="share_back" src="{{my_back}}" mode="widthFix" ></image>
+<!-- 卡片 -->
+    <view class="card">
+
+            <view class="ssooo">
+                   <image class="card_photo" src="{{photo}}" mode="widthFix" ></image>
+            </view>
+
+   
+        
+        <view class="card_content" >
+                <view class="card_name" >
+                    DevinSteve
+                    <image class="sex" src="{{sex}}" mode="widthFix" ></image>
+                </view>
+
+                <view class="card_about">
+                    我们一起撸起袖子~ 加油干！
+                </view>
+
+                <image class="card_ma" src="{{card_ma}}"  mode="widthFix"/>
+                  
+        </view>
+          
+    </view>
+
+    <!-- 其他 -->
+    <view class="hiscup">
+            <view class="cuptit" >
+                TA的俱乐部
+                <view class="kaiguan">
+                    只看他创建的
+                    <!-- 开关按 -->
+                </view>
+            </view>
+
+            <view class="cupdontai">
+                    <view class="cupdo_list" wx:for="{{cupdo_list}}" wx:key="index">
+                          <view class="dsib verm fdsfsdf" >
+                                <view class="first_" hover-class="none" hover-stop-propagation="false">
+                                    {{item.tit}}
+                                </view>
+
+                                <view class="sed_" hover-class="none" hover-stop-propagation="false">
+                                    已更新  <text class="kooks">{{item.num}}</text>   条
+                                </view>
+                     </view>
+                        <view class="dsib verm">
+                                 <image class="first_image dsds verm"  src="{{item.itemimg[0]}}" mode="widthFix" />
+                                 <image class="first_image dsds verm"  src="{{item.itemimg[1]}}" mode="widthFix" />
+                                   <image class="first_image dsds verm"  src="{{item.itemimg[2]}}" mode="widthFix" />
+                                  <image class="jianto verm" src="{{jiantou}}" mode="widthFix" ></image>
+
+                        </view>
+                             
+                     
+                    </view>
+
+            </view>
+
+    </view>
+
+
+</view>

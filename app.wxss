@@ -1,0 +1,213 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  font-family: '微软雅黑';
+  border-radius: 0px;
+  color: white;
+} 
+@font-face{
+  font-family: "pingfang";
+  src: url("https://xingwujiang-1259119670.cos.ap-chengdu.myqcloud.com/%E8%8B%B9%E6%96%B9%20%E7%B2%97%E4%BD%93.ttf")
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.vert{
+  vertical-align: top;
+}
+.message_s{
+  width: 100%;
+  height: 70rpx;
+  background-color: #1d2e4a;
+  border-radius: 30px;
+
+  left: 5%;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: white;
+  text-align: left;
+  padding: 0px 30rpx;
+  box-sizing: border-box;
+}
+.message_ss{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 70rpx;
+  background-color: #1d2e4a;
+  border-radius: 30px;
+
+  left: 5%;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: white;
+  text-align: left;
+  padding: 0px 30rpx;
+  box-sizing: border-box;
+}
+.ffffs{
+  display: inline-block;
+  vertical-align: top
+}
+.yello{
+  color: #ebbd70;
+}
+.vsomep{
+  display: inline-block;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  vertical-align: top
+
+}
+.smalllog{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 -10rpx;
+  
+}
+
+.youjian{
+  width: 20rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+
+/* 快捷 */
+.borderbottom{
+  border-bottom: 1px solid #021431
+}
+.font_color_a{
+  color: #6a7aa2;
+}
+.font_color_b{
+  color: #ebbd70;
+}
+.fr{
+    float: right;
+}
+.vertop{
+  vertical-align: top;
+}
+.margin5{
+  margin: 10rpx 0px
+}
+.dsib{
+  display: inline-block;
+}
+.flex{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.flex3{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex2{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.buttonstyle6{
+  position: absolute !important;
+  bottom: 20rpx !important;
+  left: 0rpx;
+  padding: 0px  20rpx !important;
+  width: 80%;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  margin-left: 0px !important;
+  color: #041736 !important;
+  background-color:#e3b66b !important;
+  display: inline-block !important;
+  margin-left: 10% !important;
+}
+.buttonstyle{
+  position: relative;
+  z-index: -1;
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 110rpx;
+  margin-left: 0px !important;
+  color: #041736 !important;
+  background-color:#e3b66b !important;
+  display: inline-block !important;
+}
+.buttonstyle2{
+  position: absolute !important;
+  top: 80rpx !important;
+  left: 0rpx !important;
+  z-index: 9999;
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 44%;
+  margin-left: 28% !important;
+  color: #041736 !important;
+  background-color:#e3b66b !important;
+  display: inline-block !important;
+}
+.buttonstyle3{
+
+  z-index: 9999;
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 44%;
+  margin-left: 28% !important;
+  color: white !important;
+  background-color:rgba(255, 255, 255, 0.1) !important;
+  display: inline-block !important;
+  border-radius: 40rpx !important;
+}
+.buttonstyle5{
+
+  z-index: 9999;
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 44%;
+  margin-left: 28% !important;
+  color: #041736 !important;
+  background-color:#e3b66b !important;
+  display: inline-block !important;
+  border-radius: 40rpx !important;
+}
+.veram{
+  vertical-align: middle;
+}
+.global_all{
+  color: white;
+  position: relative;
+  padding: 5%;
+  font-family: "pingfang"
+}
+.background_global{
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+.fl{
+  float: left;
+}
+.vertop{
+  vertical-align: top;
+}
+.margin5{
+  margin: 10rpx 0px
+}

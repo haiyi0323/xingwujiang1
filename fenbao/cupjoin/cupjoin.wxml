@@ -1,0 +1,95 @@
+<!--fenbao/cupjoin/cupjoin.wxml-->
+<view class="cupisjoin" hover-class="none" hover-stop-propagation="false">
+<!-- 背景图 -->
+    <image class="back" src="{{back}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <!-- 头部图 -->
+      <view class="cuptop" hover-class="none" hover-stop-propagation="false">
+            <view class="mask"></view>
+            <image class="top_img" src="{{top_image}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+              
+      </view>
+      <!-- 主体内容框 -->
+      <view class="cupisjoinkk">
+            <view class="cupname">
+                <view class="jojo  dsib verm">
+                          <image class="icon_jixinlogo verm" src="{{cup1.jixing}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                    <view class="cup_name dsib verm">{{cup1.name}}</view>
+                </view>
+                 
+                    <view class="more dsib verm">更多</view>
+            </view>
+                 
+                 <!-- 中心内容 -->
+                 
+                 <view class="cup_content">
+                        <!-- 广告图 -->
+                        <view class="advertising">
+                              <image class="advert_img" src="{{cup1.img}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+                              </image>
+                        </view>
+                        <view class="news_title" hover-class="none" hover-stop-propagation="false">
+                              {{cup1.title}}
+                        </view>
+                        <!-- 流量信息 -->
+                        <view class="liu">
+                              <view class="dsib">
+                                    <view  class="dsib fdfffd">{{cup1.like}}喜欢</view>
+                                    <view  class="dsib">{{cup1.look}}查看</view>
+                              </view>
+                              <view  class="dsib">
+                                    {{cup1.timeago}}
+                              </view>
+                        </view>
+                        <!-- 俱乐部成员 -->
+                        <view class="cupitem" hover-class="none" hover-stop-propagation="false">
+                              <view class="cupiti">
+                                    俱乐部成员
+                              </view>
+                              <view class="cupitimg verm" hover-class="none" hover-stop-propagation="false">
+                                    <view class="cupitimglist dsib" hover-class="none" hover-stop-propagation="false" wx:for="{{chengyuan}}" bind:tap="cymp" data-key="{{item.id}}">
+                               <image class="chegnyuan" src="{{item.item}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                                                  
+                                    </view>
+                                    
+                                      
+                              </view>
+                              <view class="morecy dsib verm" hover-class="none" hover-stop-propagation="false" bind:tap="moreyh">
+                                          <image class="diandian" src="{{diandian}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                                            
+                                    </view>
+                        </view>
+                        <!-- 动态板块 -->
+                        <view class="doing" hover-class="none" hover-stop-propagation="false">
+                              <view class="doingtitle">动态</view>
+                              <view class="doingsome" wx:for="{{doing}}" wx:key="index" data-key="{{item.id}}" bind:tap="dongtai">
+                              <view class="doinginfo dsib vert" >
+                                    <view class="doing_tit" hover-class="none" hover-stop-propagation="false">
+                                          {{item.tit}}
+                                    </view>
+                                    <view class="doingtime">
+
+                                          <view class=" sdfsdf dsib verm" >
+                                                <image class="yonghu" src="{{item.yhimg}}" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
+                                          </view>
+                                          <view class="doingname dsib verm">
+                                                  {{item.name}}
+                                          </view>
+                                          <view class="times dsib verm">
+                                                {{item.time}}               
+                                          </view>
+                                          
+                                    </view>
+                              </view>
+                              <view class="doing_imgs dsib vert">
+                                    <image class="doing_img" src="{{item.ggimg}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                                      
+                              </view>
+                              </view>
+                           
+                        </view>
+                          
+                         
+                 </view>
+            
+      </view>
+</view>

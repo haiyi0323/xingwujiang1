@@ -1,0 +1,460 @@
+.topbar{
+  width: 100vw;
+  height: 500rpx;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.jiidd{
+  width: 100% !important;
+  height: 100% !important;
+  font-family: "pingfang"
+}
+.jiiww{
+  width: 60%;
+  position: absolute;
+  top: -120rpx;
+  left: 50rpx;
+}
+.fffsd{
+  font-size: 26rpx;
+  color: #4e5675;
+  font-weight: bold;
+  position: absolute;
+  top: 160rpx;
+  right: 60rpx;
+  line-height: 26rpx;
+ 
+
+}
+.xiaojian1{
+  width: 26rpx !important;
+
+  position: absolute;
+  top: 160rpx;
+  right: 20rpx;
+}
+
+.fdsfsd{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 250rpx;
+
+}
+.jiiwwdds{
+
+  width: 100%;
+
+}
+.yuanji{
+  display: inline-block;
+  width: 90% !important;
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 0px;
+  position: relative;
+  
+  
+}
+.yuanji2{
+
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  
+  
+}
+.fdsfds{
+  width: 110%;
+}
+.juxing{
+  width: 100%;
+  height: 700rpx;
+  position: absolute;
+  top: 400rpx;
+}
+.dfdsfff{
+  width: 100%;
+  height: 600rpx
+}
+.all{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  background: #041736;
+  font-family: "pingfang"
+}
+.start_v{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  
+  top: calc(50% - 50rpx);
+  left: calc(50% - 50rpx);
+
+}
+.ffds{
+  width: 100%;
+}
+
+.leftflw{
+  width: 100rpx;
+  position: absolute;
+  left: 20rpx;
+  bottom: 10rpx;
+  height: 100rpx;
+/* animation-name: myfirst;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-play-state: running; */
+}
+/* 动画效果 */
+/* @keyframes myfirst{
+  0%   { left:20rpx; bottom:10rpx;}
+  100%  { left:40rpx; bottom:10rpx;}
+
+} */
+/* 动画效果 */
+/* @keyframes rithhss{
+  0%   { right:20rpx; bottom:10rpx;}
+  100%  { right:40rpx; bottom:10rpx;}
+
+} */
+
+
+.rigthflw{
+  width: 70rpx;
+  height: 100rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 0px;
+  /* animation-name: rithhss;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-play-state: running; */
+}
+.message_s{
+  width: 90%;
+  height: 70rpx;
+  background-color: #1d2e4a;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -50px;
+  left: 5%;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: white;
+  text-align: left;
+  padding: 0px 30rpx;
+  box-sizing: border-box;
+}
+.yello{
+  color: #ebbd70;
+}
+.vsomep{
+  display: inline-block;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  vertical-align: top
+
+}
+.smalllog{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 -10rpx;
+  
+}
+.ffffs{
+  display: inline-block;
+  vertical-align: top
+}
+.youjian{
+  width: 20rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+.title_jlb{
+  font-size: 35rpx;
+  color: white;
+  position: relative;
+  top: -130rpx;
+  z-index: 900;
+  padding: 3% 5%;
+
+
+}
+.righttit{
+  color: #828b9b;
+  font-size: 25rpx;
+  float: right;
+}
+
+.socll{
+  width: 90%;
+  padding: 0px 5%;
+  height: 500rpx;
+  position: absolute;
+  top: 860rpx;
+  overflow-x: auto;
+overflow-y: hidden;
+white-space: nowrap;
+background: #041736
+}
+
+.socll::-webkit-scrollbar {
+  background-color: transparent;
+}
+.all::-webkit-scrollbar{
+  width: 0px;
+}
+
+.jjiweo{
+  position: relative;
+  z-index: 900;
+  display: inline-block;
+  width: 30%;
+}
+.ffssdfe{
+  width: 90%;
+  margin-right: 10%;
+  position: relative;
+  border-radius: 25rpx;
+  overflow: hidden;
+}
+.jjoowed{
+  width: 100%
+}.people{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 20rpx;
+}
+.dfsdf{
+  width: 25rpx;
+
+
+}
+.fdsf{
+  color:#dcab60;
+  font-size: 25rpx;
+  display: inline-block;
+  margin-left: 15rpx
+}
+.jlbll{
+    color: white;
+    font-size: 30rpx;
+    padding-left: 10rpx;
+    padding-top: 5rpx;
+}
+.jiojw{
+  position: relative;
+  z-index: 8888;
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 110rpx;
+  margin-left: 0px !important;
+  color: #041736 !important;
+  background-color:#e3b66b !important;
+
+}
+.jiojw2{
+  position: relative;
+  z-index: 8888;
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 110rpx;
+  margin: 0px !important;
+  color: #041736 !important;
+  background-color:#e3b66b !important;
+  margin-top: 20rpx !important;
+
+
+}
+.lunbo{
+  background-color: #001027;
+  width: 100%;
+  height: 258rpx;
+  position: absolute;
+  top: 1300rpx;
+  text-align: center;
+  padding: 5%;
+  box-sizing: border-box;
+}
+.fdsff{
+  width: 94%;
+}
+.jkoiwe{
+  width: 100%;
+  height: 100%;
+}
+
+.fotter{
+  width: 100%;
+  background-color: #031027;
+  position: absolute;
+  top: 1550rpx;
+
+  box-sizing: border-box;
+}
+.back_f{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+.firstv{
+  width: 90%;
+  padding: 20rpx 5% 0;
+}
+.rongqi{
+  display: inline-block;
+  width: 150rpx;
+  margin-right: 30rpx;
+  vertical-align: top;
+}
+.neirong{
+  display: inline-block;
+  width: calc(100% - 180rpx);
+  vertical-align: top;
+}
+.tishne{
+  position: relative;
+  z-index: 900;
+}
+.onecol{
+  color: white;
+}
+.fl{
+  float: right;
+}
+.dsib{
+  display: inline-block;
+}
+.verm{
+  vertical-align: middle
+}
+.juli{
+  font-size: 20rpx;
+  color: #4e5675;
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+.twocol{
+  margin: 10rpx 0rpx
+}
+.three{
+  line-height: 80rpx;
+  border-bottom: 1px solid #021431;
+}
+.huodng{
+  text-align: center;
+  padding: 0px 60rpx;
+  width: 100%;
+  margin-top: 10rpx;
+  
+}
+.hdtit{
+  font-size: 30rpx;
+  color: #e3b66b
+}
+.hd_a{
+  text-align: left !important;
+  height: 50rpx;
+}
+.zuixin_a{
+  text-align: left !important;
+  height: 50rpx;
+  
+}.hdconten{
+  color: #4e5675;
+  font-size: 30rpx;
+}
+.fdsffd{
+  margin: 0px 30rpx;
+  color: #4e5675;
+}
+.dfsd{
+  width: 200rpx;
+  margin-right: 20rpx;
+  position: relative;
+}
+.dfsdf2{
+  width: 100%;
+
+}
+.fsdfj{
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-top: 30rpx;
+  
+  border-bottom: 1px solid #021431;
+  padding: 0 5% 30rpx;
+}
+.fsdfj::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.all::-webkit-scrollbar {
+  background-color: transparent;
+}
+.fsdfj {
+  width: 90%;
+  box-sizing: content-box;
+}
+.joiijdsd{
+  width: 100%;
+  position: absolute;
+  bottom: 20rpx;
+  padding: 15rpx;
+  color: white;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  word-break:break-all;
+  white-space: pre-line
+}
+.othewsl{
+  margin: 60rpx 0px;
+  padding: 0 5%;
+}
+.whitef{
+  color: rgb(199, 199, 199);
+}
+/* 指示器位置 */
+
+.wx-swiper-dots {
+  position: relative;
+  left: unset !important;
+  right: -5rpx;
+}
+
+.wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: 5rpx;
+}
+.vidersrc{
+  width: 100%;
+}
+
+
+
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+.algn{
+  align-items: center;
+}

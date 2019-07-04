@@ -1,0 +1,24 @@
+<!--pages/qidong/qidong.wxml-->
+ <view class="qidong_all" >
+     <image class="qidong_back1" src="{{back}}" mode="scaleToFill" > </image>
+
+     <view class="me_logo" >
+          <image class="qidong_back2" src="{{logo}}" mode="widthFix" > </image>
+     </view>
+    <view class="me_rukou" >
+          <i-button i-class="jiojw2 dsib fl verm" class="joijiw " shape="circle">
+                                                进入大赛
+                                        </i-button>
+                                               <i-button i-class="jiojw3 dsib fl verm" class="joijiw " shape="circle">
+                                                进入创投空间
+                                        </i-button>
+    </view>
+            
+
+            <!-- 记时 -->
+
+            <view class="jishi" bind:tap="tiaoguo">
+                    跳过  <text class="kkkos">{{time}}</text>
+            </view>
+
+ </view>

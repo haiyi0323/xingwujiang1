@@ -1,0 +1,201 @@
+/* pages/navbar/my/my.wxss */
+
+
+.my_back{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.verm{
+    vertical-align: middle;
+}
+.font_color_a{
+    color: #6a7aa2;
+}
+.font_color_b{
+    color: #ebbd70;
+  }
+.fr{
+      float: right;
+  }
+.vertop{
+    vertical-align: top;
+}
+.margin5{
+    margin: 10rpx 0px
+}
+.dsib{
+    display: inline-block;
+}
+.my_all_content{
+ 
+
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: white;
+    position: relative;
+    padding: 5%;
+    font-family: "pingfang";
+    box-sizing: border-box;
+}
+.my_card{
+    width: 100%;
+    height: 370rpx;
+    border-radius: 20rpx;
+    background: #ffffff;
+    opacity: 0.1;
+    margin-top: 80rpx;
+    padding: 6%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 200;
+    color: white;
+}
+.my_nickname{
+
+    color: white;
+    position: absolute;
+    top: 160rpx;
+    left: 80rpx;
+    font-size: 40rpx;
+    z-index: 252;
+    width: 100%;
+ 
+}
+.my_vip{
+    position: absolute;
+    top: 230rpx;
+    left: 80rpx;
+    font-size: 26rpx;
+    z-index: 252;
+    width: 100%;
+}
+.my_head{
+    width: 120rpx;
+    height: 120rpx;
+    position: absolute;
+    top: 160rpx;
+    right: 80rpx;
+    font-size: 26rpx;
+    z-index: 252;
+    background: white;
+    border-radius: 15rpx;
+    overflow: hidden;
+}
+.my_jifen{
+    position: absolute;
+    top: 260rpx;
+    left: 80rpx;
+    font-size: 26rpx;
+    z-index: 252;
+    
+}
+.my_numjifen{
+    font-size: 60rpx;
+}
+.icon_jiantou{
+    width: 15rpx;
+    vertical-align: middle;
+    margin-left: 5rpx;
+
+}
+.my_erwei{
+    width: 50rpx;
+    position: absolute;
+    top: 400rpx;
+    right: 80rpx;
+    z-index: 555
+
+}
+.icon_erwei{
+    width: 100%;
+}
+.my_head_img{
+    width: 100%;
+}
+.icon_sj{
+    width: 22rpx;
+    margin-left: 10rpx;
+}
+.icon_laba{
+    width: 20rpx;
+}
+.message_s{
+    width: 90%;
+    height: 80rpx;
+    background-color: #1d2e4a;
+    border-radius: 30px;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    color: white;
+    padding: 0px 30rpx;
+    box-sizing: border-box;
+    margin-top: 20rpx;
+    position: absolute;
+    top: 500rpx;
+    left: 5%;
+  }
+
+  .text_info{
+    display: inline-block;
+    vertical-align: top
+  }
+
+  .icon_right{
+    width: 20rpx;
+    vertical-align: middle;
+    float: right;
+    margin: 20rpx
+  }
+  .setting{
+    position: absolute;
+    top: 630rpx;
+    left: 2.5%;
+    width: 95%;
+    height: 200rpx;
+    color: white;
+   
+  }
+  .list_icon {
+      width: 30rpx;
+      vertical-align: middle;
+      margin-right: 25rpx;
+  }
+  .lict_jiantou{
+      width: 15rpx;
+      vertical-align: middle;
+      margin-left: 25rpx;
+
+  }
+
+.list_title{
+
+    font-size: 30rpx;
+    margin-left: 10rpx;
+    width: 40%;
+    text-align: left;
+
+} 
+
+.list_cont{
+    width: 40%;
+    text-align: right;
+    font-size: 30rpx;
+   
+    
+}
+.setting_list{
+    padding: 30rpx;
+    border-bottom: 1px solid black;
+}
+
+
+    ::-webkit-scrollbar{
+        width: 0 !important;
+        height: 0 !important;
+        color: transparent !important;
+        }
+   

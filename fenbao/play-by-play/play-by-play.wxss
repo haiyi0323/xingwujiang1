@@ -1,0 +1,283 @@
+/* fenbao/play-by-play/play-by-play.wxss */
+.top_img{
+    width: 100%;
+}
+.play_info{
+    background: #03132c;
+    padding-bottom: 40rpx;
+    border: 1px solid black;
+    font-family: "pingfang"
+}
+.play_title{
+    font-size: 38rpx;
+    color: white;
+    padding: 5%;
+}
+.play_content{
+    font-size: 28rpx;
+    color: #cfd2d6;
+    padding:  0px 5%;
+}
+.play_seniority{
+    width: 100%;
+    position: relative;
+}
+.back_img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.play_seniority{
+    padding: 5%;
+}
+.ph_title{
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    color: white;
+}
+.ph_list_name{
+    display: inline-block;
+    vertical-align: middle;
+}.box{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0%;
+    box-sizing: border-box;
+    padding: 5%;
+ 
+}
+.ph_list{
+    width: 100%;
+    color: white;
+    margin: 30rpx 0px
+}
+.head_portrait{
+    display: inline-block;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    background: #1d2e4a;
+    overflow: hidden;
+    margin-right: 40rpx;
+    vertical-align: middle;
+}
+.head_img{
+    width: 100%;
+}
+.meili{
+    font-size: 30rpx;
+    line-height: 50rpx;
+    color: #4e5675;
+}
+.name{
+    line-height: 80rpx
+}
+.font_color_a{
+    color: #ebbd70;
+}
+.font_color_1{
+    color: #6a7aa2;
+}
+.font_color_2{
+    color: #ebbd70;
+}
+
+/*  */
+.ranking{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    color: white;
+    font-family: "pingfang"
+
+}
+.back{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+    }
+    
+.rankcontent{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 200;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.dsib{
+    display: inline-block;
+}
+.dsfx{
+    display: flex;
+
+}
+.hearddfj{
+    width: 20%;
+    
+}
+.hewaeefi{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.conte{
+    width: 80%;
+}
+.touxiang{
+    width: 100%;
+}
+.verm{
+    vertical-align: middle;
+}
+.phlist{
+    padding: 20rpx 0;
+}
+.howmany{
+    font-size: 26rpx;
+
+}
+.jiooiwf{
+    width: 300rpx !important;
+    margin: 10rpx 0 !important;
+}
+.dianzano{
+    width: 10%;
+    height: 80rpx;
+    position: relative;
+}
+.iconzan{
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom !important;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.phlist_item{
+
+    padding: 20rpx 0;
+    padding-bottom: 1px solid 
+}
+.conte{
+    padding-bottom: 20rpx;
+}
+.verb{
+    vertical-align: bottom;
+}
+.dsfdsf{
+    height: 80rpx;
+}
+.consnslls{
+    width: 100%;
+    position: relative;
+    font-family: "pingfang"
+}
+.backss{
+    width: 100%;
+    position: absolute;
+    top: 0px ;
+    left: 0px;
+}
+.meddlecont{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 222;
+    color: white;
+    padding: 5% 5% 10%;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+
+}
+.phb{
+    font-size: 40rpx;
+}
+.bisaixq{
+    width: 100%;
+    padding: 5% 5% 10%;
+    box-sizing: border-box;
+    color: white;
+    position: relative;
+    border: 1px solid black;
+    background: #03132c;
+}
+.imgbox{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 5%;
+}
+.imgbox_img{
+    width: 100%;
+}
+.bs_itemifo{
+    width: calc(95% - 40rpx)
+}
+.bs_content{
+    color: #cfd1d5;
+}
+.firstxq{
+    margin-bottom: 30rpx;
+    margin-top: 40rpx;
+}
+.bs_title{
+    font-size: 40rpx;
+}
+.danwei{
+    width: 100%;
+    padding: 5%;
+    color: white;
+    background: #03132c;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.top_tttts{
+    font-size: 40rpx;
+}
+.imgsseew{
+    width: 100%;
+}
+.imageboxss1{
+    width: 300rpx;
+}
+.imageboxss2 {
+    width: 200rpx;
+}
+.imageboxss1{
+    margin: 40rpx 0rpx ;
+    padding-bottom: 60rpx;
+    border-bottom: 1rpx solid black;
+}
+.imageboxss2{
+    margin: 20rpx 15rpx;
+}
+.dsfdsfhg{
+    margin-bottom: 80rpx;
+}
+.syxy{
+    color: #6a7aa2;
+    font-size: 24rpx;
+    text-align: center;
+    padding-bottom: 30rpx;
+    margin-top: -10rpx;
+}
+.dibu{
+    width: 100%;
+    position: absolute;
+    left: 0rpx;
+    bottom: 0rpx;
+
+}

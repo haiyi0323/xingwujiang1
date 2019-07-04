@@ -1,0 +1,76 @@
+/* fenbao/shopxq/shopxq.wxss */
+.backspxq{
+    width: 100%;
+    position: absolute;
+    top: 360rpx;
+    left: 0rpx;
+}
+.shopxq{
+    width: 100vw;
+    height: 100vh;
+    font-family: "pingfang"
+}
+.shopxq.cont{
+    width: 100%;
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+}
+.jkoiwe{
+    width: 100%;
+
+}
+.wx-swiper-dots {
+    position: relative;
+    left: unset !important;
+    right: 0;
+}
+
+.wx-swiper-dots.wx-swiper-dots-horizontal {
+    margin-bottom: -5rpx;
+}
+.titl{
+    position: relative;
+    color: white;
+    padding: 5% 5% 3% 5%;
+    font-size: 40rpx;
+}
+.tigong{
+    position: relative;
+    padding: 0 5%;
+    font-size: 24rpx;
+}
+.price{
+    position: relative;
+    padding:  5%;
+
+}
+.f40{
+    font-size: 40rpx;
+}
+.ffdsf{
+    margin-right: 20rpx
+}
+.fdsfdsfrw{
+    text-decoration:line-through
+}
+.dfdsff{
+    position: relative;
+}
+.xqimg{
+    width: 100%;
+    position: relative;
+    margin: 70rpx 0rpx;
+}
+.xq_img1{
+    width: 100%;
+}
+.zhifu{
+    width: 100%;
+    position: fixed;
+    bottom: 0rpx;
+    left: 0rpx;
+    text-align: center;
+    height: 300rpx;
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),#293b5eab,#293b5ee7,#1f3053);
+}

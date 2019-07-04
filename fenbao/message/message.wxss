@@ -1,0 +1,77 @@
+/* fenbao/message/message.wxss */
+.dsib{
+    display: inline-block;
+}
+.all{
+    width: 100%;
+    background:#001027;      
+    height: 100vh; 
+    font-family: "pingfang"
+}
+.topbar{
+    width: 100%;
+    padding: 60rpx 30rpx 10rpx;
+    background: #101c2e;
+    color: #6a7aa2;
+    margin-bottom: 34rpx;
+
+}
+.tap1 ,.tap2{
+    padding: 0px 20rpx;
+    text-align: center;
+}
+.huakuai{
+    width: 80%;
+    height: 10rpx;
+    margin: 10rpx 10%;
+    background: #d3a862;
+    border-radius: 10rpx;
+}
+.active{
+    color: white !important;
+}
+.message_back{
+    width: 100%;
+}
+.message{
+    position: relative;
+    z-index: 2300;
+}
+.message_back{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.mes_list{
+    
+    position: absolute;
+    top: 40rpx;
+    left: 0%; 
+    padding: 0px 5%
+}
+.mes_head{
+    width: 15%;
+    height: 100rpx;
+    margin-right: 5%;
+    border-radius: 50%;
+    background:#6a7aa2
+}
+.head_img{
+    width: 100%;
+}
+.mes_content{
+    width: 80%;
+    color: white;
+    vertical-align: top;
+    font-size: 30rpx
+
+}
+.mes_time{
+    color: #6a7aa2;
+    
+}
+.mes_item{
+    padding: 40rpx 0rpx;
+    border-bottom: 1px solid black;
+
+}

@@ -1,0 +1,61 @@
+<!--pages/navbar/renwu/renwu.wxml-->
+
+<view class="rw_all">
+    <image class="rw_background" src="{{renwuback}}" mode="widthFix" >
+        
+    </image>
+
+    <!-- 头部 -->
+    <view class="rw_header" bind:tap="wdjf" >
+            <view class="rw_header_title">
+                当前积分
+            </view>
+            <view class="rw_header_jifen font_color_b" >
+                153
+            </view>
+              <!-- 兑换消息 -->
+             <view class="message_s" >
+                        <view class="text_info">
+                                  兑换精美礼盒咖啡
+                                <text class="font_color_b">{{num}}</text>
+                           
+                        </view>
+                        
+                        <image class="icon_right" src="{{rightb}}" mode="widthFix"></image>
+                </view>
+    </view>
+    <!-- 主体 -->
+        <view class="rw_content" style="height:{{contentheight}}px">
+                <view class="rw_content_title">
+                    我的任务
+                </view>
+                <view class="rw_content_list">
+                        <view class="rw_content_item" wx:for="{{rw_list}}">
+              <!-- logo -->
+                            <view class="rw_content_item_logo dsib" >
+                                <image class="item_logo_image" src="{{item.img}}" mode="widthFix"></image>       
+                            </view>
+                            <!-- 内容 -->
+                            <view class="rw_item_content dsib" hover-class="none" >
+                                <view class="rw_item_content_first">
+                                    {{item.cont}} <text class="font_color_b">{{item.award}}</text>
+                                </view>
+                                <view class="rw_item_content_sed">
+                                    <text class="sed_left font_color_a"> {{item.xiang}}</text>
+                                    <text wx:if="{{item.zt.isok == 1}}" class="sed_right2"> 已完成 </text>
+                                    <text wx:if="{{item.zt.isok == 2}}" class="sed_right"> 进行中 </text>
+                                    <text wx:if="{{item.zt.isok == 3}}" class="sed_right2"> 已失效 </text>
+                                   
+                                </view>
+
+                                <view class="rw_item_content_three">
+                                    <!-- 进度 --> <text class="font_color_b"> {{item.zt.down}} </text> /{{item.zt.all}}
+                                </view>
+                            </view>
+
+
+                        </view>
+                </view>
+                  
+        </view>
+</view>

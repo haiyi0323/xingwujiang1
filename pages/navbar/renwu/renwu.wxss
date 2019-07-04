@@ -1,0 +1,138 @@
+
+
+
+.font_color_a{
+    color: #6a7aa2;
+}
+.font_color_b{
+    color: #ebbd70;
+  }
+.fr{
+      float: right;
+  }
+.vertop{
+    vertical-align: top;
+}
+.margin5{
+    margin: 10rpx 0px
+}
+.dsib{
+    display: inline-block;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+    }
+    
+.rw_all{
+    width: 100vw;
+    height: 102vh;
+    overflow: auto;
+    font-family: "pingfang"
+}
+.rw_background{
+    width: 100%;
+    vertical-align: top;
+    display: flex;
+    top: 0px;
+    left: 0px;
+}
+.message_s{
+    width: 70%;
+    height: 80rpx;
+    background-color: #1d2e4a;
+    border-radius: 30px;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    color: white;
+    padding: 0px 30rpx;
+    box-sizing: border-box;
+    margin-top: 20rpx;
+    margin-left: 15%
+  }
+  
+  .text_info{
+    display: inline-block;
+    vertical-align: top
+  }
+  .img_num{
+    display: inline-block;
+    margin-top: 10rpx;
+    margin-left: 30rpx;
+    vertical-align: top
+  
+  }
+  .icon_right{
+    width: 20rpx;
+    vertical-align: middle;
+    margin-left: 20rpx;
+  }
+  .rw_header{
+      position: absolute;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      text-align: center;
+      padding: 20rpx;
+      color: white;
+      box-sizing: border-box;
+  }
+  .rw_header_title{
+      font-size: 30rpx;
+      margin-top: 50rpx;
+      margin-bottom: 20rpx;
+  }
+  .rw_header_jifen{
+      font-size: 50rpx;
+      font-weight: bold;
+  }
+  .rw_content{
+      position: absolute;
+      top: 330rpx;
+      box-sizing: border-box;
+      color: white;
+      width: 100%;
+      overflow: auto;
+      font-size: 0px;
+  }
+
+  /* content */
+
+  .rw_content_title{
+      font-size: 34rpx;
+      color: white;
+      margin: 50rpx 0px;
+      margin-left: 40rpx;
+  }
+.rw_content_item_logo{
+    width: 25%;
+    text-align: center;
+
+}
+.item_logo_image{
+    width: 50%;
+}
+.rw_item_content{
+    width: 75%;
+    font-size: 30rpx;
+}
+.sed_left{
+    font-size: 24rpx;
+}
+.sed_right{
+    float: right;
+    margin-right: 40rpx;
+}
+.sed_right2{
+    float: right;
+    margin-right: 40rpx;
+    color: #6a7aa2
+}
+.rw_content_item{
+    margin: 30rpx 0px;
+    padding-bottom: 30rpx;
+
+    border-bottom: 1px solid black;
+}

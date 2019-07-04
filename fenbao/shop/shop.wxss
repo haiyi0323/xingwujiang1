@@ -1,0 +1,281 @@
+/* fenbao/shop/shop.wxss */
+.shop{
+    width: 100vw;
+    height: 100vh;
+    font-family: "pingfang";
+    position: relative;
+}
+.shopback{
+    width: 100%;
+    position: fixed;
+    top: 0rpx;
+    left: 0rpx;
+}
+.allposit{
+    width: 100%;
+    height: 100%
+    ;
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+
+}
+.imagebox{
+    width: 100%;
+    height: 500rpx;
+    
+}
+.mask{
+    width: 100%;
+    height: 100vh;
+    background: #0f1724;
+    
+}
+.shopcont{
+    padding: 5%;
+}
+.luojipost{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 44%;
+    left: 0%;
+    box-sizing: border-box;
+
+}
+.fs40{
+    font-size: 40rpx;
+
+}
+.fs30{
+    font-size: 30rpx;
+    
+}
+.fs26{
+    font-size: 26rpx;
+    
+}
+.fs24{
+    font-size: 24rpx;
+    
+}
+.whereicon{
+    width: 18rpx;
+    margin-right: 10rpx;
+
+}
+.font_color_a{
+    color: #6a7aa2;
+  }
+  .font_color_b{
+    color: #ebbd70;
+  }
+  .jiooiwf{
+      width: 20% !important;
+      margin-right: 10rpx;
+  }
+  .dsib{
+      display: inline-block;
+  }
+  .sygg{
+      margin-right: 20rpx;
+  }
+  .shoptit{
+      margin: 10rpx 0;
+  }
+  .fuwuban{
+      width: 90%;
+     display: inline-block;
+    margin-right: 30rpx;
+   
+
+  }
+  .scoll::-webkit-scrollbar {
+      background: transparent;
+  }
+  .fu_itme{
+      width: 100%;
+      position: relative;
+  }
+  .kuai_img{
+      width: 100%;
+  }
+  .fu_xkuai{
+      width: 90%;
+      position: absolute;
+      left: 5%;
+      bottom: -60rpx;
+      background: #1d2e4a;
+      border-radius: 30rpx;
+      padding: 30rpx 40rpx;
+      box-sizing: border-box;
+  }
+  .fu_kuai{
+      width: 100%;
+      border-radius: 30rpx;
+      overflow: hidden;
+  }
+  .button{
+      width: 50rpx;
+      height: 50rpx;
+      border-radius: 50%;
+      overflow: hidden;
+      text-align: center;
+      background: #ebbd70;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .shoping{
+      width: 60%;
+        line-height: 50rpx;
+  }
+  .scoll{
+      margin: 40rpx 0 0;
+      padding-left: 5%;
+      height: 400rpx;
+      overflow: auto;
+      white-space: nowrap;
+  }
+  .allposit{
+
+  }
+  .luo_back{
+      width: 100%;
+      position: absolute;
+      top: 400rpx;
+      left: 0rpx;
+  }
+
+
+  /*  */
+  /* fenbao/credit/credit.wxss */
+.dsib{
+    display: inline-block;
+}
+.credit{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    font-family: "pingfang";
+
+}
+.backll{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.content_top{
+    width: 100%;
+}
+.top_one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top_one_left{
+    color: white;
+    font-size: 40rpx;
+    font-weight: bold;
+}
+.top_one_right ,.guoqi{
+    color: #4e5675;
+    font-size: 26rpx;
+}
+.verm{
+    vertical-align: middle;
+}
+.top_one{
+    margin-top: 50rpx;
+}
+.top_two{
+    color: white;
+}
+.fontcolor1{
+    color: #ebbd70;
+    font-size: 60rpx;
+}
+.top_two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top_two{
+    margin-top: 60rpx;
+}
+.top_two_right{
+    background: #ebbd70;
+    padding: 20rpx;
+    color: #041736;
+    border-top-left-radius: 60rpx;
+    border-bottom-left-radius: 60rpx;
+    font-size: 30rpx;
+    margin-right: -38rpx;
+}
+.content_info{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    overflow: auto;
+
+}
+.contentlist{
+    width: 48%;
+    position: relative;
+    margin: 20rpx 0rpx;
+    border-radius: 30rpx;
+    overflow: hidden;
+}
+.listimg{
+    width: 100%;
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),#293b5e,#1f3053);
+}
+.mask2{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background:linear-gradient(rgba(0,0,0,0),#060e1f59,#0f1c35,#0a1225);
+}
+.jfdh{
+    font-size: 30rpx;
+    position: absolute;
+    bottom: 25px ;
+    left: 0px;
+    padding: 0px 20rpx;
+}
+.price{
+    color: #ebbd70
+}
+.allfu_list{
+    padding: 0 5%;
+    background: #041736;
+    padding-bottom: 50rpx;
+
+}
+.fsdfew{
+    width: 100%;
+    color: white;
+    position: relative;
+    padding: 5%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,177 @@
+/* fenbao/cupjoin/cupjoin.wxss */
+.cupisjoin{
+    width: 100%;
+    font-family: "pingfang";
+    position: relative;
+}
+.back{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.cuptop{
+    width: 200%;
+    height: 1600rpx;
+    border-radius: 50%;
+    background: #071836;
+    position: absolute;
+    top: -1200rpx;
+    left: -50%;
+    overflow: hidden;
+    z-index: 1;
+}
+.top_img{
+    position: absolute;
+    bottom: -70rpx ;
+    left: 25%;
+    width: 50%;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background: #00000083;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 556;
+}
+.cupisjoinkk{
+    width: 100%;
+    position: absolute;
+    top: 0px ;
+    left: 0px;
+    z-index: 555;
+
+}
+.dsib{
+    display: inline-block;
+}
+.icon_jixinlogo{
+    width: 80rpx;
+    margin-right: 30rpx;
+}
+.cupname{
+    color: white;
+    padding: 55rpx 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.verm{
+    vertical-align: middle;
+}
+.more{
+    color: #989694;
+    font-size: 24rpx;
+}
+.cup_content{
+    padding: 0px 5%;
+    box-sizing: border-box;
+}
+.advertising{
+    width: 100%;
+    border-radius: 20rpx;
+    overflow: hidden;
+}
+.advert_img{
+    width: 100%;
+    vertical-align: top;
+}
+.news_title{
+    color: white;
+    padding: 20rpx 0rpx;
+}
+.liu{
+    color: #6a7aa2;
+    font-size: 24rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30rpx;
+    border-bottom: 1px solid black;
+}
+.fdfffd{
+    margin: 0px 30rpx 0 0;
+}
+.cupitem{
+    color: white;
+}
+.cupiti{
+    margin: 20rpx 0rpx;
+}
+.cupitimg{
+    width: 90%;
+    display: inline-block;
+  
+}
+.diandian{
+    width: 80%;
+}
+
+.cupitimglist{
+    width: 90rpx;
+    height: 90rpx;
+    margin: 10rpx 30rpx 0 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.chegnyuan{
+    width: 100%;
+}
+.doing{
+    width: 100%;
+    color: white;
+}
+.doingtitle{
+    margin: 20rpx 0;
+}
+.doinginfo{
+    width: 55%;
+
+}
+.doing_imgs{
+    width: 40%;
+}
+.doing_img{
+    width: 100%;
+}
+.sdfsdf{
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.yonghu{
+    width: 100%;
+}
+.doingsome{
+    margin: 60rpx 0rpx;
+    font-size: 40rpx;
+    position: relative;
+}
+.doinginfo{
+    height: 100%;
+    padding: 0px 5% 0 0;
+}
+.vert{
+    vertical-align: top
+}
+.doingtime{
+    font-size: 24rpx;
+    color: #6a7aa2;
+    position: absolute;
+    bottom: 20rpx;
+
+}
+.doingname{
+    margin: 0rpx 20rpx
+}
+.morecy{
+    width: 60rpx;
+    height: 60rpx;
+    background: rgba(255, 255, 255, 0.103);
+    border-radius: 50%;
+    text-align: center;
+}

@@ -1,0 +1,65 @@
+/* fenbao/ article /article.wxss */
+.news{
+    width: 100vw;
+    font-family: "pingfang";
+    background: #12223f;
+}
+.main_img{
+    width: 100%;
+    position: relative;
+    z-index: 555;
+}
+.content{
+    padding: 5%;
+    color: white;
+    position: relative;
+}
+.dsib{
+    display: inline-block;
+}
+.boximg{
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 50%;
+    background: #ffffff;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.lalala{
+    width: 100%;
+}
+.antherna,.times{
+    font-size: 24rpx;
+    color: #4e5675;
+    margin: 0px 15rpx;
+    vertical-align: middle;
+}
+.anther{
+   margin: 30rpx 0;
+}
+.wenan{
+    font-size: 30rpx;
+}
+.p1 ,.p2 ,.p3 ,.p4{
+    margin: 20rpx 0rpx;
+    color: #cfd1d5;
+}
+.backcontent{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+}
+.allcontentinfo{
+    width: 100%;
+    position: absolute;
+    top: 20rpx;
+    left: 0px;
+    z-index: 66;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.sdfasd{
+    width: 100%;
+}

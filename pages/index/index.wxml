@@ -1,0 +1,193 @@
+<scroll-view class="all" scroll-y hover-class="none" hover-stop-propagation="false" bindscrolltolower="daodibu">
+        <!-- 矩形2 -->
+        
+        <!-- 最上部分 -->
+        <view class="topbar" hover-class="none" hover-stop-propagation="false">
+                <i-avatar i-class="jiidd" shape="square" src="{{tuceng7}}" size="small"></i-avatar>
+                <image class="jiiww" mode="{{srctype}}" src="{{src1}}"></image>
+                <view class="fffsd" hover-class="whitef" bind:tap="baoming">我要报名</view>
+                <image class="xiaojian1" mode="widthFix" src="{{jiantou}}"></image>
+        </view>
+        <!-- 视频入口 -->
+        <view class="fdsfsd">
+                <view class="yuanji">
+                        <!-- <image class="ffds" src="{{video_fen}}" mode="widthFix"></image> -->
+                        <video class="vidersrc" id="video1" style="height:{{videoheight}}px" src="{{videosrc}}" controls show-center-play-btn="{{false}}"
+                        >
+                        </video>
+
+                        <view wx:if="{{isplay}}" class="fdong yuanji2" hover-class="" hover-stop-propagation="false">
+                                  <image class="fdsfds" src="{{video_fen}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                        <image  class="start_v" src="{{bofang}}" mode="widthFix" bind:tap="videoplay"></image>
+                        <image class="leftflw" src="{{leftf}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+                        <image class="rigthflw" src="{{rigthf}}" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
+                          </view>
+                      
+                     
+                </view>
+                <!-- 视频消息 -->
+                <view class="message_s" bind:tap="listpel">
+                        <view class="ffffs">
+                                比赛进行中，已有
+                                <text class="yello">{{num}}</text>
+                                人报名
+                        </view>
+                        <view class="vsomep">
+                                <image class="smalllog" wx:for="{{somep}}" wx:key="index" src="{{item}}"></image>
+                        </view>
+                        <image class="youjian" src="{{rightb}}" mode="widthFix"></image>
+                </view>
+        </view>
+        <!-- 俱乐部 -->
+        <view class="title_jlb">
+                我的俱乐部
+                <view class="righttit" hover-class="whitef" bind:tap="morecup">更多</view>
+        </view>
+        <!-- 横屏滚动 -->
+        <view class="socll">
+                <view class="jjiweo" wx:for="{{cup}}" wx:key="index" bind:tap="julebu">
+                        <!-- 图片框 -->
+                        <view class="ffssdfe">
+                                <image class="jjoowed" src="{{item.img}}" mode="widthFix"></image>
+                                <view class="people">
+                                        <image class="dfsdf" src="{{xiaoren}}" mode="widthFix"></image>
+                                        <view class="fdsf">{{item.pel}}</view>
+                                </view>
+                        </view>
+                        <!-- 标题等 -->
+                        <view class="jlbll">{{item.title}}</view>
+                        <i-button i-class="jiojw" class="joijiw" shape="circle">进入</i-button>
+                </view>
+        </view>
+        <!-- 轮播图 -->
+        <view class="lunbo">
+                <swiper indicator-dots="{{indicatorDots}}" class="jkoiwe" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular indicator-color="{{contorbackcolor}}" indicator-active-color="{{advicecolor}}">
+                        <block wx:for="{{imgUrls}}" class="fdsff" >
+                                <swiper-item bind:tap="news">
+                                        <image src="{{item}}" class="slide-image" style="width:100%" mode="widthFix" />
+                                </swiper-item>
+                        </block>
+                </swiper>
+        </view>
+        <!-- 活动广告 -->
+        <view class="fotter">
+                <!-- 背景图 -->
+                <image class="back_f" src="{{fottre_b}}" mode="widthFix" style="width:100%" />
+                <!-- 第一展示广告 -->
+                <view class="firstv">
+                        <!-- 图片view -->
+                        <view class="rongqi tishne" bind:tap="yuyue">
+                                <image class="fsdfdsssv" src="{{firstinfo.img}}" mode="widthFix" style="width:100%"></image>
+                        </view>
+                        <!-- 内容view -->
+                        <view class="neirong tishne" bind:tap="yuyue">
+                                <!-- 第一行 -->
+                                <view class="onecol">
+                                        {{firstinfo.zuobiao}}
+                                        <view class="rightkm fl">
+                                                <image class="dingweicon verm" src="{{dingweiicon}}" mode="widthFix" style="width:20rpx"></image>
+                                                <view class="juli dsib verm">
+                                                        {{firstinfo.juli}}
+                                                </view>
+                                        </view>
+                                </view>
+                                <!-- 第二行 -->
+                                <view class="twocol">
+                                        <view class="shengyu dsib verm" style="color:#6a7aa2;font-size:30rpx">
+                                                剩余固定工作位
+                                                <view style="color:#e3b66b" class="dsib">
+                                                        {{firstinfo.shengyu}}
+                                                </view>
+                                                个
+                                                <i-progress i-class="jiooiwf" percent="65" status="wrong" hide-info="false"></i-progress>
+                                        </view>
+                                        <i-button i-class="jiojw2 dsib fl verm" class="joijiw " shape="circle" bind:tap="yuyue">
+                                                预定
+                                        </i-button>
+                                </view>
+                                <!-- 第三行 -->
+                                <view class="three" style="color:#6a7aa2 ;font-size:30rpx">
+                                        {{firstinfo.xxdz}}
+                                </view>
+                        </view>
+                        <view class="huodng tishne">
+                                <view class="hd_a" bind:tap="shangpin">
+                                        <view class="hdtit dsib">活动</view>
+                                        <text class="fdsffd dsib">|</text>
+                                        <view class="hdconten dsib">行无疆百万扶持创投大赛</view>
+                                </view>
+                                <view class="zuixin_a" bind:tap="shangpin">
+                                        <view class="hdtit dsib">最新</view>
+                                        <text class="fdsffd dsib">|</text>
+                                        <view class="hdconten dsib">昆明摩蜂互娱科技有限公司入驻</view>
+                                </view>
+                        </view>
+                </view>
+                <!-- 滑动轮播 -->
+                <view class="fsdfj tishne">
+                        <view class="dfsd dsib" wx:for="{{laiba}}" bind:tap="news">
+                                <image class="dfsdf2" src="{{item.img}}" mode="widthFix"></image>
+                                <view class="joiijdsd tishne">{{item.tttt}}</view>
+                        </view>
+                </view>
+                <!-- 其他广告 -->
+                <view class="othewsl" wx:for="{{otherinfo}}">
+                        <!-- 图片view -->
+                        <view class="rongqi tishne">
+                                <image class="fsdfdsssv" src="{{item.img}}" mode="widthFix" style="width:100%"></image>
+                        </view>
+                        <!-- 内容view -->
+                        <view class="neirong tishne">
+                                <!-- 第一行 -->
+                                <view class="onecol">
+                                        {{item.zuobiao}}
+                                        <view class="rightkm fl">
+                                                <image class="dingweicon verm" src="{{dingweiicon}}" mode="widthFix" style="width:20rpx"></image>
+                                                <view class="juli dsib verm">{{item.juli}}</view>
+                                        </view>
+                                </view>
+                                <!-- 第二行 -->
+                                <view class="twocol">
+                                        <view class="shengyu dsib verm" style="color:#6a7aa2;font-size:30rpx">
+                                                剩余固定工作位
+                                                <view style="color:#e3b66b" class="dsib">
+                                                        {{item.shengyu}}
+                                                </view>
+                                                个
+                                                <i-progress i-class="jiooiwf" percent="65" status="wrong" hide-info="false"></i-progress>
+                                        </view>
+                                        <i-button i-class="jiojw2 dsib fl verm" class="joijiw " shape="circle" bind:tap="yuyue">
+                                                预定
+                                        </i-button>
+                                </view>
+                                <!-- 第三行 -->
+                                <view class="three" style="color:#6a7aa2 ;font-size:30rpx">
+                                        {{item.xxdz}}
+                                </view>
+                        </view>
+                        <view class="huodng tishne" bind:tap="shangpin">
+                                <view class="hd_a">
+                                        <view class="hdtit dsib">热门</view>
+                                        <text class="fdsffd dsib">|</text>
+                                        <view class="hdconten dsib">行无疆百万扶持创投大赛</view>
+                                </view>
+                        </view>
+                </view>
+                <i-load-more tip="更多场地努力建设中" loading="{{ false }}" />
+ <!--
+<i-modal title="纵向排列的按钮" visible="{{ssdfff}}" actions="{{ actions4 }}" action-mode="{{ vertical }}" bind:click="handleClick4">
+            
+            <view class="baominglist">
+                      <i-cell-group>
+    <i-cell i-class="jiosji" is-link value="报名时间:2019-12-12" wx:for="{{somep}}">
+        <i-avatar src="{{item}}" size="small"></i-avatar>
+
+
+    </i-cell>
+   
+</i-cell-group>     
+            </view>
+       
+</i-modal> -->
+        </view>
+</scroll-view>

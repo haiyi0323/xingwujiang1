@@ -1,0 +1,49 @@
+<!--fenbao/ article /article.wxml-->
+    <view class="news" hover-class="none" hover-stop-propagation="false">
+        <image class="main_img" src="{{new.mainimg}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+           <!-- 内容  -->
+          <view class="content" hover-class="none" hover-stop-propagation="false">
+              <image class="backcontent" src="{{back}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+             
+             <view class="allcontentinfo" hover-class="none" hover-stop-propagation="false">
+                  <view class="title" hover-class="none" hover-stop-propagation="false">
+                  {{new.title}}
+              </view>
+              <!-- 作者栏 -->
+              <view class="anther" hover-class="none" hover-stop-propagation="false">
+                  <view class="boximg dsib" hover-class="none" hover-stop-propagation="false">
+                      <image class="lalala" src="{{}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                  </view>
+
+                  <view class="antherna dsib" hover-class="none" hover-stop-propagation="false">
+                      {{new.anther}}
+                  </view>
+                  
+                  <view class="times dsib" hover-class="none" hover-stop-propagation="false">
+                      {{new.agotime}}
+                  </view>
+              </view>
+              <!-- 文案 -->
+                <view class="wenan" hover-class="none" hover-stop-propagation="false">
+                    <view class="p1" hover-class="none" hover-stop-propagation="false">
+                        {{new.content1}}
+                    </view>
+                     <view class="p2" hover-class="none" hover-stop-propagation="false">
+                        {{new.content2}}
+                    </view>
+                     <view class="p3" hover-class="none" hover-stop-propagation="false">
+                       <image class="sdfasd" src="{{new.oteherimg1}}" mode="awidthFix" lazy-load="false" binderror="" bindload="" />
+                        
+                    </view>
+                     <view class="p4" hover-class="none" hover-stop-propagation="false">
+                        {{new.content3}}
+                    </view>
+                </view>
+             </view>
+             
+            
+          </view>
+
+
+       
+    </view>

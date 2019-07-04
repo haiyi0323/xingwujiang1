@@ -1,0 +1,85 @@
+/* pages/qidong/qidong.wxss */
+.qidong_all{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: "pingfang"
+}
+.qidong_back1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.qidong_back2{
+    width: 100%;
+    position: relative;
+    z-index: 222;
+}
+.me_logo{
+    width: 60%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    z-index: 111;
+}
+
+.me_rukou{
+    width: 46%;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 27%;
+    z-index: 111;
+}
+.qidong_back3{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+.jiojw2{
+    position: absolute;
+    z-index: 8888;
+    padding: 0px  10rpx !important;
+    height: 70rpx !important;
+    line-height:  70rpx !important;
+    width: 100%;
+    margin: 0px !important;
+    color: #041736 !important;
+    background-color:#e3b66b !important;
+    margin-top: 20rpx !important;
+  
+  
+  }
+  .jiojw3{
+    position: absolute;
+    z-index: 8888;
+    padding: 0px  10rpx !important;
+    height: 70rpx !important;
+    line-height:  70rpx !important;
+    width: 100%;
+    margin: 0px !important;
+    color: #ffffff !important;
+    background-color:#1b314c !important;
+    margin-top: 30rpx !important;
+  
+  }
+  .jishi{
+      width: 80rpx;
+      font-size: 24rpx;
+      background: #1b314c;
+      color: white;
+      position: absolute;
+      top: 3%;
+      right: 3%;
+      z-index: 55555;
+      border-radius: 20rpx;
+      padding: 10rpx 20rpx;
+  }
+  .kkkos{
+      color: #e3b66b
+  }

@@ -1,0 +1,74 @@
+<!--pages/navbar/my/my.wxml-->
+
+        <image class="my_back " src="{{my_back}}" mode="widthFix" > </image>
+<view class="my_all_content" >
+        <view class="my_card">
+      
+        </view>
+
+
+              <!-- 名字 -->
+                <view class="my_nickname dsib" >
+                    DevinSteve
+                </view>
+            <!-- 会员 -->
+                <view class="my_vip font_color_a" bind:tap="supfw">
+                    333汽车人会员    <text class="font_color_b">  升级服务</text> 
+                    <image class="icon_sj" src="{{xsjiantou}}" mode="widthFix" ></image>
+                    <view class="my_jdt">
+
+
+                    </view>
+
+                </view>
+
+                <!-- 头像 -->
+                <view class="my_head">
+                    <image class="my_head_img" src="{{headimage}}" mode="widthFix" ></image>
+
+                </view>
+
+                <!-- 积分 -->
+                <view class="my_jifen">
+                    <text class="font_color_b my_numjifen" bind:tap="wdjifen">
+                            153
+                    </text>
+                    <view class="my_jifenr font_color_a" bind:tap="wdjifen">
+                        <view class="verm dsib">我的积分 </view>  
+                        <image class="icon_jiantou verm" src="{{jiantou}}" mode="widthFix"></image>
+                    </view>
+                </view>
+                <!-- 二维码 -->
+                <view class="my_erwei" bind:tap="businesscard">
+                    <image class="icon_erwei" src="{{erweima}}" mode="widthFix" ></image>
+
+                </view>
+
+
+                  <!-- 用户消息 -->
+             <view class="message_s" bind:tap="mesageto">
+                        <view class="text_info">
+
+                            <image class="icon_laba" src="{{laba}}" mode="widthFix"></image>
+                                体验成员可使用体验版微信小程序
+
+                        </view>
+                        
+                        <image class="icon_right" src="{{jiantou}}" mode="widthFix"></image>
+                </view>
+
+                <view class="setting" >
+                        <!-- 设置列表 -->
+                        <view class="setting_list" wx:for="{{set_list}}" wx:key="index">
+                                <image class="list_icon" src="{{item.img}}" mode="widthFix" ></image>
+                                <view class="list_title dsib">{{item.left}}</view>
+                                <view class="list_cont dsib font_color_a" >{{item.right}}</view>
+                                <image class="lict_jiantou" src="{{item.icon}}" mode="widthFix"></image>
+                        </view>
+                        
+                </view>
+
+</view>
+       
+
+  

@@ -1,0 +1,94 @@
+/* fenbao/ranking list /ranking list .wxss */
+.ranking{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    color: white;
+    font-family: "pingfang"
+
+}
+.back{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+    }
+    
+.rankcontent{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 200;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.dsib{
+    display: inline-block;
+}
+.dsfx{
+    display: flex;
+
+}
+.hearddfj{
+    width: 20%;
+    
+}
+.hewaeefi{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.conte{
+    width: 80%;
+}
+.touxiang{
+    width: 100%;
+}
+.verm{
+    vertical-align: middle;
+}
+.phlist{
+    padding: 20rpx 0;
+}
+.howmany{
+    font-size: 26rpx;
+
+}
+.jiooiwf{
+    width: 300rpx !important;
+    margin: 10rpx 0 !important;
+}
+.dianzano{
+    width: 10%;
+    height: 80rpx;
+    position: relative;
+}
+.iconzan{
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom !important;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.phlist_item{
+    margin: 20rpx 0;
+    padding: 20rpx 0;
+    padding-bottom: 1px solid 
+}
+.conte{
+    padding-bottom: 20rpx;
+}
+.verb{
+    vertical-align: bottom;
+}
+.dsfdsf{
+    height: 80rpx;
+}

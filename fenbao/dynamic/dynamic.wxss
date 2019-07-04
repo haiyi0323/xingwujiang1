@@ -1,0 +1,175 @@
+/* fenbao/dynamic/dynamic.wxss */
+.dynamic{
+    width: 100vw;
+    height: 100vh;
+    font-family: "pingfang"
+}
+.fieximg{
+    width: 120%;
+    position: fixed;
+    left: -120rpx;
+    top: -30px;
+}
+.particular{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+.pelinfo{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    z-index: 55;
+
+    box-sizing: border-box;
+}
+.boxheadimg{
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+    background: red;
+    overflow: hidden;
+}
+.my_head{
+    width: 100%;
+}
+.dsib{
+    display: inline-block;
+}
+.verm{
+    vertical-align: middle;
+}
+.pelhead{
+    margin: 20rpx  0px;
+}
+.my_name ,.my_last ,.boxheadimg{
+    margin-right: 30rpx;
+    font-size: 26rpx;
+    color: #aba3a6;
+}
+.dong{
+    width: 100%;
+}
+.touming{
+    width: 100%;
+    padding: 0px 5%;
+    box-sizing: border-box;
+}
+.allput{
+    position: relative;
+    overflow: hidden;
+}
+.dong{
+   margin-top: -350rpx
+
+  
+}
+.mesbox{
+    padding: 5% 0;
+    width: 90%;
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    box-sizing: border-box;
+    min-height: 500rpx
+
+}
+.allput_top{
+    padding: 5% 0;
+}
+.allput_top{
+    width: 90%;
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+.yuan{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.rwbox{
+    width: 100rpx;
+    height: 100rpx;
+
+}
+.hdimg{
+    width: 100%;
+}
+.fontcolor1{
+    color: #ebbd70;
+}
+.textbox{
+    margin: 0px 25rpx;
+    font-size: 30rpx;
+}
+.dsfdsf{
+    font-size: 26rpx;
+}
+.msgradio{
+    display: inline-block;
+    padding: 20rpx ;
+    border-radius: 60rpx;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10rpx 0rpx;
+    font-size: 30rpx;
+}
+.headerbox{
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 20rpx;
+}
+.header{
+    width: 100%;
+}
+.msdtexts{
+    max-width: 500rpx;
+    word-wrap: break-word;
+}
+.inputt{
+    width: 100%;
+    padding: 5%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    box-sizing: border-box;
+}
+.inputbox{
+    width: 80%
+}
+.radioboxs{
+    width: 100%;
+    padding: 20rpx 40rpx;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 60rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+
+.sendicon{
+    width: 60rpx;
+    height: 60rpx;
+
+    color: black;
+    text-align: center;
+    line-height: 60rpx;
+
+}
+.jiojwe{
+    background: transparent !important;
+    padding: 0px !important;
+    outline: none !important;
+    color: white !important;
+}
+.jopweijf{
+    color: white !important;
+}
+.shangjian{
+    width: 100%;
+}

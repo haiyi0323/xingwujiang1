@@ -1,0 +1,105 @@
+<!--fenbao/shop/shop.wxml-->
+<view class="shop">
+    <view class="imagebox">
+         
+            <image class="shopback" src="{{shopback}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+            </image>
+           <view class="mask2">  </view>
+       
+    </view>
+<view class="allposit">
+
+    <view class="luojipost">
+        <image class="luo_back" src="{{luo_back}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+            
+        </image>
+                  <view class="shopcont">
+        <!--  -->
+            <view class="zujian">
+                <view class="shoptit fs40">
+                    银海幸福广场
+                </view>
+                <view class="someinfo font_color_1">
+                    <!-- 进度条 -->
+                      <i-progress i-class="jiooiwf dsib" percent="65" status="wrong" hide-info="false"></i-progress>
+                    <view class="sygg dsib font_color_a fs26 vrem">
+                        剩余 <text class="font_color_b">{{dsssf.syss}} </text> 个固定工位 
+                    </view>
+                    <image class="whereicon " src="{{icon_where}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+                    <view class="howlong dsib fs26 font_color_a vrem" hover-class="none" hover-stop-propagation="false">
+                        {{dsssf.juli}}km
+                    </view> 
+               
+                </view>
+            </view>
+           
+    </view>
+     <!-- 推荐服务 -->
+            <view class="scoll">
+                          <view class="fuwuban" wx:for="{{dianjia}}" wx:key="index">
+                <view class="fu_itme">
+                    <view class="fu_kuai">
+                            <image class="kuai_img" src="{{item.fw_img}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                              
+                    </view>
+                    <view class="fu_xkuai">
+                        <view>
+                            LED大屏会议
+                        </view>
+                        <view class="flex3">
+                            <view class="fs26 font_color_a" hover-class="none" hover-stop-propagation="false">
+                                        参与话题讨论可以获得积分奖励
+                            </view>
+                              <view class="button">
+                                  <image class="shoping" src="{{gouwucaor}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+                                      
+                                  </image>
+                              </view>
+                    
+                        </view>
+                        <view class="font_color_b fs26">
+                            {{item.jiage}}
+                        </view>
+                    </view>
+                </view>
+            </view>
+            </view>
+        <!-- 所有服务 -->
+        <view class="allfu">
+                <view class="fsdfew flex3 fs30">
+                    <view class="tit">
+                        所有服务
+                    </view>
+                    <view class="fs24 font_color_a" hover-class="none" hover-stop-propagation="false">
+                        仅看服务体系
+                         <!-- 开关 -->
+                    <view class="" >
+                        
+                    </view>
+                    </view>
+                   
+                      
+                      
+                </view>
+                <view class="allfu_list">
+                       
+            <view class="content_info" hover-class="none" hover-stop-propagation="false">
+                <view class="contentlist"  wx:for="{{duihuanlist}}" wx::key="index">
+                        <view class="mask"></view>
+                        <image class="listimg" src="{{item.img}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                            <view class="jfdh">
+                        <view class="price">{{item.price}}积分兑换</view>
+                        <view class="listtit">{{item.title}}</view>
+                            </view>
+                        
+                </view>
+            </view>
+
+                </view>
+        </view>
+    </view>
+        
+</view>
+  
+          
+</view>

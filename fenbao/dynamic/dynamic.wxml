@@ -1,0 +1,97 @@
+<!--fenbao/dynamic/dynamic.wxml-->
+<view class="dynamic" hover-class="none" hover-stop-propagation="false">
+        <image class="fieximg" src="{{mainimg}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+          
+          <view class="particular" hover-class="none" hover-stop-propagation="false">
+                    <view class="pelinfo" hover-class="none" hover-stop-propagation="false">
+
+                            <view class="touming" hover-class="none" hover-stop-propagation="false">
+                                   <view class="main_title" hover-class="none" hover-stop-propagation="false">
+                            {{dongtaiinfo.main_title}}
+                        </view>
+                        <!-- 个人信息 -->
+                        <view class="pelhead" hover-class="none" hover-stop-propagation="false">
+                            <view class="boxheadimg dsib verm" hover-class="none" hover-stop-propagation="false">
+                                <image class="my_head" src="{{dongtaiinfo.my_antver}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                            </view>
+                            <view class="dsib verm my_name" hover-class="none" hover-stop-propagation="false">
+                                {{dongtaiinfo.my_name}}
+                            </view>
+                              <view class="dsib verm my_last" hover-class="none" hover-stop-propagation="false">
+                                {{dongtaiinfo.my_lastonlin}}
+                            </view>
+                        </view>
+
+                            </view>
+                     
+                        <!-- 动态 -->
+                        <view class="allput" hover-class="none" hover-stop-propagation="false">
+                            <image class="dong" src="{{back}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                              
+                            <view class="allput_top" hover-class="none" hover-stop-propagation="false">
+                                <view class="dsib rwbox yuan verm">
+                                    <image class="hdimg" src="{{dongtaiinfo.wdrwa}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                                </view>
+                                <view class="dsib textbox verm">
+                                        <view>
+                                            <view class="" hover-class="none" hover-stop-propagation="false">
+                                                写点啥呢 <text class="fontcolor1"> {{dongtaiinfo.shangjin}}</text>
+                                            </view>
+                                        </view>
+                                        <view style="color:#4e5675;line-height:40rpx">
+                                            {{dongtaiinfo.jianshi}}
+                                        </view>
+                                        <view style="color:#4e5675">
+                                            <text class="fontcolor1"  >{{dongtaiinfo.overstate}}</text>/{{dongtaiinfo.allstate}}
+                                        </view>
+                                </view>
+                                <view class="dsib verm dsfdsf">
+                                        {{dongtaiinfo.state}}
+                                </view>
+                            </view>
+
+                            <!-- 消息盒  -->
+                            <view class="mesbox" hover-class="none" hover-stop-propagation="false">
+                                <!-- 实例消息 -->
+                                <view class="bigbox" hover-class="none" hover-stop-propagation="false" wx:for="{{monimsg}}" wx:key="index">
+                                       <view class="msgradio" hover-class="none" hover-stop-propagation="false" >
+                                        <view class="headerbox yuan verm dsib" hover-class="none" hover-stop-propagation="false">
+                                            <image class="header" src="{{item.pelheaderimg}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                                        </view>
+                                        <view class="msdtexts verm dsib" hover-class="none" hover-stop-propagation="false">
+                                            {{item.text}}
+                                        </view>
+                                          
+                                    </view>
+
+                                </view>
+                                 
+                                     
+
+
+                            </view>
+                                <!-- 表单 -->
+
+                                    <view class="inputt" >
+                                        <view class="radioboxs" hover-class="none" hover-stop-propagation="false">
+                                            <view class="inputbox dsib verm" hover-class="none" hover-stop-propagation="false">
+                                                      <i-input value="{{sendmsg}}" i-class="jiojwe" class="jopweijf" placeholder="说点什么" maxlength="140"  bind:change="bindKeyInput" />
+
+                                            </view>
+                                              
+                                      
+                                             <view class="sendicon yuan dsib verm" hover-class="none" hover-stop-propagation="false">
+                                                 <image class="shangjian" src="{{shangjian}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                                                   
+                                             </view>
+                                        </view>
+                                        
+                                          
+                                    </view>
+
+
+                        </view>
+                          
+                    </view>
+          </view>
+</view>

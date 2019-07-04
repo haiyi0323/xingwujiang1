@@ -1,0 +1,46 @@
+<!--fenbao/shopxq/shopxq.wxml-->
+<view class="shopxq">
+    <image class="backspxq" src="{{back}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+      <view class="shopxq_cont">
+            <!-- 轮播图 -->
+              <swiper indicator-dots="{{indicatorDots}}" class="jkoiwe" style="height:{{height}}px" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular indicator-color="{{contorbackcolor}}" indicator-active-color="{{advicecolor}}">
+                        <block wx:for="{{imgUrls}}" class="fdsff" >
+                                <swiper-item bind:tap="news">
+                                        <image src="{{item}}" class="slide-image" style="width:100%" mode="widthFix" />
+                                </swiper-item>
+                        </block>
+                </swiper>
+                <!-- 标题分类 -->
+                <view class="titl">
+                    {{goos.title}}
+                </view>
+                <view class="tigong font_color_a">
+                    {{goos.lalala}}
+                </view>
+                <view class="price" hover-class="none" hover-stop-propagation="false">
+                    <view class="dsib font_color_b f40 ffdsf">{{goos.price_now}}</view>
+                    <view class="dsib font_color_a fdsfdsfrw">{{goos.price_away}}</view>
+                </view>
+                  <!-- 选择规格 -->
+                  <view class="message_ss dfdsff" bind:tap="listpel">
+                        <view class="ffffs font_color_a">
+                               已选
+                                <text style="color:white">{{wodexz}}</text>
+                             
+                        </view>
+                      
+                        <image class="youjian" src="{{rightb}}" mode="widthFix"></image>
+                </view>
+                <!-- 详情图片 -->
+                <view class="xqimg">
+                    <image class="xq_img1" src="{{xiang}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                      
+                </view>
+                <!-- 支付按钮 -->
+                <view class="zhifu">
+                      <i-button i-class="buttonstyle6 dsib fl verm" class="joijiw " shape="circle">
+                                                选好了，去支付订单
+                                        </i-button>
+                </view>
+      </view>
+</view>

@@ -1,0 +1,90 @@
+
+<view class="rw_all">
+<image class="rw_background" src="{{renwuback}}" mode="widthFix" >
+    
+</image>
+
+<!-- 头部 -->
+<view class="rw_header" >
+        <view class="rw_header_title">
+            当前等级
+        </view>
+        <view class="rw_header_jifen font_color_b" >
+            333汽车人会员
+        </view>
+          <!-- 兑换消息 -->
+         <view class="message_s" >
+                    <view class="text_info">
+                              e***f购买了 
+                            <text class="font_color_b">{{num}}</text>
+                       
+                    </view>
+                    
+                    <image class="icon_right" src="{{rightb}}" mode="widthFix"></image>
+            </view>
+</view>
+<!-- 主体 -->
+
+    <view class="conteng_lb">
+            <view class="renwu_list" wx:for="{{qcrlb}}" wx:key="index">
+                    <!-- 主题 -->
+                    <view class="renwu_top">
+                        <view class="renwu_top_left dsib vertop">
+                            <image class="renwo_logo" src="{{item.logo}}" mode="widthFix"></image>
+                        </view>
+
+                        <view class="renwu_medd dsib vertop">
+                            <view class="medd_top">
+                                {{item.where}} <text class=" ffssdf font_color_b">{{item.maney}}</text>
+                            </view>
+                            <view class="medd_bot font_color_a">
+                                    {{item.xq}}
+                            </view>
+                        </view>
+                        <view class="renwu_right dsib verb">
+
+                            <text class="j1 font_color_a">已完成</text>
+                            
+                                                                            
+                        </view> 
+                        <view class="renwu_gg font_color_a" hover-class="none" hover-stop-propagation="false">
+                            *{{item.guanming}}
+                        </view>
+                          
+                    </view>
+                    <!-- 图片 -->
+
+                    <view class="auto_scoll">
+                            <view class="auto_item dsib" wx:for="{{item.lbimg}}" wx:for-item="lbimg" wx:key="index">
+                              <!-- 遮罩 -->
+
+                                    <view class="mask">
+
+                                    </view>
+                                   
+     
+                                        <image class="dsfsd" src="{{lbimg.image}}" mode="aspectFill" > </image>
+                                    
+                            <!-- <image class="" src="" mode="||widthFix" lazy-load="false" binderror="" bindload="">
+                                
+                            </image> -->
+                            <view class="jioaojdd" hover-class="none" hover-stop-propagation="false">
+                                 <view class="first_imgt fddfs font_color_b"> {{lbimg.first}}</view>
+                                <view class="sed_imgt fddfs">
+                                    {{lbimg.sed}}
+                                </view>
+                            </view>
+                               
+                            </view>
+
+                    </view> 
+
+
+
+            </view>
+        
+
+    </view>
+
+    
+</view>
