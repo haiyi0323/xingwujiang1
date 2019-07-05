@@ -35,7 +35,39 @@
            
     </view>
      <!-- 推荐服务 -->
-            <view class="scoll">
+            <swiper class="scoll" current="0" duration="{{500}}"   next-margin="60rpx" bindchange="huadongso">
+                <block wx:for="{{dianjia}}"  wx:index="index">
+                           <swiper-item  class="jopijiwe">
+                                 <view class="fu_itme  {{swiperIndex == index ? 'active' : ''}}">
+                    <view class="fu_kuai ">
+                            <image class="kuai_img" src="{{item.fw_img}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                              
+                    </view>
+                    <view class="fu_xkuai">
+                        <view>
+                            LED大屏会议
+                        </view>
+                        <view class="flex3">
+                            <view class="fs26 font_color_a" hover-class="none" hover-stop-propagation="false">
+                                        参与话题讨论可以获得积分奖励
+                            </view>
+                              <view class="button">
+                                  <image class="shoping" src="{{gouwucaor}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+                                      
+                                  </image>
+                              </view>
+                    
+                        </view>
+                        <view class="font_color_b fs26">
+                            {{item.jiage}}
+                        </view>
+                    </view>
+                </view>
+                 </swiper-item>
+                </block>
+            </swiper>
+              
+            <!-- <view class="scoll">
                           <view class="fuwuban" wx:for="{{dianjia}}" wx:key="index">
                 <view class="fu_itme">
                     <view class="fu_kuai">
@@ -63,7 +95,8 @@
                     </view>
                 </view>
             </view>
-            </view>
+            </view> -->
+            
         <!-- 所有服务 -->
         <view class="allfu">
                 <view class="fsdfew flex3 fs30">

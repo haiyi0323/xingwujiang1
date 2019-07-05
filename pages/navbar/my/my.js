@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    jiwjjf:false,
       my_back: config.NETWORK_RESOURCE + 'renwuback.jpeg',
       jiantou: config.NETWORK_RESOURCE + '图标-右.png',
       erweima: config.NETWORK_RESOURCE + '二维码.png',
@@ -47,12 +48,39 @@ Page({
           },
           {
             left: "关于我们",
-            right:"￥227.05",
+            right:"",
             icon:  config.NETWORK_RESOURCE + '图标-右.png',
             img: config.NETWORK_RESOURCE + 'my_list6.png',
           },
 
 
+      ],
+      my_back: config.NETWORK_RESOURCE + 'renwuback.jpeg',
+      photo: config.NETWORK_RESOURCE + 'photo.jpeg',
+      sex: config.NETWORK_RESOURCE + 'nan.png',
+      card_ma: config.NETWORK_RESOURCE + 'song.png',
+      jiantou : config.NETWORK_RESOURCE + '图标-右.png',
+      cupdo_list:[
+          {
+            tit:"吉行天下",
+            num:"26",
+            itemimg:[
+               config.NETWORK_RESOURCE + 'mingpian1.png',
+               config.NETWORK_RESOURCE + 'mingpian2.png',
+               config.NETWORK_RESOURCE + 'mingpian3.png',
+            ]
+          },
+          {
+            tit:"华为花粉",
+            num:"2",
+            itemimg:[
+               config.NETWORK_RESOURCE + 'mingpian4.png',
+               config.NETWORK_RESOURCE + 'mingpian5.png',
+               config.NETWORK_RESOURCE + 'mingpian6.png',
+            ]
+          }
+  
+  
       ]
   },
 
@@ -111,11 +139,8 @@ Page({
   onShareAppMessage: function () {
 
   },
-  businesscard(){
-  
-      router.navto("/fenbao/business card/business card")
-  },
 
+ 
   wdjifen(){
    
     router.navto("/fenbao/credit/credit")
@@ -128,5 +153,29 @@ Page({
   // 跳转到消息
   mesageto(){
     router.navto("/fenbao/message/message")
-  }
+  },
+  // 增大
+  djoijwee(){
+    this.setData({
+      jiwjjf:false,
+      tioojj:false,
+      mask:false
+     })
+  },
+
+  joidjif(){
+    this.setData({
+      mask:true,
+      tioojj:true,
+    })
+    setTimeout(() => {
+      this.setData({
+      
+        jiwjjf:true,
+   
+      })
+    }, 500);
+    
+  },
+
 })

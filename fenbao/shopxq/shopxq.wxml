@@ -38,6 +38,7 @@
                 </view>
                 <!-- 支付按钮 -->
                 <view class="zhifu">
+                    <view class="masssfk"></view>
                       <i-button i-class="buttonstyle6 dsib fl verm" class="joijiw " shape="circle">
                                                 选好了，去支付订单
                                         </i-button>

@@ -1,4 +1,14 @@
 /* fenbao/play-by-play/play-by-play.wxss */
+
+.play-by-play{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+   
+    font-family: "pingfang";
+   
+}
+
 .top_img{
     width: 100%;
 }
@@ -199,7 +209,7 @@
     color: white;
     padding: 5% 5% 10%;
     box-sizing: border-box;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
 
 }
 .phb{
@@ -211,7 +221,7 @@
     box-sizing: border-box;
     color: white;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.308);
     background: #03132c;
 }
 .imgbox{
@@ -259,7 +269,7 @@
 .imageboxss1{
     margin: 40rpx 0rpx ;
     padding-bottom: 60rpx;
-    border-bottom: 1rpx solid black;
+    border-bottom: 1rpx solid rgba(0, 0, 0, 0.349);
 }
 .imageboxss2{
     margin: 20rpx 15rpx;

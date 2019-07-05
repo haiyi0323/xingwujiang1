@@ -39,15 +39,17 @@
                     </view>
                 </view>
                 <!-- 二维码 -->
-                <view class="my_erwei" bind:tap="businesscard">
+                   <view class="massk {{mask == true ? 'afddff' : ''}}" >
+       
+    </view>
+                <view class="my_erwei" bind:tap="joidjif">
                     <image class="icon_erwei" src="{{erweima}}" mode="widthFix" ></image>
 
                 </view>
 
-
                   <!-- 用户消息 -->
              <view class="message_s" bind:tap="mesageto">
-                        <view class="text_info">
+                        <view class="text_info ">
 
                             <image class="icon_laba" src="{{laba}}" mode="widthFix"></image>
                                 体验成员可使用体验版微信小程序
@@ -59,16 +61,52 @@
 
                 <view class="setting" >
                         <!-- 设置列表 -->
-                        <view class="setting_list" wx:for="{{set_list}}" wx:key="index">
-                                <image class="list_icon" src="{{item.img}}" mode="widthFix" ></image>
-                                <view class="list_title dsib">{{item.left}}</view>
-                                <view class="list_cont dsib font_color_a" >{{item.right}}</view>
-                                <image class="lict_jiantou" src="{{item.icon}}" mode="widthFix"></image>
+                        <view class="setting_list flex3"  wx:for="{{set_list}}" wx:key="index" hover-stop-propagation="{{true}}" hover-class="huise">
+                              
+                                <view class="list_title dsib"> <view class="dsib"><image class="list_icon" src="{{item.img}}" mode="widthFix" ></image></view> <view class="dsib">{{item.left}}</view></view>
+                                <view class="list_cont dsib font_color_a" ><view class="dsib">{{item.right}}</view> <view class="dsib"><image class="lict_jiantou" src="{{item.icon}}" mode="widthFix"></image></view> </view>
+                              
                         </view>
                         
                 </view>
 
 </view>
        
-
+<!-- pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp -->
+ 
+  <view class="share_all {{tioojj == true ? 'active' : ''}}" wx:if="{{jiwjjf}}" hover-class="dfeef" bind:tap="djoijwee">
   
+<!-- 卡片 -->
+    <view class="card">
+
+            <view class="ssooo">
+                   <image class="card_photo" src="{{photo}}" mode="widthFix" ></image>
+            </view>
+
+   
+        
+        <view class="card_content" >
+
+
+                <view class="card_name" >
+                    DevinSteve
+                    <image class="sex" src="{{sex}}" mode="widthFix" ></image>
+                </view>
+
+                <view class="card_about">
+                    我们一起撸起袖子~ 加油干！
+                </view>
+                <view class="boximg">
+                      <image class="card_ma" src="{{card_ma}}"  mode="widthFix"/>
+                </view>
+              
+                  
+        </view>
+          
+    </view>
+
+    <!-- 其他 -->
+    <i-button i-class="buttonstyle4" class="dsib veram fr dsfdsf" shape="circle">创建俱乐部</i-button>
+
+
+</view>

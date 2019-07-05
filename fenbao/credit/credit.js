@@ -1,5 +1,6 @@
 // fenbao/credit/credit.js
 import config from '../../config'
+import ulik from '../../utils/util'
 Page({
 
   /**
@@ -117,6 +118,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  renwu(){
+
+    wx.switchTab({
+      url:'/pages/navbar/renwu/renwu'
+  })
   }
 
 })

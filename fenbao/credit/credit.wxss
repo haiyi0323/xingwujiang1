@@ -2,11 +2,21 @@
 .dsib{
     display: inline-block;
 }
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+    }
+   
 .credit{
-    width: 100%;
-    position: relative;
+ 
+    width: 100vw;
     height: 100vh;
+    overflow: auto;
+    position: relative;
     font-family: "pingfang";
+
 
 }
 .backll{

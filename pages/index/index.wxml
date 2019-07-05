@@ -18,7 +18,7 @@
 
                         <view wx:if="{{isplay}}" class="fdong yuanji2" hover-class="" hover-stop-propagation="false">
                                   <image class="fdsfds" src="{{video_fen}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
-                        <image  class="start_v" src="{{bofang}}" mode="widthFix" bind:tap="videoplay"></image>
+                        <image  class="start_v {{donghua == true ? 'donghua' : ''}}" src="{{bofang}}" mode="widthFix" bind:tap="videoplay"></image>
                         <image class="leftflw" src="{{leftf}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
                         <image class="rigthflw" src="{{rigthf}}" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
                           </view>
@@ -114,12 +114,12 @@
                                 <view class="hd_a" bind:tap="shangpin">
                                         <view class="hdtit dsib">活动</view>
                                         <text class="fdsffd dsib">|</text>
-                                        <view class="hdconten dsib">行无疆百万扶持创投大赛</view>
+                                        <view class="hdconten dsib" hover-class="white">行无疆百万扶持创投大赛</view>
                                 </view>
                                 <view class="zuixin_a" bind:tap="shangpin">
                                         <view class="hdtit dsib">最新</view>
                                         <text class="fdsffd dsib">|</text>
-                                        <view class="hdconten dsib">昆明摩蜂互娱科技有限公司入驻</view>
+                                        <view class="hdconten dsib" hover-class="white">昆明摩蜂互娱科技有限公司入驻</view>
                                 </view>
                         </view>
                 </view>
@@ -133,7 +133,7 @@
                 <!-- 其他广告 -->
                 <view class="othewsl" wx:for="{{otherinfo}}">
                         <!-- 图片view -->
-                        <view class="rongqi tishne">
+                        <view class="rongqi tishne" bind:tap="yuyue">
                                 <image class="fsdfdsssv" src="{{item.img}}" mode="widthFix" style="width:100%"></image>
                         </view>
                         <!-- 内容view -->
@@ -169,7 +169,7 @@
                                 <view class="hd_a">
                                         <view class="hdtit dsib">热门</view>
                                         <text class="fdsffd dsib">|</text>
-                                        <view class="hdconten dsib">行无疆百万扶持创投大赛</view>
+                                        <view class="hdconten dsib" hover-class="white">行无疆百万扶持创投大赛</view>
                                 </view>
                         </view>
                 </view>

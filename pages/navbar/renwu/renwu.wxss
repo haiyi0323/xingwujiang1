@@ -25,17 +25,20 @@
     height: 0;
     color: transparent;
     }
-    
+    .fs24{
+        font-size: 24rpx;
+    }
 .rw_all{
     width: 100vw;
     height: 102vh;
     overflow: auto;
-    font-family: "pingfang"
+    font-family: "pingfang";
+    position: relative;
 }
 .rw_background{
     width: 100%;
     vertical-align: top;
-    display: flex;
+    position: fixed;
     top: 0px;
     left: 0px;
 }
@@ -134,5 +137,13 @@
     margin: 30rpx 0px;
     padding-bottom: 30rpx;
 
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+}
+::-webkit-scrollbar{
+    width: 0 !important;
+    height: 0 !important;
+    color: transparent !important;
+    }
+.jiooiwf{
+    width: 20% !important;
 }

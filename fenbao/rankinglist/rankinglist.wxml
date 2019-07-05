@@ -1,2 +1,56 @@
 <!--fenbao/rankinglist/rankinglist.wxml-->
-<text>fenbao/rankinglist/rankinglist.wxml</text>
+
+<view class="ranking">
+    <image class="back" src="{{back}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+      <view class="rankcontent">
+          <!--  -->
+            <view class="message_s" bind:tap="listpel">
+                        <view class="ffffs">
+                                比赛进行中，已有
+                                <text class="yello">{{num}}</text>
+                                人报名
+                        </view>
+                        <view class="vsomep">
+                                <image class="smalllog" wx:for="{{somep}}" wx:key="index" src="{{item}}"></image>
+                        </view>
+                        <image class="youjian" src="{{rightb}}" mode="widthFix"></image>
+                </view>
+                <!--  -->
+
+                 <view class="meddlecont ">
+                   
+                              <view class="phlist">
+            <view class="phlist_item" wx:for="{{yonghuxx}}" wx:key="index">
+            <view class="dsib hearddfj verm">
+                <view class="hewaeefi" bind:tap="yonghu">
+                    <image class="touxiang" src="{{item.img}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+                </view>
+              
+            </view>
+            <view class="dsib conte verm borderbottom">
+                <view class="flex3">
+                    <view class="name">{{item.name}}</view>
+                    <view class="howmany font_color_a">{{item.daqi}}人为他打气</view>
+                </view>
+                <view>
+                    <!-- 进度条 -->
+                        <i-progress i-class="jiooiwf" percent="65" status="wrong" hide-info="false"></i-progress>
+                </view>
+                <view class="flex3 dsfdsf">
+                    <view class="font_color_a al">
+                        已获得 <view class=" dsib font_color_b">{{item.meili}}魅力值</view>
+                    </view>
+                    <view class="dianzano verb">
+                        <image   class="iconzan" src="{{item.iszan == true ? zan : yizan }}" mode="widthFix" lazy-load="false" binderror="" bindload="" bind:tap="zan" data-index="{{index}}"></image>
+                          <!-- <image  wx:else  class="iconzan" src="{{yizan}}" mode="widthFix" lazy-load="false" binderror="" bindload="" bind:tap="zan" data-index="{{index}}"></image> -->
+                    </view>
+                </view>
+            </view>
+
+            </view>
+           
+        </view>
+                  
+                    </view>
+      </view>
+</view>

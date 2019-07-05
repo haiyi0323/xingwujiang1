@@ -1,8 +1,12 @@
 /* fenbao/cupjoin/cupjoin.wxss */
 .cupisjoin{
-    width: 100%;
-    font-family: "pingfang";
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: white;
     position: relative;
+    font-family: "pingfang";
 }
 .back{
     width: 100%;
@@ -90,7 +94,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30rpx;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
 }
 .fdfffd{
     margin: 0px 30rpx 0 0;
@@ -174,4 +178,9 @@
     background: rgba(255, 255, 255, 0.103);
     border-radius: 50%;
     text-align: center;
-}
+}    ::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+    }
+   

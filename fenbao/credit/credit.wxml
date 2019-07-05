@@ -17,7 +17,7 @@
                             <view class="fontcolor1">{{jifen}}</view>
                             <view class="guoqi">月底即将过期: {{guoqi}}</view>
                     </view>
-                     <view class="top_two_right dsib">
+                     <view class="top_two_right dsib" bind:tap="renwu">
                             去赚积分 
                     </view>
                 </view>

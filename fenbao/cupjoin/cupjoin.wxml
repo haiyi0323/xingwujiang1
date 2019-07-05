@@ -16,14 +16,14 @@
                     <view class="cup_name dsib verm">{{cup1.name}}</view>
                 </view>
                  
-                    <view class="more dsib verm">更多</view>
+                    <view class="more dsib verm" bind:tap="morecup">更多</view>
             </view>
                  
                  <!-- 中心内容 -->
                  
                  <view class="cup_content">
                         <!-- 广告图 -->
-                        <view class="advertising">
+                        <view class="advertising" bind:tap="guangg">
                               <image class="advert_img" src="{{cup1.img}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
                               </image>
                         </view>

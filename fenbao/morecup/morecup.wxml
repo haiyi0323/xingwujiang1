@@ -1,0 +1,73 @@
+<!--fenbao/morecup/morecup.wxml-->
+<view class="global_all" hover-class="none" hover-stop-propagation="false">
+    <image class="background_global " src="{{backgound}}" mode="widthFix" ></image>
+    <view class="header_t" >
+       以下是为您推荐的俱乐部
+        <view class="small_t font_color_a" >
+            赶快看看为你推荐的俱乐部
+        </view>
+        <!-- 报名消息 -->
+             <view class="message_s" bind:tap="listpel">
+                        <view class="text_info">
+                                比赛进行中，已有
+                                <text class="font_color_b">{{num}}</text>
+                                人报名
+                        </view>
+                        <view class="img_num">
+                                <image class="smalllog" wx:for="{{somep}}" wx:key="index" src="{{item}}"></image>
+                        </view>
+                        <image class="icon_right" src="{{rightb}}" mode="widthFix"></image>
+                </view>
+
+
+    </view>
+    <!-- 推荐俱乐部列表 -->
+    <view class="rd_cup_list" >
+        <view class="rd_cup_item" wx:for="{{rd_cup_list}}" wx:key="index">
+        <view class="cup_left_k dsib" hover-class="none" hover-stop-propagation="false">
+              <image class="cup_image" src="{{item.img}}" mode="widthFix" ></image>
+        </view>
+          
+            <view class="rd_cup_content dsib vertop" hover-class="none" hover-stop-propagation="false">
+                    <view class="rd_cup_title_top margin5" >
+                        {{item.title}}
+                    </view>
+                     <view class="rd_cup_title_top2 margin5" >
+
+                            <view class="title_top2_son dsib font_color_a veram" >
+                                    <view class="son_one margin5" >
+                                                  {{item.jianjie}}
+                                    </view>
+                                    <view class="son_two margin5">
+                                            <image class="icon_xiaoren" src="{{xiaoren}}" mode="widthFix" > </image>
+                                            <view class="pel_num dsib font_color_b" >
+                                                {{item.attention}}
+                                            </view>
+                                    </view>
+
+                             </view>
+
+
+                          <i-button i-class="buttonstyle" class="dsib veram fr" shape="circle" bind:tap="jioncup">加入</i-button>
+
+
+                    </view>
+                     <view class="rd_cup_title_top3 font_color_a margin5" >
+                        # {{item.label}}
+                    </view>
+            </view>
+        </view>
+    </view>
+    <!-- 底部创建俱乐部 -->
+    <view class="bottom_createcup">
+        <image class="back_fotter" src="{{bottom_backgound}}" mode="widthFix" >
+        </image>
+
+        <view class="otherchoose font_color_a"> 
+            没有喜欢的？你还可以选择
+        </view>
+
+          <i-button i-class="buttonstyle2" class="dsib veram fr" shape="circle">创建俱乐部</i-button>
+    </view>
+</view>
+

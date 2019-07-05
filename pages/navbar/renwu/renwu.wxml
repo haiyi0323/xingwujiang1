@@ -14,7 +14,7 @@
                 153
             </view>
               <!-- 兑换消息 -->
-             <view class="message_s" >
+             <view class="message_s flex3" >
                         <view class="text_info">
                                   兑换精美礼盒咖啡
                                 <text class="font_color_b">{{num}}</text>
@@ -48,8 +48,10 @@
                                    
                                 </view>
 
-                                <view class="rw_item_content_three">
-                                    <!-- 进度 --> <text class="font_color_b"> {{item.zt.down}} </text> /{{item.zt.all}}
+                                <view class="rw_item_content_three font_color_a fs24">
+                                    <!-- 进度 -->
+                                     <i-progress i-class="jiooiwf" percent="65" status="wrong" hide-info="false"></i-progress>
+                                     <text class="font_color_b"> {{item.zt.down}} </text> / {{item.zt.all}}
                                 </view>
                             </view>
 

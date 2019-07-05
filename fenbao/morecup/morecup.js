@@ -1,6 +1,6 @@
 // pages/navbar/cup/cup.js
-import ulik from '../../../utils/util'
-import config from '../../../config'
+import ulik from '../../utils/util'
+import config from '../../config'
 Page({
 
   /**

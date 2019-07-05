@@ -126,8 +126,8 @@
   left: 0rpx;
   padding: 0px  20rpx !important;
   width: 80%;
-  height: 60rpx !important;
-  line-height:  60rpx !important;
+  height: 70rpx !important;
+  line-height:  70rpx !important;
   margin-left: 0px !important;
   color: #041736 !important;
   background-color:#e3b66b !important;

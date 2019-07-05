@@ -13,7 +13,7 @@
             333汽车人会员
         </view>
           <!-- 兑换消息 -->
-         <view class="message_s" >
+         <view class="message_s flex3" >
                     <view class="text_info">
                               e***f购买了 
                             <text class="font_color_b">{{num}}</text>

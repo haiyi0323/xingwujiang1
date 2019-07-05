@@ -2,12 +2,23 @@
 .shop{
     width: 100vw;
     height: 100vh;
-    font-family: "pingfang";
+    overflow: auto;
+    color: white;
     position: relative;
+    font-family: "pingfang";
+
 }
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+    }
+   
 .shopback{
     width: 100%;
     position: fixed;
+    z-index: 50;
     top: 0rpx;
     left: 0rpx;
 }
@@ -18,6 +29,7 @@
     position: absolute;
     top: 0rpx;
     left: 0rpx;
+    z-index: 5555;
 
 }
 .imagebox{
@@ -94,8 +106,11 @@
       background: transparent;
   }
   .fu_itme{
-      width: 100%;
+      width: 90%;
       position: relative;
+ 
+      box-sizing: border-box;
+      margin-left: 5%
   }
   .kuai_img{
       width: 100%;
@@ -114,6 +129,8 @@
       width: 100%;
       border-radius: 30rpx;
       overflow: hidden;
+      position: relative;
+
   }
   .button{
       width: 50rpx;
@@ -131,9 +148,9 @@
         line-height: 50rpx;
   }
   .scoll{
-      margin: 40rpx 0 0;
+        padding: 20rpx 0;
       padding-left: 5%;
-      height: 400rpx;
+      height: 430rpx;
       overflow: auto;
       white-space: nowrap;
   }
@@ -146,7 +163,10 @@
       top: 400rpx;
       left: 0rpx;
   }
+.jopijiwe{
+    padding: 30rpx 0;
 
+}
 
   /*  */
   /* fenbao/credit/credit.wxss */
@@ -254,8 +274,10 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    background:linear-gradient(rgba(0,0,0,0),#060e1f59,#0f1c35,#0a1225);
+    z-index: 100;
+    background:linear-gradient(rgba(0,0,0,0),#0a1b419d,#0d1c41b7,#0c1e3f,#05112c);
 }
+
 .jfdh{
     font-size: 30rpx;
     position: absolute;
@@ -279,3 +301,20 @@
     padding: 5%;
     box-sizing: border-box;
 }
+
+.active{
+
+    transform: scale(1.1);
+    
+    transition:all .2s ease-in 0s;
+    
+    z-index: 20;
+    
+    }
+    .swiper-block{
+    
+    height: 480rpx;
+    
+    width: 100%;
+    
+    }

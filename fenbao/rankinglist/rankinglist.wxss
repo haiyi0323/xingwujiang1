@@ -92,3 +92,6 @@
 .dsfdsf{
     height: 80rpx;
 }
+.meddlecont{
+    margin:10rpx 0;
+}

@@ -1,5 +1,5 @@
 <!--fenbao/dynamic/dynamic.wxml-->
-<view class="dynamic" hover-class="none" hover-stop-propagation="false">
+
         <image class="fieximg" src="{{mainimg}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
           
           <view class="particular" hover-class="none" hover-stop-propagation="false">
@@ -94,4 +94,3 @@
                           
                     </view>
           </view>
-</view>

@@ -22,8 +22,11 @@
 .rw_all{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    font-family: "pingfang"
+    overflow: auto;
+    color: white;
+    position: relative;
+    font-family: "pingfang";
+
 }
 .rw_background{
     width: 100%;
@@ -127,7 +130,10 @@
     margin: 30rpx 0px;
     padding-bottom: 30rpx;
 
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+}
+.renwu_right{
+    float: right;
 }
 .conteng_lb{
     position: absolute;
@@ -165,7 +171,7 @@
 }
 .renwu_list{
     padding: 40rpx 0 30rpx;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
   
 }
 .j1{
@@ -231,3 +237,9 @@
     position: absolute;
     bottom: 20rpx;
 }
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+    }
+   

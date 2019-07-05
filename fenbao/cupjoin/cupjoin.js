@@ -145,5 +145,11 @@ Page({
   // 跳转到排行榜
   moreyh(){
     ulink.navto("/fenbao/rankinglist/rankinglist")
+  },
+  guangg(){
+    ulink.navto("/fenbao/article/article")
+  },
+  morecup(){
+    ulink.navto("/fenbao/morecup/morecup")
   }
 })

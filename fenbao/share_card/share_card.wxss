@@ -5,7 +5,14 @@
     font-family: "pingfang";
     text-align: center;
     position: relative;
+    overflow: auto;
 }
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+    }
+   
 .share_back{
     width: 100%;
     position: fixed;

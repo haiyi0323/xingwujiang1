@@ -135,22 +135,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    let that = this
-    wx.createSelectorQuery().selectAll(".vidersrc").boundingClientRect(function (rect) {
-      console.log(rect[0].height);
-      console.log(rect);
-      that.setData({
-        videoheight: rect[0].width * 0.5625
-      })
-    }).exec()
-
     setInterval(() => {
       let newarr =[] ;
    
@@ -176,6 +160,22 @@ Page({
       })
       newarr=[]
     }, 3000);
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    let that = this
+    wx.createSelectorQuery().selectAll(".vidersrc").boundingClientRect(function (rect) {
+      console.log(rect[0].height);
+      console.log(rect);
+      that.setData({
+        videoheight: rect[0].width * 0.5625
+      })
+    }).exec()
+
+   
      
 
     
@@ -230,11 +230,18 @@ Page({
   videoplay() {
     console.log('开始播放')
       this.setData({
-        isplay:false
+        donghua:true,
+     
       })
-    var videoplay = wx.createVideoContext('video1')
-    videoplay.play()
- },
+      setTimeout(() => {
+        this.setData({
+          isplay:false,
+        })
+        var videoplay = wx.createVideoContext('video1')
+        videoplay.play()
+  
+      }, 1000);
+    },
  morecup(){
   wx.switchTab({
     url:'/pages/navbar/cup/cup'

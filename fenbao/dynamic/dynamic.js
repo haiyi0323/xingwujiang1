@@ -9,7 +9,7 @@ Page({
   data: {
     mainimg: config.NETWORK_RESOURCE + 'zhanhui.jpeg',
     back: config.NETWORK_RESOURCE + 'footerl.jpeg',
-    shangjian:".././../img/shangjiantou.png",
+    shangjian:config.NETWORK_RESOURCE +"shangjiantou.png",
  
     dongtaiinfo:{
       main_title:"网易有道X最强大脑，测测你的人格词条，寻找未知自己",

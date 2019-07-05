@@ -11,6 +11,7 @@ Page({
     icon_where: config.NETWORK_RESOURCE +'weizhi.png',
     gouwucaor:config.NETWORK_RESOURCE +'gouwucar.png',
     luo_back:config.NETWORK_RESOURCE +'footerl.jpeg',
+    swiperIndex:"0",
     dsssf:{
       juli:"1.34",
       syss:"5",
@@ -144,5 +145,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  huadongso(e){
+    const that = this;
+    
+    that.setData({
+    
+    swiperIndex: e.detail.current,
+    
+    })
+    
   }
+
 })

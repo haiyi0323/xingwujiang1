@@ -1,30 +1,27 @@
 {
   "pages": [
-        "fenbao/rankinglist/rankinglist",
-              "pages/index/index",
-              "pages/navbar/cup/cup",
-              "pages/qidong/qidong",
-              "pages/navbar/renwu/renwu",
-              "pages/navbar/my/my",
-
-      "fenbao/dynamic/dynamic",
+      "pages/qidong/qidong",
+        "fenbao/shopxq/shopxq",
+      "pages/navbar/my/my",
         "fenbao/cupjoin/cupjoin",
-   
-  
-     "fenbao/shopxq/shopxq",
-    "fenbao/shop/shop",
-
+        "fenbao/morecup/morecup",
  
-    "fenbao/message/message",
-    "fenbao/credit/credit",
-    "fenbao/vip/vip",
+    "fenbao/share_card/share_card",
+    "fenbao/shop/shop",
   
-
-    "fenbao/article/article",
-    "fenbao/play-by-play/play-by-play",
-
+    "pages/index/index",
+    "pages/navbar/cup/cup",
+    "pages/navbar/renwu/renwu",
+    "fenbao/rankinglist/rankinglist",
     "fenbao/business card/business card",
-    "fenbao/share_card/share_card"
+    "fenbao/play-by-play/play-by-play",
+    "fenbao/article/article",
+    "fenbao/vip/vip",
+    "fenbao/credit/credit",
+    "fenbao/message/message",
+
+
+    "fenbao/dynamic/dynamic"
 
   ],
   "window": {

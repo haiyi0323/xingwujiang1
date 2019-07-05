@@ -105,25 +105,25 @@ Page({
    */
   onLoad: function (options) {
 
-    var that = this
-    wx.getSystemInfo({
-      success: function (res) {
-          console.log(res);
+    // var that = this
+    // wx.getSystemInfo({
+    //   success: function (res) {
+    //       console.log(res);
           
-        wx.createSelectorQuery().selectAll('.rw_header').boundingClientRect(function (rect) {
-          console.log(res.windowHeight);
-          console.log(rect[0].height);
+    //     wx.createSelectorQuery().selectAll('.rw_header').boundingClientRect(function (rect) {
+    //       console.log(res.windowHeight);
+    //       console.log(rect[0].height);
           
-          let contenth = rect[0].height
-          let contenthhh = res.windowHeight - contenth
-          that.setData({
-              contentheight: contenthhh
-          })
-        }).exec()
+    //       let contenth = rect[0].height
+    //       let contenthhh = res.windowHeight - contenth
+    //       that.setData({
+    //           contentheight: contenthhh
+    //       })
+    //     }).exec()
         
       
-      }
-    });
+    //   }
+    // });
 
 
 
