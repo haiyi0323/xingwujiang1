@@ -8,6 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    yeman:true,
       renwuback: config.NETWORK_RESOURCE + 'renwuback.jpeg',
       rightb: config.NETWORK_RESOURCE + '图标-右.png',
       num:'55积分',
@@ -133,21 +134,28 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+   
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    setTimeout(() => {
+      this.setData({
+        yeman: false
+      })
+       
+    }, 1000);
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    this.setData({
+      yeman: true
+    })
   },
 
   /**

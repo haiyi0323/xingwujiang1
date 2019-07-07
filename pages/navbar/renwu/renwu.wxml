@@ -1,5 +1,5 @@
 <!--pages/navbar/renwu/renwu.wxml-->
-
+<loading wx:if="{{yeman}}"></loading>
 <view class="rw_all">
     <image class="rw_background" src="{{renwuback}}" mode="widthFix" >
         

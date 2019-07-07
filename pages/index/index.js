@@ -6,6 +6,7 @@ const app = getApp()
 
 Page({
   data: {
+      yeman:true,
       isplay:true,
       src1:  config.NETWORK_RESOURCE + '图层 93.png',
       ljioji:  config.NETWORK_RESOURCE + '矩形 12.png',
@@ -175,8 +176,13 @@ Page({
       })
     }).exec()
 
-   
-     
+    setTimeout(() => {
+      this.setData({
+        yeman: false
+      })
+       
+    }, 1000);
+
 
     
   },
@@ -186,6 +192,7 @@ Page({
    */
   onHide: function () {
     this.setData({
+      yeman: true,
       isplay:true
     })
   },

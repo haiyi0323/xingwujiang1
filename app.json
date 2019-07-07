@@ -1,14 +1,14 @@
 {
   "pages": [
-      "pages/qidong/qidong",
-        "fenbao/shopxq/shopxq",
-      "pages/navbar/my/my",
-        "fenbao/cupjoin/cupjoin",
-        "fenbao/morecup/morecup",
- 
+  
+    "pages/qidong/qidong",
+    "fenbao/indent/indent",
+    "pages/navbar/my/my",
+    "fenbao/shopxq/shopxq",
+    "fenbao/cupjoin/cupjoin",
+    "fenbao/morecup/morecup",
     "fenbao/share_card/share_card",
     "fenbao/shop/shop",
-  
     "pages/index/index",
     "pages/navbar/cup/cup",
     "pages/navbar/renwu/renwu",
@@ -19,10 +19,9 @@
     "fenbao/vip/vip",
     "fenbao/credit/credit",
     "fenbao/message/message",
-
-
-    "fenbao/dynamic/dynamic"
-
+    "fenbao/dynamic/dynamic",
+      "compontens/loading/loading"
+   
   ],
   "window": {
     "backgroundTextStyle": "light",

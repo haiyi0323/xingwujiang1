@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    yeman:true,
     backgound:  config.NETWORK_RESOURCE + 'background_main.jpeg',
     bottom_backgound:  config.NETWORK_RESOURCE + 'bottom_back.png',
     xiala_back: config.NETWORK_RESOURCE + 'xialaback.png',
@@ -141,14 +142,21 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    setTimeout(() => {
+      this.setData({
+        yeman: false
+      })
+       
+    }, 1000);
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    this.setData({
+      yeman: true
+    })
   },
 
   /**

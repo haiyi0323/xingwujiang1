@@ -1,5 +1,5 @@
 <!--pages/navbar/my/my.wxml-->
-
+<loading wx:if="{{yeman}}"></loading>
         <image class="my_back " src="{{my_back}}" mode="widthFix" > </image>
 <view class="my_all_content" >
         <view class="my_card">
@@ -61,7 +61,7 @@
 
                 <view class="setting" >
                         <!-- 设置列表 -->
-                        <view class="setting_list flex3"  wx:for="{{set_list}}" wx:key="index" hover-stop-propagation="{{true}}" hover-class="huise">
+                        <view class="setting_list flex3"  wx:for="{{set_list}}" wx:key="index" hover-stop-propagation="{{true}}" hover-class="huise" data-index="{{index}}" bind:tap="luyou">
                               
                                 <view class="list_title dsib"> <view class="dsib"><image class="list_icon" src="{{item.img}}" mode="widthFix" ></image></view> <view class="dsib">{{item.left}}</view></view>
                                 <view class="list_cont dsib font_color_a" ><view class="dsib">{{item.right}}</view> <view class="dsib"><image class="lict_jiantou" src="{{item.icon}}" mode="widthFix"></image></view> </view>

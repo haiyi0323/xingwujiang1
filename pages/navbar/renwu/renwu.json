@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "i-progress": "../../../dist/progress/index",
-    "i-progress": "../../../dist/progress/index"
+    "i-progress": "../../../dist/progress/index",
+    "loading":"../../../compontens/loading/loading"
 
   }
 }

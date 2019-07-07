@@ -2,7 +2,8 @@
   "usingComponents": {
 
     "i-button": "../../../dist/button/index",
-    "i-avatar": "../../../dist/avatar/index"
+    "i-avatar": "../../../dist/avatar/index",
+    "loading":"../../../compontens/loading/loading"
     
   },
   "enablePullDownRefresh":true

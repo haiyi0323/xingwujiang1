@@ -1,3 +1,4 @@
+<loading wx:if="{{yeman}}"></loading>
 <view class="global_all" hover-class="none" hover-stop-propagation="false">
     <image class="background_global " src="{{backgound}}" mode="widthFix" ></image>
     <view class="header_t" >

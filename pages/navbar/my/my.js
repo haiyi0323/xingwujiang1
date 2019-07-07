@@ -1,12 +1,14 @@
 // pages/navbar/my/my.js
 import  router from '../../../router/router'
 import config from '../../../config'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    yeman:true,
     jiwjjf:false,
       my_back: config.NETWORK_RESOURCE + 'renwuback.jpeg',
       jiantou: config.NETWORK_RESOURCE + '图标-右.png',
@@ -95,21 +97,28 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+   
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    setTimeout(() => {
+      this.setData({
+        yeman: false
+      })
+       
+    }, 1000);
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    this.setData({
+      yeman: true
+    })
   },
 
   /**
@@ -177,5 +186,21 @@ Page({
     }, 500);
     
   },
+
+  luyou(e){
+    let luyouarr = [
+      "/fenbao/credit/credit",
+      "/fenbao/indent/indent",
+      "/fenbao/indent/indent",
+      "/fenbao/indent/indent",
+      "/fenbao/indent/indent",
+      "/fenbao/indent/indent"
+    ]
+    let index = e.currentTarget.dataset.index
+      
+    console.log(e.currentTarget.dataset.index);
+       
+    router.navto(luyouarr[index])
+  }
 
 })

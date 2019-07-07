@@ -1,3 +1,4 @@
+import config from '../../config'
 Component({
     externalClasses: ['i-class'],
 
@@ -18,6 +19,10 @@ Component({
         custom: {
             type: Boolean,
             value: false
-        }
-    }
+        },
+        
+    },
+    data: {
+        back:config.NETWORK_RESOURCE+"footerl.jpeg"
+      },
 });

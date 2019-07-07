@@ -120,6 +120,12 @@
   flex-flow: row wrap;
   justify-content: flex-start;
 }
+.flex4{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
 .buttonstyle6{
   position: absolute !important;
   bottom: 20rpx !important;
@@ -170,6 +176,32 @@
   margin-left: 28% !important;
   color: white !important;
   background-color:rgba(255, 255, 255, 0.1) !important;
+  display: inline-block !important;
+  border-radius: 40rpx !important;
+}
+.buttonstyle13{
+
+
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 100rpx;
+
+  color: white !important;
+  background-color:rgba(255, 255, 255, 0.1) !important;
+  display: inline-block !important;
+  border-radius: 40rpx !important;
+}
+.buttonstyle15{
+
+
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 100rpx;
+
+  color: #041736 !important;
+  background-color:#e3b66b !important;
   display: inline-block !important;
   border-radius: 40rpx !important;
 }

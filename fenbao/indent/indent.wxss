@@ -1,0 +1,76 @@
+/* fenbao/indent/indent.wxss */
+.indent_all{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+    font-family: "pingfang"
+}
+.back{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.indent_content{
+    width: 100%;
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+
+}
+.topbar{
+    position: fixed !important;
+    top: 0rpx !important;
+    left: 0rpx !important;
+    width: 100% !important;
+    z-index: 55 !important;
+    background: #041736 !important;
+    color: white !important;
+}
+.gong{
+    color: white;
+    padding: 5%;
+}
+.dditem{
+    margin-bottom: 30rpx;
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.247);
+}
+.dditem_top{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+   padding-bottom: 10rpx;
+}
+.ddlist{
+    padding-top: 100rpx;
+}
+.dditem{
+
+    background: rgba(20,53,107,0.4);
+    padding: 20rpx 20rpx 10rpx;
+    border-radius: 10rpx;
+
+}
+.fdsffsdf{
+    margin-top: 10rpx;
+    font-size: 26rpx;
+}
+.fdfwefg{
+    width: 25%;
+    margin-right: 5%;
+}
+.goossrc{
+    width: 100%;
+}
+.meddlew{
+    padding: 10rpx 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+}
+.fdsfhhgh{
+    width: 65%;
+}
+.hfiwee{
+    margin: 10rpx 0rpx;
+}
+.bottoddlist{
+    margin-top: 10rpx;
+}

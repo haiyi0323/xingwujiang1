@@ -1,3 +1,4 @@
+<loading wx:if="{{yeman}}"></loading>
 <scroll-view class="all" scroll-y hover-class="none" hover-stop-propagation="false" bindscrolltolower="daodibu">
         <!-- 矩形2 -->
         

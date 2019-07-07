@@ -31,4 +31,3 @@
     "fenbao/share_card/share_card"
     #比赛排行榜
    "fenbao/rankinglist/rankinglist ",
-   
