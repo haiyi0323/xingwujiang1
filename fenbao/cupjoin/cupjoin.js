@@ -7,6 +7,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    pull_down : false,
+    backgound:  config.NETWORK_RESOURCE + 'background_main.jpeg',
+    xiala_back: config.NETWORK_RESOURCE + 'xialaback.png',
+    jianbianback: config.NETWORK_RESOURCE + 'jianbian.jpeg',
+
+
       back: config.NETWORK_RESOURCE + "background_main.jpeg",
       top_image: config.NETWORK_RESOURCE + "car.jpeg",
      
@@ -71,13 +77,60 @@ Page({
           time:"刚刚",
           ggimg: config.NETWORK_RESOURCE + "mingpian1.png"
         }
-      ]
+      ],
+      xl_cuplist:[
+        {
+          img: config.NETWORK_RESOURCE + 'baoma.png',
+          text:'宝马X系'
+        },
+        {
+         img: config.NETWORK_RESOURCE + 'bieke.png',
+         text:'别克君威'
+       },
+       {
+         img: config.NETWORK_RESOURCE + 'fangtianxia.png',
+         text:'房天下'
+       },
+       {
+         img: config.NETWORK_RESOURCE + 'xl_more.png',
+         text:''
+       }
+   ],
+   xl_cuplist2:[
+     {
+       img: config.NETWORK_RESOURCE + 'wodecup.png',
+       text:'吉行天下'
+     },
+     {
+      img: config.NETWORK_RESOURCE + 'wodecup2.png',
+      text:'凯迪拉克'
+    },
+    {
+      img: config.NETWORK_RESOURCE + 'wodecup3.png',
+      text:'嘉华食品'
+    },
+    {
+      img: config.NETWORK_RESOURCE + 'wodecup4.png',
+      text:'WEB工蜂+'
+    },
+    {
+     img: config.NETWORK_RESOURCE + 'wodecup5.png',
+     text:'华为花粉'
+    },
+    {
+      img: config.NETWORK_RESOURCE + 'wodecup6.png',
+      text:'小米之家'
+    }
+]
       
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  wdjlb(){
+    ulink.navto("/fenbao/cupjoin/cupjoin")
+  },
   onLoad: function (options) {
 
   },
@@ -114,7 +167,17 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    console.log("下拉了");
+    this.setData({
+      pull_down : true
+    })
+    // 停止页面下拉
+    wx.stopPullDownRefresh();
+  },
+  closexl(){
+    this.setData({
+      pull_down : false
+    })
   },
 
   /**
@@ -144,7 +207,12 @@ Page({
   },
   // 跳转到排行榜
   moreyh(){
-    ulink.navto("/fenbao/rankinglist/rankinglist")
+    // ulink.navto("/fenbao/rankinglist/rankinglist")
+    let ffff= 0
+    wx.navigateTo({
+      url: `/fenbao/rankinglist/rankinglist?bz=${ffff}`,
+  })
+
   },
   guangg(){
     ulink.navto("/fenbao/article/article")

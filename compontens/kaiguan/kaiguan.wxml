@@ -1,0 +1,4 @@
+<!--compontens/kaiguan/kaiguan.wxml-->
+
+  
+    <switch bindchange="switch2Change"/>

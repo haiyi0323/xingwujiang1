@@ -1,5 +1,5 @@
 <view class="i-class i-spin i-spin-{{ size }} {{ fix ? 'i-spin-fix' : '' }} {{ custom ? 'i-spin-show-text' : '' }} {{ fullscreen ? 'i-spin-fullscreen' : '' }}">
-   <image class="background" src="{{back}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+   <image class="background" src="../../img/footerl.jpeg" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="">
 </image>
     <div class="i-spin-main">
         <view class="i-spin-dot"></view>

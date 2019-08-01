@@ -1,0 +1,5 @@
+<!--compontens/huibiao/huibiao.wxml-->
+<i-badge dot count ="0">
+    <view class="demo-badge"></view>
+</i-badge>
+

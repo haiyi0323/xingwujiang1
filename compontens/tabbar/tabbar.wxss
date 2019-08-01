@@ -1,0 +1,53 @@
+/* compontens/tabbar/tabbar.wxss */
+.dfsfsfs{
+    position:fixed !important;bottom:0rpx !important;width:100% !important;z-index:888888 !important;
+  }
+  .dfasd{
+    height: 100%;
+    position: relative;
+    left: -5rpx;
+    width: 41%;
+  }
+  .jiiwe{
+    position:fixed !important;bottom:0rpx !important;width:100% !important;z-index:888888 !important;
+    background: #041736;
+    height: 100rpx;
+
+  }
+  .gamestart{
+    position: absolute;
+    left: 40rpx;
+    top: 20rpx;
+    color: #041736;
+  }
+  .itembar{
+    height: 100rpx;
+    width: 59%;
+    vertical-align: top;
+
+  }
+  .dsib{
+    display: inline-block;
+  }
+  .jdifas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .kdkks{
+    width: calc(82rpx / 1.5);
+    height: calc(82rpx / 1.5);
+  }
+  .text{
+    color: #4e5675;
+    font-size: calc(30rpx / 1.5)
+  }
+  .item{
+    text-align: center;
+  }
+  .itembar{
+    margin-top: 10rpx
+  }
+  .paddingsss{
+    padding-bottom: calc(100rpx / 1.5)
+  }

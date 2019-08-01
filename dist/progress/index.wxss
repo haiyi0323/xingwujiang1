@@ -2,7 +2,9 @@
     display: inline-block;
     width: 100%;
     font-size: 12px;
-    position: relative
+    position: relative;
+    right:-2rpx;
+
 }
 
 .i-progress-outer {
@@ -55,7 +57,7 @@
 }
 
 .i-progress-wrong .i-progress-bg {
-    background-color: #d1a661
+    background: linear-gradient(45deg,#ecbd70,#e0b268,#b48b49);
 }
 
 .i-progress-wrong .i-progress-text {

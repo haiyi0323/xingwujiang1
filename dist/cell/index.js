@@ -38,7 +38,7 @@ Component({
             type: null,
             value: ''
         },
-        // 链接类型，可选值为 navigateTo，redirectTo，switchTab，reLaunch
+        // 链接类型，可选值为 navigateTo，redirectTo，reLaunch，reLaunch
         linkType: {
             type: String,
             value: 'navigateTo'
@@ -67,8 +67,8 @@ Component({
                 return;
             }
 
-            if (['navigateTo', 'redirectTo', 'switchTab', 'reLaunch'].indexOf(this.data.linkType) === -1) {
-                warn('linkType 属性可选值为 navigateTo，redirectTo，switchTab，reLaunch', this.data.linkType);
+            if (['navigateTo', 'redirectTo', 'reLaunch', 'reLaunch'].indexOf(this.data.linkType) === -1) {
+                warn('linkType 属性可选值为 navigateTo，redirectTo，reLaunch，reLaunch', this.data.linkType);
                 return;
             }
             wx[this.data.linkType].call(wx, {url});

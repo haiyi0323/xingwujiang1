@@ -2,7 +2,9 @@
   "usingComponents": {
     "i-progress": "../../../dist/progress/index",
     "i-progress": "../../../dist/progress/index",
-    "loading":"../../../compontens/loading/loading"
+    "loading":"../../../compontens/loading/loading",
+    "i-badge": "../../../dist/badge/index",
+    "tab" :"../../../compontens/tabbar/tabbar"
 
   }
 }

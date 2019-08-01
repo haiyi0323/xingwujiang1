@@ -1,6 +1,6 @@
 
 <view class="rw_all">
-<image class="rw_background" src="{{renwuback}}" mode="widthFix" >
+<image class="rw_background" src="{{renwuback}}" mode="widthFix" style="height:auto" >
     
 </image>
 
@@ -14,13 +14,17 @@
         </view>
           <!-- 兑换消息 -->
          <view class="message_s flex3" >
-                    <view class="text_info">
+                    <view class="text_info fs42">
                               e***f购买了 
-                            <text class="font_color_b">{{num}}</text>
-                       
+                            <text class="font_color_b">{{num}}</text>...
                     </view>
-                    
-                    <image class="icon_right" src="{{rightb}}" mode="widthFix"></image>
+                    <view class="kkk">
+                    <i-badge dot>
+                    <view class="demo-badge"></view>
+                     </i-badge>
+       <image class="icon_right" src="{{rightb}}" mode="widthFix" style="height:auto"></image>
+                    </view>
+             
             </view>
 </view>
 <!-- 主体 -->
@@ -30,11 +34,11 @@
                     <!-- 主题 -->
                     <view class="renwu_top">
                         <view class="renwu_top_left dsib vertop">
-                            <image class="renwo_logo" src="{{item.logo}}" mode="widthFix"></image>
+                            <image class="renwo_logo" src="{{item.logo}}" mode="widthFix" style="height:auto"></image>
                         </view>
 
                         <view class="renwu_medd dsib vertop">
-                            <view class="medd_top">
+                            <view class="medd_top fs42">
                                 {{item.where}} <text class=" ffssdf font_color_b">{{item.maney}}</text>
                             </view>
                             <view class="medd_bot font_color_a">
@@ -43,9 +47,8 @@
                         </view>
                         <view class="renwu_right dsib verb">
 
-                            <text class="j1 font_color_a">已完成</text>
-                            
-                                                                            
+                            <text wx:if="{{item.isok}}" class="j1 font_color_a">已完成</text>
+                         <i-button wx:else="{{!item.isok}}" i-class="buttonstyl" class="dsib veram fr" shape="circle" bind:tap="jioncup">购买</i-button>                                              
                         </view> 
                         <view class="renwu_gg font_color_a" hover-class="none" hover-stop-propagation="false">
                             *{{item.guanming}}
@@ -65,7 +68,7 @@
      
                                         <image class="dsfsd" src="{{lbimg.image}}" mode="aspectFill" > </image>
                                     
-                            <!-- <image class="" src="" mode="||widthFix" lazy-load="false" binderror="" bindload="">
+                            <!-- <image class="" src="" mode="||widthFix" style="height:auto" lazy-load="false" binderror="" bindload="">
                                 
                             </image> -->
                             <view class="jioaojdd" hover-class="none" hover-stop-propagation="false">
@@ -82,7 +85,11 @@
 
 
             </view>
-        
+                <!--  -->
+
+                <view class="bottomtext">
+                    还有更多福利，可以去 <text class="zhuxian" bind:tap="renwudatign">任务大厅</text> 中逛逛
+                </view>
 
     </view>
 

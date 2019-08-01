@@ -2,10 +2,15 @@
 //获取应用实例
 import ulik from '../../utils/util'
 import config from '../../config'
+const ImgLoader = require('../../img-loader/img-loader.js')
 const app = getApp()
 
 Page({
   data: {
+    currentSwiper:"0",
+      chuangye:"../../img/cy.png",
+      current: 'homepage',
+    // ---------------------
       yeman:true,
       isplay:true,
       src1:  config.NETWORK_RESOURCE + '图层 93.png',
@@ -51,9 +56,9 @@ Page({
           },
       },
       imgUrls: [
-         config.NETWORK_RESOURCE + '轮播图.png',
-         config.NETWORK_RESOURCE + '轮播图.png',
-         config.NETWORK_RESOURCE + '轮播图.png'
+         config.NETWORK_RESOURCE + '轮播图.jpg',
+         config.NETWORK_RESOURCE + '轮播图.jpg',
+         config.NETWORK_RESOURCE + '轮播图.jpg'
       ],
       indicatorDots: true,
       autoplay: true,
@@ -97,7 +102,7 @@ Page({
           img:  config.NETWORK_RESOURCE + 'firsts.png',
           zuobiao:"昆明同德广场",
           juli:"3.6km",
-          shengyu:"25",
+          shengyu:"252",
           xxdz:"昆明市盘龙区同德广场B座32层",
           remen:"行无疆百万扶持创投大赛",
         },
@@ -124,11 +129,34 @@ Page({
     
   },
 
+  handleChange ({ detail }) {
+    this.setData({
+        current: detail.key
+    });
 
+},
  
  
-  onLoad: function () {
+  onLoad: function (e) {
 
+      console.log(e);
+      console.log(app);
+      app.globalData.game = true
+      
+
+      if (app.globalData.game) {
+          this.setData({
+            game:true
+          })
+      }
+    if (e.type == "qidong") {
+      ulik.navto("/fenbao/play-by-play/play-by-play")
+    }
+
+    this.imgLoader = new ImgLoader(this)
+    this.imgLoader.load("../../img/footerl.jpeg", (err, data) => {
+      console.log('图片加载完成', err, data.src, data.width, data.height)
+    })
   },
 
 
@@ -146,13 +174,9 @@ Page({
         config.NETWORK_RESOURCE + '图层 99.png',
 
      ]
+          var paixu = ulik.mathqucuog()
         for (let i = 0; i < oudarr.length; i++) {
-   
-          let num = Math.round(Math.random()*(oudarr.length - 1))
-          console.log(num);
-          newarr.push(oudarr[num])  
-          console.log(newarr);
-          
+          newarr.push(oudarr[paixu[i]])  
           
         }
 
@@ -250,17 +274,22 @@ Page({
       }, 1000);
     },
  morecup(){
-  wx.switchTab({
+  wx.reLaunch({
     url:'/pages/navbar/cup/cup'
 })
  },
+ swiperChange: function(e) {
+  this.setData({
+    currentSwiper: e.detail.current
+  })
+},
 //  跳转到已加入俱乐部
 julebu(){
   ulik.navto("/fenbao/cupjoin/cupjoin")
 },
 // 跳转到文章详情
 news(){
-  ulik.navto("/fenbao/article/article")
+  ulik.navto(   "/fenbao/shopxq/shopxq")
 },
 // 跳转到比赛详情
 baoming(){
@@ -273,7 +302,8 @@ yuyue(){
 },
 // 跳转到商品
 shangpin(){
-  ulik.navto(   "/fenbao/shopxq/shopxq")
+  ulik.navto("/fenbao/article/article")
+
 },
 // 监听到底部
 daodibu(){

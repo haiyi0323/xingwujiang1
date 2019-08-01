@@ -1,13 +1,17 @@
 // pages/navbar/my/my.js
 import  router from '../../../router/router'
 import config from '../../../config'
+let app =  getApp();
 
+  
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    phone:"0871-65344022",
+    hb_count:"3",
     yeman:true,
     jiwjjf:false,
       my_back: config.NETWORK_RESOURCE + 'renwuback.jpeg',
@@ -19,6 +23,8 @@ Page({
 
       set_list : [
           {
+            color:5,
+            hb_count:"0",
             left: "零钱",
             right:"￥227.05",
             icon:  config.NETWORK_RESOURCE + '图标-右.png',
@@ -26,29 +32,34 @@ Page({
           },
           {
             left: "我的订单",
-            right:"￥227.05",
+            hb_count:"1",
             icon:  config.NETWORK_RESOURCE + '图标-右.png',
             img: config.NETWORK_RESOURCE + 'my_list2.png',
           },
           {
+            hb_count:"0",
             left: "收货地址",
             right:"云南 昆明",
             icon:  config.NETWORK_RESOURCE + '图标-右.png',
             img: config.NETWORK_RESOURCE + 'my_list3.png',
           },
           {
+            hb_count:"0",
             left: "实名认证",
             right:"周珍珍",
             icon:  config.NETWORK_RESOURCE + '图标-右.png',
             img: config.NETWORK_RESOURCE + 'my_list4.png',
           },
           {
+            hb_count:"0",
             left: "微信客服",
             right:"0871-65344022",
+            right_text:"如有疑问请咨询客服",
             icon:  config.NETWORK_RESOURCE + '图标-右.png',
             img: config.NETWORK_RESOURCE + 'my_list5.png',
           },
           {
+            hb_count:"0",
             left: "关于我们",
             right:"",
             icon:  config.NETWORK_RESOURCE + '图标-右.png',
@@ -91,6 +102,11 @@ Page({
    */
   onLoad: function (options) {
 
+    if (app.globalData.game) {
+      this.setData({
+        game:true
+      })
+  }
   },
 
   /**
@@ -189,13 +205,18 @@ Page({
 
   luyou(e){
     let luyouarr = [
-      "/fenbao/credit/credit",
+      "/",
       "/fenbao/indent/indent",
-      "/fenbao/indent/indent",
-      "/fenbao/indent/indent",
-      "/fenbao/indent/indent",
-      "/fenbao/indent/indent"
+      "/",
+      "/",
+      "/",
+      "/"
     ]
+    if (e.currentTarget.dataset.index == 4) {
+      wx.makePhoneCall({
+        phoneNumber: this.data.phone 
+      })
+    }
     let index = e.currentTarget.dataset.index
       
     console.log(e.currentTarget.dataset.index);

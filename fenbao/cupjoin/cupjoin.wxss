@@ -20,21 +20,21 @@
     border-radius: 50%;
     background: #071836;
     position: absolute;
-    top: -1200rpx;
+    top: -1120rpx;
     left: -50%;
     overflow: hidden;
     z-index: 1;
 }
 .top_img{
     position: absolute;
-    bottom: -70rpx ;
+    bottom: 25rpx ;
     left: 25%;
     width: 50%;
 }
 .mask{
     width: 100%;
     height: 100%;
-    background: #00000083;
+    background: rgba(7, 28, 51, 0.644);
     position: absolute;
     top: 0px;
     left: 0px;
@@ -56,8 +56,9 @@
     margin-right: 30rpx;
 }
 .cupname{
+    width: 100%;
     color: white;
-    padding: 55rpx 5%;
+    padding: 75rpx 5% 50rpx 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,8 +89,13 @@
     padding: 20rpx 0rpx;
 }
 .liu{
+    width: 110%;
+    position: relative;
+    left: -5%;
+    padding: 0 5%;
+    box-sizing: border-box;
     color: #6a7aa2;
-    font-size: 24rpx;
+    font-size: calc(36rpx / 1.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,18 +112,20 @@
     margin: 20rpx 0rpx;
 }
 .cupitimg{
-    width: 90%;
+    width: 91%;
     display: inline-block;
   
 }
 .diandian{
-    width: 80%;
+    width: calc(46rpx / 1.5);
+
+
 }
 
 .cupitimglist{
-    width: 90rpx;
-    height: 90rpx;
-    margin: 10rpx 30rpx 0 0;
+    width: calc(130rpx / 1.5);
+    height: calc(130rpx / 1.5);
+    margin: 10rpx calc(54rpx / 1.5) 0 0;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -129,14 +137,17 @@
     color: white;
 }
 .doingtitle{
-    margin: 20rpx 0;
+    margin: 20rpx 0 ;
 }
 .doinginfo{
     width: 55%;
 
 }
 .doing_imgs{
-    width: 40%;
+    width: calc(384rpx / 1.5);
+    border-radius: calc(24rpx / 1.5);
+    overflow: hidden;
+
 }
 .doing_img{
     width: 100%;
@@ -151,7 +162,8 @@
     width: 100%;
 }
 .doingsome{
-    margin: 60rpx 0rpx;
+    margin: calc(50rpx / 1.5) 0rpx 0;
+    padding-bottom: calc(60rpx / 1.5);
     font-size: 40rpx;
     position: relative;
 }
@@ -163,24 +175,146 @@
     vertical-align: top
 }
 .doingtime{
-    font-size: 24rpx;
+    font-size: calc(36rpx / 1.5);
     color: #6a7aa2;
     position: absolute;
-    bottom: 20rpx;
+    bottom: 55rpx;
 
 }
 .doingname{
     margin: 0rpx 20rpx
 }
 .morecy{
-    width: 60rpx;
-    height: 60rpx;
+    width: calc(80rpx / 1.5);
+    height:calc(80rpx / 1.5);
     background: rgba(255, 255, 255, 0.103);
     border-radius: 50%;
     text-align: center;
+    display: inline-block;
+
 }    ::-webkit-scrollbar{
     width: 0;
     height: 0;
     color: transparent;
     }
    
+
+    /*  */
+
+    .pull_down_all{
+        font-family: "pingfang";
+          width: 100vw;
+          height: 100vh;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          z-index: 99999;
+          background:linear-gradient(#11142a,#11142a ,#061d3c ,rgba(6,29,60,0.9),rgba(6,29,60,0.9));
+        
+      }
+      .backgroundcolor{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 5555;
+      }
+      .back_topimg{
+          width: 100%;
+          position: absolute;
+          top: -20px;
+          z-index: 5555;
+      }
+      .xl_top_title{
+          position: absolute;
+          top: 0px;
+          width: 100%;
+          height: 100%;
+          color: white;
+          z-index: 55555;
+    
+      }
+      .title_text{
+          text-align: center;
+          margin-top: 80rpx;
+          margin-bottom: 60rpx;
+      }
+      .firstzj{
+          font-size: 24rpx;
+          margin-bottom: 30rpx;
+      }
+      .sedzj{
+        font-size: 24rpx;
+        margin-bottom: 30rpx;
+        margin-top: 10rpx;
+      }
+      .xl_content{
+          padding: 0px 10%;
+      }
+      .rm_label{
+          width: calc(145rpx / 1.5);
+          height: calc(145rpx / 1.5);
+          text-align: center;
+          margin-bottom: 120rpx;
+          white-space : normal nowrap ;
+          margin-right: calc(100rpx / 1.5)
+    
+    
+         
+      }
+      .rm_label:nth-child(4){
+          margin-right: 0rpx;
+      }
+      .cup_logo{
+          width: 100%;
+          border-radius: 50%;
+      }
+      .rm_label_text{
+          font-size: 26rpx;
+          width: 136%;
+          margin-top: 10rpx;
+          line-height: 26rpx;
+          position: relative;
+          left: -18%;
+      }
+      .kuang{
+          width: 70%;
+          text-align: center;
+      }
+      .red{
+          width: 100%;
+          height: 2rpx;
+          background: red;
+          position: absolute;
+          top: 98rpx;
+      }
+
+      .flex{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .flex4{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .flex2{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .flex3{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+    }
+    
+         ::-webkit-scrollbar{
+            width: 0;
+            height: 0;
+            color: transparent;
+            }
+           

@@ -1,0 +1,41 @@
+/* compontens/kaiguan2/kaiguan2.wxss */
+.yuan{
+
+ 
+    width: calc(42rpx / 1.5);
+    height: calc(42rpx / 1.5);
+    background: #6a7aa2;
+    border-radius: 50%;
+    position: relative;
+    z-index: 565;
+    right: 0rpx;
+    transition: all 0.5s;
+    top: -1rpx;
+}
+.tiao{
+    width: calc(84rpx / 1.5);
+    height: calc(26rpx / 1.5);
+    background: #4e5675;
+    position: absolute;
+    top: 5.5rpx;
+    border-radius: calc(13rpx / 1.5);
+    transition: all 0.5s;
+}
+.back{
+    background: #6a7aa2;
+}
+.content{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle
+}
+.kaile{
+
+    transform:translate(30rpx,0);
+    
+}
+.guanle{
+   
+    transform:translate(0rpx,0);
+
+}

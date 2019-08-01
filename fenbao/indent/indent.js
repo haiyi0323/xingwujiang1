@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    current: 'tab1',
+    current: '0',
     back: config.NETWORK_RESOURCE +"footerl.jpeg",
     ddlist:[
       {
@@ -64,11 +64,25 @@ Page({
     ]
    
   },
+
+
   handleChange ({ detail }) {
+    console.log(detail);
+    
     this.setData({
         current: detail.key
     });
 },
+reLaunch(e){
+
+  console.log(e.detail.current);
+
+  this.setData({
+    current:e.detail.current
+  })
+  
+},
+
 
 handleChangeScroll ({ detail }) {
     this.setData({

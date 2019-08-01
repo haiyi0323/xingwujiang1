@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    benzun:true,
     back: config.NETWORK_RESOURCE +"footerl.jpeg",
 
     somep:[
@@ -51,7 +52,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options);
+    
+      this.setData({
+          benzun: Number(options.bz)  
+      })
   },
 
   /**
@@ -65,7 +70,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
     setInterval(() => {
       let newarr =[] ;
    
@@ -76,13 +80,9 @@ Page({
         config.NETWORK_RESOURCE + '图层 99.png',
 
      ]
+          var paixu = ulik.mathqucuog()
         for (let i = 0; i < oudarr.length; i++) {
-   
-          let num = Math.round(Math.random()*(oudarr.length - 1))
-          console.log(num);
-          newarr.push(oudarr[num])  
-          console.log(newarr);
-          
+          newarr.push(oudarr[paixu[i]])  
           
         }
 
@@ -90,7 +90,7 @@ Page({
         somep: newarr
       })
       newarr=[]
-    }, 300000000);
+    }, 3000);
   },
 
   /**
@@ -151,6 +151,9 @@ zan(e){
 },
 listpel(){
   ulik.navto("/fenbao/play-by-play/play-by-play")
+},
+yonghu(){
+  ulik.navto("/fenbao/share_card/share_card")
 }
 
 })  

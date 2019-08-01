@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "i-progress": "../../dist/progress/index"
+    "i-progress": "../../dist/progress/index",
+    "kaiguan":"../../compontens/kaiguan2/kaiguan2"
   }
 }

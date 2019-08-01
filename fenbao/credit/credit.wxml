@@ -1,14 +1,14 @@
 <!--fenbao/credit/credit.wxml-->
 <view class="credit" hover-class="none" hover-stop-propagation="false">
-    <image class="backll" src="{{back}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <image class="backll" src="{{back}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
       
       <view class="content">
             <view class="content_top" hover-class="none" hover-stop-propagation="false">
                 <view class="top_one">
-                    <view class="top_one_left dsib">
+                    <view class="top_one_left dsib fs72">
                         我的积分
                     </view>
-                     <view class="top_one_right dsib">
+                     <view class="top_one_right dsib" hover-class="white">
                         规则
                     </view>
                 </view>
@@ -18,18 +18,20 @@
                             <view class="guoqi">月底即将过期: {{guoqi}}</view>
                     </view>
                      <view class="top_two_right dsib" bind:tap="renwu">
-                            去赚积分 
+                            去赚积分  
+                            <image class="imgejsie" src="{{jiantou}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+                              
                     </view>
                 </view>
             </view>
             
             <view class="content_info" hover-class="none" hover-stop-propagation="false">
-                <view class="contentlist"  wx:for="{{duihuanlist}}" wx::key="index">
+                <view class="contentlist"  wx:for="{{duihuanlist}}" wx::key="index" bind:tap="shopxqy">
                         <view class="mask"></view>
-                        <image class="listimg" src="{{item.img}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                        <image class="listimg" src="{{item.img}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
                             <view class="jfdh">
                         <view class="price">{{item.price}}积分兑换</view>
-                        <view class="listtit">{{item.title}}</view>
+                        <view class="listtit fs42">{{item.title}}</view>
                             </view>
                         
                 </view>

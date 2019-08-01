@@ -1,22 +1,22 @@
 <!--fenbao/cupjoin/cupjoin.wxml-->
 <view class="cupisjoin" hover-class="none" hover-stop-propagation="false">
 <!-- 背景图 -->
-    <image class="back" src="{{back}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <image class="back" src="{{back}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
     <!-- 头部图 -->
       <view class="cuptop" hover-class="none" hover-stop-propagation="false">
             <view class="mask"></view>
-            <image class="top_img" src="{{top_image}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+            <image class="top_img" src="{{top_image}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
               
       </view>
       <!-- 主体内容框 -->
       <view class="cupisjoinkk">
             <view class="cupname">
-                <view class="jojo  dsib verm">
-                          <image class="icon_jixinlogo verm" src="{{cup1.jixing}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
-                    <view class="cup_name dsib verm">{{cup1.name}}</view>
+                <view class="jojo  dsib flex4">
+                          <image class="icon_jixinlogo " src="{{cup1.jixing}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+                    <view class="cup_name dsib ">{{cup1.name}}</view>
                 </view>
                  
-                    <view class="more dsib verm" bind:tap="morecup">更多</view>
+                    <view class="more dsib " bind:tap="morecup">更多</view>
             </view>
                  
                  <!-- 中心内容 -->
@@ -24,10 +24,10 @@
                  <view class="cup_content">
                         <!-- 广告图 -->
                         <view class="advertising" bind:tap="guangg">
-                              <image class="advert_img" src="{{cup1.img}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+                              <image class="advert_img" src="{{cup1.img}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="">
                               </image>
                         </view>
-                        <view class="news_title" hover-class="none" hover-stop-propagation="false">
+                        <view class="news_title fs54" hover-class="none" hover-stop-propagation="false">
                               {{cup1.title}}
                         </view>
                         <!-- 流量信息 -->
@@ -42,34 +42,35 @@
                         </view>
                         <!-- 俱乐部成员 -->
                         <view class="cupitem" hover-class="none" hover-stop-propagation="false">
-                              <view class="cupiti">
+                              <view class="cupiti fs48">
                                     俱乐部成员
                               </view>
                               <view class="cupitimg verm" hover-class="none" hover-stop-propagation="false">
                                     <view class="cupitimglist dsib" hover-class="none" hover-stop-propagation="false" wx:for="{{chengyuan}}" bind:tap="cymp" data-key="{{item.id}}">
-                               <image class="chegnyuan" src="{{item.item}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                               <image class="chegnyuan" src="{{item.item}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
                                                   
                                     </view>
                                     
                                       
                               </view>
+                              
                               <view class="morecy dsib verm" hover-class="none" hover-stop-propagation="false" bind:tap="moreyh">
-                                          <image class="diandian" src="{{diandian}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                                          <image class="diandian verm" src="{{diandian}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
                                             
                                     </view>
                         </view>
                         <!-- 动态板块 -->
                         <view class="doing" hover-class="none" hover-stop-propagation="false">
-                              <view class="doingtitle">动态</view>
+                              <view class="doingtitle fs48">动态</view>
                               <view class="doingsome" wx:for="{{doing}}" wx:key="index" data-key="{{item.id}}" bind:tap="dongtai">
                               <view class="doinginfo dsib vert" >
-                                    <view class="doing_tit" hover-class="none" hover-stop-propagation="false">
+                                    <view class="doing_tit fs54" hover-class="none" hover-stop-propagation="false">
                                           {{item.tit}}
                                     </view>
                                     <view class="doingtime">
 
                                           <view class=" sdfsdf dsib verm" >
-                                                <image class="yonghu" src="{{item.yhimg}}" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
+                                                <image class="yonghu" src="{{item.yhimg}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload=""> </image>
                                           </view>
                                           <view class="doingname dsib verm">
                                                   {{item.name}}
@@ -81,7 +82,7 @@
                                     </view>
                               </view>
                               <view class="doing_imgs dsib vert">
-                                    <image class="doing_img" src="{{item.ggimg}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                                    <image class="doing_img" src="{{item.ggimg}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
                                       
                               </view>
                               </view>
@@ -93,3 +94,59 @@
             
       </view>
 </view>
+
+
+<!-- 下拉菜单 -->
+
+    <view wx:if="{{pull_down}}" class="pull_down_all" hover-class="none" hover-stop-propagation="false">
+      
+        <view class="xl_top_title" bind:tap="closexl">
+            <view class="title_text" >
+                   俱乐部
+            </view>
+                <!-- 内容盒 -->
+            <view class="xl_content" hover-class="none" hover-stop-propagation="false">
+                <view class="firstzj font_color_a" hover-class="none" hover-stop-propagation="false">
+                最近热门
+               </view>
+                <!-- 热门俱乐部 -->
+                <view class="flex" hover-class="none" hover-stop-propagation="false">
+
+                    <view class="rm_label dsib"  wx:for="{{xl_cuplist}}" bind:tap="wdjlb">
+              
+                        <image class="cup_logo" src="{{item.img}}" mode="widthFix" style="height:auto" ></image>
+                    <view class="rm_label_text">
+                        {{item.text}}
+                    </view>
+              
+                    
+                </view>
+
+                </view>
+                <!-- 我的俱乐部 -->
+                <view class="sedzj font_color_a" hover-class="none" hover-stop-propagation="false">
+                        我的俱乐部
+                </view>
+                    <!-- 我的俱乐部 -->
+                <view class="flex3" hover-class="none" hover-stop-propagation="false">
+
+                    <view class="rm_label dsib"  wx:for="{{xl_cuplist2}}" bind:tap="wdjlb">
+              
+                        <image class="cup_logo" src="{{item.img}}" mode="widthFix" style="height:auto" ></image>
+                    <view class="rm_label_text">
+                        {{item.text}}
+                    </view>
+              
+                    
+                </view>
+
+                </view>
+                
+
+
+            </view>
+              
+            
+      
+        </view>
+    </view>

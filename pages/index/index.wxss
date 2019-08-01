@@ -13,26 +13,35 @@
 .jiiww{
   width: 60%;
   position: absolute;
-  top: -120rpx;
-  left: 50rpx;
+  top: -100rpx;
+  left: 30rpx;
+}
+.dfsfsfs{
+  position:fixed !important;bottom:0rpx !important;width:100% !important;z-index:888888 !important;
+}
+.jianjuwenti{
+  position: absolute;
+  top: 180rpx;
+  right:5%;
+  display: flex;
+  align-items: center;
 }
 .fffsd{
+  display: inline-block;
   font-size: 26rpx;
   color: #4e5675;
   font-weight: bold;
-  position: absolute;
-  top: 160rpx;
-  right: 60rpx;
+  margin-right: 10rpx;
   line-height: 26rpx;
  
 
 }
+.slide-image{
+  border-radius: calc(28rpx / 1.5)
+}
 .xiaojian1{
-  width: 26rpx !important;
 
-  position: absolute;
-  top: 160rpx;
-  right: 20rpx;
+  width: 26rpx !important;
 }
 
 .fdsfsd{
@@ -50,7 +59,7 @@
 .yuanji{
   display: inline-block;
   width: 90% !important;
-  border-radius: 20px;
+  border-radius: calc(24rpx / 1.5);
   overflow: hidden;
   font-size: 0px;
   position: relative;
@@ -61,7 +70,7 @@
 
   width: 100% !important;
   height: 100% !important;
-  border-radius: 20px;
+  border-radius: calc(24rpx / 1.5);
   overflow: hidden;
   font-size: 0px;
   position: absolute;
@@ -85,7 +94,7 @@
 }
 .all{
   width: 100vw;
-  height: 100vh;
+  height: 94vh;
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
@@ -108,7 +117,7 @@
 .leftflw{
   width: 100rpx;
   position: absolute;
-  left: 20rpx;
+  left: 0rpx;
   bottom: 10rpx;
   height: 100rpx;
 /* animation-name: myfirst;
@@ -136,7 +145,7 @@ animation-play-state: running; */
   width: 70rpx;
   height: 100rpx;
   position: absolute;
-  right: 20rpx;
+  right: 0rpx;
   bottom: 0px;
   /* animation-name: rithhss;
 animation-duration: 1s;
@@ -147,7 +156,7 @@ animation-play-state: running; */
 }
 .message_s{
   width: 90%;
-  height: 70rpx;
+  height: 80rpx;
   background-color: #1d2e4a;
   border-radius: 30px;
   position: absolute;
@@ -165,9 +174,10 @@ animation-play-state: running; */
 }
 .vsomep{
   display: inline-block;
-  margin-top: 10rpx;
+  margin-top: 15rpx;
   margin-left: 30rpx;
-  vertical-align: top
+  vertical-align: top;
+
 
 }
 .smalllog{
@@ -177,13 +187,15 @@ animation-play-state: running; */
   
 }
 .ffffs{
+  line-height: 80rpx;
   display: inline-block;
   vertical-align: top
 }
 .youjian{
-  width: 20rpx;
+  width: calc(20rpx / 1.5);
   vertical-align: middle;
   margin-left: 20rpx;
+  margin-top: 5rpx;
 }
 .title_jlb{
   font-size: 35rpx;
@@ -192,7 +204,9 @@ animation-play-state: running; */
   top: -130rpx;
   z-index: 900;
   padding: 3% 5%;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between
 
 }
 .righttit{
@@ -225,9 +239,10 @@ background: #041736
   z-index: 900;
   display: inline-block;
   width: 30%;
+  margin-right: calc(28rpx / 1.5)
 }
 .ffssdfe{
-  width: 90%;
+  width: calc(300rpx / 1.5);
   margin-right: 10%;
   position: relative;
   border-radius: 25rpx;
@@ -245,6 +260,16 @@ background: #041736
   width: 25rpx;
 
 
+}
+.longing{
+  position: relative;
+  z-index: 55555;
+  color: #6a7aa2;
+  width: 100%;
+  text-align: center;
+  font-size: calc(36rpx / 1.5);
+  margin-top: calc(60rpx / 1.5);
+  margin-bottom: calc(80rpx / 1.5)
 }
 .fdsf{
   color:#dcab60;
@@ -267,7 +292,8 @@ background: #041736
   width: 110rpx;
   margin-left: 0px !important;
   color: #041736 !important;
-  background-color:#e3b66b !important;
+  font-family: "pingfang" !important;
+  background: linear-gradient(45deg,#ecbd70,#bc9354) !important;
 
 }
 .jiojw2{
@@ -281,6 +307,23 @@ background: #041736
   color: #041736 !important;
   background-color:#e3b66b !important;
   margin-top: 20rpx !important;
+  top: -50rpx;
+right: 0rpx;
+
+}
+.jiojw3{
+  position: relative;
+  z-index: 8888;
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 110rpx;
+  margin: 0px !important;
+  color: #041736 !important;
+  background-color:#e3b66b !important;
+  margin-top: 20rpx !important;
+  top: -90rpx;
+  right: 0rpx;
 
 
 }
@@ -289,7 +332,7 @@ background: #041736
   width: 100%;
   height: 258rpx;
   position: absolute;
-  top: 1300rpx;
+  top: 1330rpx;
   text-align: center;
   padding: 5%;
   box-sizing: border-box;
@@ -302,12 +345,38 @@ background: #041736
   height: 100%;
 }
 
+.dots {
+  text-align: right;
+  width: 100rpx;
+  height: 20rpx;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: -40rpx;
+  transform: translateX(-50%);
+  bottom: 60rpx;
+
+}
+
+.dot {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+  background-color: rgba(255, 255, 255, 0.301);
+}  
+.active {
+  width: 10rpx;
+  height: 10rpx;
+  background-color: white;
+} 
+
 .fotter{
   width: 100%;
   background-color: #031027;
   position: absolute;
-  top: 1550rpx;
-
+  top: 1590rpx;
+  overflow: hidden;
   box-sizing: border-box;
 }
 .back_f{
@@ -321,9 +390,10 @@ background: #041736
 }
 .rongqi{
   display: inline-block;
-  width: 150rpx;
+  width: calc(194rpx / 1.5);
   margin-right: 30rpx;
   vertical-align: top;
+  height: calc(291rpx / 1.5);
 }
 .neirong{
   display: inline-block;
@@ -347,7 +417,7 @@ background: #041736
   vertical-align: middle
 }
 .juli{
-  font-size: 20rpx;
+  font-size: calc(36rpx / 1.5);
   color: #4e5675;
   font-weight: bold;
   margin-left: 10rpx;
@@ -356,18 +426,30 @@ background: #041736
   margin: 10rpx 0rpx
 }
 .three{
-  line-height: 80rpx;
-  border-bottom: 1px solid #021431;
+  white-space: nowrap;
+  border-bottom: 1px solid #00030865;
+padding-bottom: 15rpx;
 }
 .huodng{
-  text-align: center;
-  padding: 0px 60rpx;
+  padding-top: 10rpx;
+  padding-left: 163rpx;
   width: 100%;
-  margin-top: 10rpx;
   
 }
+.huodng2{
+
+  padding-left: 163rpx;
+  width: 100%;
+  padding-bottom: 15rpx;
+  border-bottom: 1px solid #00030859;
+
+  
+}
+.huodng2:last-child{
+  border-bottom: 1px solid transparent;
+}
 .hdtit{
-  font-size: 30rpx;
+  font-size: calc(36rpx / 1.5);
   color: #e3b66b
 }
 .hd_a{
@@ -380,7 +462,7 @@ background: #041736
   
 }.hdconten{
   color: #4e5675;
-  font-size: 30rpx;
+  font-size: calc(36rpx / 1.5);
 }
 .fdsffd{
   margin: 0px 30rpx;
@@ -427,8 +509,10 @@ background: #041736
   white-space: pre-line
 }
 .othewsl{
-  margin: 60rpx 0px;
+
   padding: 0 5%;
+  padding-top: 60rpx;
+  border-top: 1px solid #021431;
 }
 .whitef{
   color: rgb(199, 199, 199);
@@ -439,10 +523,11 @@ background: #041736
   position: relative;
   left: unset !important;
   right: -5rpx;
+  bottom: 5rpx;
 }
 
 .wx-swiper-dots.wx-swiper-dots-horizontal {
-  margin-bottom: 5rpx;
+  margin-bottom: 15rpx;
 }
 .vidersrc{
   width: 100%;

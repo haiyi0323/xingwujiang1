@@ -2,12 +2,14 @@
 
 import  router from '../../../router/router'
 import config from '../../../config'
+let app =  getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    hb_count:"2",
     yeman:true,
       renwuback: config.NETWORK_RESOURCE + 'renwuback.jpeg',
       rightb: config.NETWORK_RESOURCE + '图标-右.png',
@@ -61,42 +63,8 @@ Page({
           }
 
         },
-        {
-          img: config.NETWORK_RESOURCE + 'wdrwa4.png',
-          cont:"喝一杯咖啡",
-          award:"33积分",
-          xiang:"在门店消费任意一杯拿铁",
-          zt:{
-            isok:"1",
-            down:"1",
-            all: "1"
-          }
-
-        },
-        {
-          img: config.NETWORK_RESOURCE + 'wdrwa4.png',
-          cont:"喝一杯咖啡",
-          award:"33积分",
-          xiang:"在门店消费任意一杯拿铁",
-          zt:{
-            isok:"1",
-            down:"1",
-            all: "1"
-          }
-
-        },
-        {
-          img: config.NETWORK_RESOURCE + 'wdrwa4.png',
-          cont:"喝一杯咖啡",
-          award:"33积分",
-          xiang:"在门店消费任意一杯拿铁",
-          zt:{
-            isok:"1",
-            down:"1",
-            all: "1"
-          }
-
-        },
+    
+      
       ]
 
   },
@@ -105,6 +73,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    
+    if (app.globalData.game) {
+      this.setData({
+        game:true
+      })
+  }
 
     // var that = this
     // wx.getSystemInfo({

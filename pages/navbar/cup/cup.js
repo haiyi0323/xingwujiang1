@@ -1,6 +1,7 @@
 // pages/navbar/cup/cup.js
 import ulik from '../../../utils/util'
 import config from '../../../config'
+let app =  getApp();
 Page({
 
   /**
@@ -52,51 +53,8 @@ Page({
         label:"汽车俱乐部"
       }
     ],
-    pull_down : false,
-    xl_cuplist:[
-         {
-           img: config.NETWORK_RESOURCE + 'baoma.png',
-           text:'宝马X系'
-         },
-         {
-          img: config.NETWORK_RESOURCE + 'bieke.png',
-          text:'别克君威'
-        },
-        {
-          img: config.NETWORK_RESOURCE + 'fangtianxia.png',
-          text:'房天下'
-        },
-        {
-          img: config.NETWORK_RESOURCE + 'xl_more.png',
-          text:''
-        }
-    ],
-    xl_cuplist2:[
-      {
-        img: config.NETWORK_RESOURCE + 'wodecup.png',
-        text:'吉行天下'
-      },
-      {
-       img: config.NETWORK_RESOURCE + 'wodecup2.png',
-       text:'凯迪拉克'
-     },
-     {
-       img: config.NETWORK_RESOURCE + 'wodecup3.png',
-       text:'嘉华食品'
-     },
-     {
-       img: config.NETWORK_RESOURCE + 'wodecup4.png',
-       text:'WEB工蜂+'
-     },
-     {
-      img: config.NETWORK_RESOURCE + 'wodecup5.png',
-      text:'华为花粉'
-     },
-     {
-       img: config.NETWORK_RESOURCE + 'wodecup6.png',
-       text:'小米之家'
-     }
- ]
+
+
     
   },
 
@@ -105,6 +63,11 @@ Page({
    */
   onLoad: function (options) {
 
+    if (app.globalData.game) {
+      this.setData({
+        game:true
+      })
+  }
   },
 
   /**
@@ -121,13 +84,9 @@ Page({
         config.NETWORK_RESOURCE + '图层 99.png',
 
      ]
+          var paixu = ulik.mathqucuog()
         for (let i = 0; i < oudarr.length; i++) {
-   
-          let num = Math.round(Math.random()*(oudarr.length - 1))
-          console.log(num);
-          newarr.push(oudarr[num])  
-          console.log(newarr);
-          
+          newarr.push(oudarr[paixu[i]])  
           
         }
 
@@ -170,10 +129,8 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-      console.log("下拉了");
-      this.setData({
-        pull_down : true
-      })
+ 
+    
       
   },
 
@@ -190,15 +147,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  closexl(){
-    this.setData({
-      pull_down : false
-    })
-  },
+ 
 //跳转到已加入俱乐部
-  wdjlb(){
-    ulik.navto("/fenbao/cupjoin/cupjoin")
-  },
+
   // 跳转到比赛详情
   listpel(){
     ulik.navto("/fenbao/play-by-play/play-by-play")

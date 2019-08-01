@@ -2,9 +2,9 @@
 App({
   onLaunch: function () {
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    var index = wx.getStorageSync('index') || []
+    index.unshift(Date.now())
+    wx.setStorageSync('index', index)
 
     // 登录
     wx.login({
@@ -32,8 +32,23 @@ App({
         }
       }
     })
+var that = this
+    wx.getSystemInfo({
+      success: function(res) {
+        var name = 'iPhone X'
+        if(res.model.indexOf(name) > -1){
+          that.globalData.isIpx = true
+        }
+      }
+    })
   },
+
+  
   globalData: {
-    userInfo: null
+    userInfo: null,
+    isIpx : false
   }
+
+
+  
 })

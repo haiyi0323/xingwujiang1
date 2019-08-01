@@ -10,54 +10,54 @@ Page({
       back: config.NETWORK_RESOURCE + "renwuback.jpeg",
       jifen:"153",
       guoqi:"0",
-
+      jiantou :config.NETWORK_RESOURCE + '图标-右.png',
       duihuanlist:[
         {
           img: config.NETWORK_RESOURCE + '图层 104.png',
           price:"2000",
-          title:"LOL英雄联盟职业联赛单次入场券",
+          title:"西湖龙井工艺 雨前龙井茶叶",
         },
 
         {
           img: config.NETWORK_RESOURCE + '图层 104.png',
           price:"2000",
-          title:"LOL英雄联盟职业联赛单次入场券",
+          title:"西湖龙井工艺 雨前龙井茶叶",
         },
 
 
         {
           img: config.NETWORK_RESOURCE + '图层 104.png',
           price:"2000",
-          title:"LOL英雄联盟职业联赛单次入场券",
+          title:"西湖龙井工艺 雨前龙井茶叶",
         },
         {
           img: config.NETWORK_RESOURCE + '图层 104.png',
           price:"2000",
-          title:"LOL英雄联盟职业联赛单次入场券",
-        },
-
-        {
-          img: config.NETWORK_RESOURCE + '图层 104.png',
-          price:"2000",
-          title:"LOL英雄联盟职业联赛单次入场券",
+          title:"西湖龙井工艺 雨前龙井茶叶",
         },
 
         {
           img: config.NETWORK_RESOURCE + '图层 104.png',
           price:"2000",
-          title:"LOL英雄联盟职业联赛单次入场券",
+          title:"西湖龙井工艺 雨前龙井茶叶",
         },
 
         {
           img: config.NETWORK_RESOURCE + '图层 104.png',
           price:"2000",
-          title:"LOL英雄联盟职业联赛单次入场券",
+          title:"西湖龙井工艺 雨前龙井茶叶",
         },
 
         {
           img: config.NETWORK_RESOURCE + '图层 104.png',
           price:"2000",
-          title:"LOL英雄联盟职业联赛单次入场券",
+          title:"西湖龙井工艺 雨前龙井茶叶",
+        },
+
+        {
+          img: config.NETWORK_RESOURCE + '图层 104.png',
+          price:"2000",
+          title:"西湖龙井工艺 雨前龙井茶叶",
         },
 
 
@@ -121,9 +121,12 @@ Page({
   },
   renwu(){
 
-    wx.switchTab({
+    wx.reLaunch({
       url:'/pages/navbar/renwu/renwu'
   })
+  },
+  shopxqy(){
+    ulik.navto( "/fenbao/shopxq/shopxq")
   }
 
 })

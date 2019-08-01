@@ -30,10 +30,11 @@
     }
 .rw_all{
     width: 100vw;
-    height: 102vh;
+    height: 93vh;
     overflow: auto;
     font-family: "pingfang";
     position: relative;
+
 }
 .rw_background{
     width: 100%;
@@ -42,18 +43,19 @@
     top: 0px;
     left: 0px;
 }
-.message_s{
-    width: 70%;
+.message_ss{
+    width: calc(705rpx / 1.5);
     height: 80rpx;
     background-color: #1d2e4a;
     border-radius: 30px;
     line-height: 80rpx;
-    font-size: 30rpx;
+    font-size: calc(42rpx / 1.5);
     color: white;
     padding: 0px 30rpx;
     box-sizing: border-box;
     margin-top: 20rpx;
-    margin-left: 15%
+    margin: 0 auto;
+    margin-top: 20rpx;
   }
   
   .text_info{
@@ -68,7 +70,7 @@
   
   }
   .icon_right{
-    width: 20rpx;
+    width: calc(20rpx / 1.5);
     vertical-align: middle;
     margin-left: 20rpx;
   }
@@ -83,12 +85,12 @@
       box-sizing: border-box;
   }
   .rw_header_title{
-      font-size: 30rpx;
+      font-size: calc(42rpx / 1.5);
       margin-top: 50rpx;
       margin-bottom: 20rpx;
   }
   .rw_header_jifen{
-      font-size: 50rpx;
+      font-size: calc(86rpx / 1.5);
       font-weight: bold;
   }
   .rw_content{
@@ -99,32 +101,52 @@
       width: 100%;
       overflow: auto;
       font-size: 0px;
+      margin-top: 60rpx;
   }
+  .rw_item_content_sed{
+      position: relative;
+      top: 8rpx;
+  }
+  .dfsdf{
+      position: relative;
+      top: 12rpx
+  }
+.dontworry{
 
+box-sizing:border-box;
+text-align: center;
+width:100%;
+font-size: calc(36rpx / 1.5);
+padding-bottom: 50rpx 
+
+
+}
   /* content */
 
   .rw_content_title{
-      font-size: 34rpx;
+      font-size: calc(54rpx / 1.5);
       color: white;
       margin: 50rpx 0px;
       margin-left: 40rpx;
   }
 .rw_content_item_logo{
-    width: 25%;
-    text-align: center;
+    width: 20%;
+    height: calc(150rpx / 1.5);
+
 
 }
 .item_logo_image{
-    width: 50%;
+    width: 100rpx;
 }
 .rw_item_content{
     width: 75%;
     font-size: 30rpx;
 }
 .sed_left{
-    font-size: 24rpx;
+    font-size: calc(36rpx / 1.5);
 }
 .sed_right{
+    font-size: calc(42rpx / 1.5);
     float: right;
     margin-right: 40rpx;
 }
@@ -136,8 +158,8 @@
 .rw_content_item{
     margin: 30rpx 0px;
     padding-bottom: 30rpx;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+    margin-left: 5%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
 }
 ::-webkit-scrollbar{
     width: 0 !important;
@@ -145,5 +167,5 @@
     color: transparent !important;
     }
 .jiooiwf{
-    width: 20% !important;
+    width: calc(135rpx / 1.5) !important;
 }

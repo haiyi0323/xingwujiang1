@@ -2,12 +2,12 @@
 
 <!--fenbao/share card/share card.wxml-->
 <view class="share_all">
-    <image class="share_back" src="{{my_back}}" mode="widthFix" ></image>
+    <image class="share_back" src="{{my_back}}" mode="widthFix" style="height:auto" ></image>
 <!-- 卡片 -->
     <view class="card">
 
             <view class="ssooo">
-                   <image class="card_photo" src="{{photo}}" mode="widthFix" ></image>
+                   <image class="card_photo" src="{{photo}}" mode="widthFix" style="height:auto" ></image>
             </view>
 
    
@@ -17,14 +17,14 @@
 
                 <view class="card_name" >
                     DevinSteve
-                    <image class="sex" src="{{sex}}" mode="widthFix" ></image>
+                    <image class="sex" src="{{sex}}" mode="widthFix" style="height:auto" ></image>
                 </view>
 
                 <view class="card_about">
                     我们一起撸起袖子~ 加油干！
                 </view>
                 <view class="boximg">
-                      <image class="card_ma" src="{{card_ma}}"  mode="widthFix"/>
+                      <image class="card_ma" src="{{card_ma}}"  mode="widthFix" style="height:auto"/>
                 </view>
               
                   

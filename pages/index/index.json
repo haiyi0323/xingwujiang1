@@ -9,6 +9,9 @@
     "i-modal": "../../dist/modal/index",
     "i-cell-group": "../../dist/cell-group/index",
     "i-cell": "../../dist/cell/index",
-    "loading":"../../compontens/loading/loading"
+    "loading":"../../compontens/loading/loading",
+    "i-tab-bar": "../../dist/tab-bar/index",
+    "i-tab-bar-item": "../../dist/tab-bar-item/index",
+    "tab":"../../compontens/tabbar/tabbar"
   }
 }

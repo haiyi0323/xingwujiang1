@@ -23,6 +23,7 @@ Component({
         
     },
     data: {
-        back:config.NETWORK_RESOURCE+"footerl.jpeg"
+ 
+   
       },
 });

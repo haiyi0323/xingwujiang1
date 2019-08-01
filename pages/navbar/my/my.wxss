@@ -1,11 +1,18 @@
 /* pages/navbar/my/my.wxss */
 
-
+.background{
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+    width: 100%;
+    z-index: 8;
+}
 .my_back{
     width: 100%;
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 6;
 }
 .verm{
     vertical-align: middle;
@@ -15,6 +22,15 @@
 }
 .font_color_b{
     color: #ebbd70;
+  }
+  .rightbt{
+      font-size: calc(30rpx / 1.5);
+      display:inline-block;
+      line-height: calc(30rpx / 1.5);
+
+  }
+  .jiiiwew{
+      margin: 0rpx 5rpx
   }
 .fr{
       float: right;
@@ -30,9 +46,9 @@
 }
 .my_all_content{
  
-
+    background: #041736;
     width: 100vw;
-    height: 100vh;
+    height: 91vh;
     overflow-x: hidden;
     overflow-y: auto;
     color: white;
@@ -43,33 +59,33 @@
 }
 .my_card{
     width: 100%;
-    height: 370rpx;
+    height: calc(551rpx / 1.5);
     border-radius: 20rpx;
     background: #ffffff;
     opacity: 0.1;
-    margin-top: 80rpx;
+    margin-top: 95rpx;
     padding: 6%;
     box-sizing: border-box;
     position: relative;
     z-index: 200;
     color: white;
+    padding-top: calc(60rpx / 1.5)
 }
 .my_nickname{
 
     color: white;
     position: absolute;
-    top: 160rpx;
+    top: 185rpx;
     left: 80rpx;
-    font-size: 40rpx;
     z-index: 252;
     width: 100%;
  
 }
 .my_vip{
     position: absolute;
-    top: 230rpx;
+    top: 260rpx;
     left: 80rpx;
-    font-size: 26rpx;
+    font-size: calc(36rpx / 1.5);
     z-index: 252;
     width: 100%;
 }
@@ -77,7 +93,7 @@
     width: 120rpx;
     height: 120rpx;
     position: absolute;
-    top: 160rpx;
+    top: 170rpx;
     right: 80rpx;
     font-size: 26rpx;
     z-index: 252;
@@ -87,7 +103,7 @@
 }
 .my_jifen{
     position: absolute;
-    top: 260rpx;
+    top: 295rpx;
     left: 80rpx;
     font-size: 26rpx;
     z-index: 252;
@@ -97,9 +113,9 @@
     font-size: 60rpx;
 }
 .icon_jiantou{
-    width: 15rpx;
+    width: calc(20rpx / 1.5);
     vertical-align: middle;
-    margin-left: 5rpx;
+    margin-left: 10rpx;
 
 }
 .jofjisd{
@@ -119,7 +135,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 400rpx;
+    top: 402rpx;
     right: 80rpx;
     z-index: 555;
     text-align: center;
@@ -141,11 +157,15 @@ transition:all .5s ease-in 0s;
     width: 100%;
 }
 .icon_sj{
-    width: 22rpx;
+    width: calc(36rpx / 1.5);
     margin-left: 10rpx;
+    position: relative;
+    top: 5rpx;
 }
 .icon_laba{
-    width: 20rpx;
+    width: calc(40rpx / 1.5);
+    margin-right: calc(25rpx / 1.5)
+    
 }
 .message_s{
     width: 90%;
@@ -153,26 +173,26 @@ transition:all .5s ease-in 0s;
     background-color: #1d2e4a;
     border-radius: 30px;
     line-height: 80rpx;
-    font-size: 30rpx;
+    z-index: 666;
     color: white;
-    padding: 0px 30rpx;
+    padding: 0px calc(52rpx / 1.5);
     box-sizing: border-box;
-    margin-top: 20rpx;
+    margin-top: 40rpx;
     position: absolute;
     top: 500rpx;
     left: 5%;
   }
 
   .text_info{
-    display: inline-block;
-    vertical-align: top
+    display: flex;
+    align-items: center;
   }
 
   .icon_right{
-    width: 20rpx;
+    width: calc(20rpx / 1.5);
     vertical-align: middle;
-    float: right;
-    margin: 20rpx
+    margin: 24rpx;
+    margin-right: 0rpx;
   }
   .setting{
     position: absolute;
@@ -180,39 +200,63 @@ transition:all .5s ease-in 0s;
     left: 0rpx;
     width: 100%;
     color: white;
+    padding-left: 5%;
+    z-index: 666;
    
   }
   .list_icon {
       width: 30rpx;
-      vertical-align: middle;
+        position: relative;top: 5rpx;
       margin-right: 25rpx;
   }
   .lict_jiantou{
       width: 15rpx;
-      vertical-align: middle;
+        position: relative;
+        top: 5rpx;
       margin-left: 25rpx;
 
   }
 
 .list_title{
 
-    font-size: 30rpx;
+    font-size: calc(42rpx / 1.5);
     margin-left: 10rpx;
     width: 40%;
     text-align: left;
 
+
 } 
 
+.fkessf{
+    display: flex;
+    align-items: center;
+    
+}
+.fkessf2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+    
+}
 .list_cont{
     width: 45%;
     text-align: right;
     font-size: 30rpx;
+    display: flex;
+    align-items: center
    
     
 }
+.fsdfsdf{
+    font-size: calc(42rpx / 1.5);
+    position: relative;
+    top: 2rpx;
+
+}
 .setting_list{
     padding: 30rpx;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    border-bottom: 1px solid rgba(0, 16, 39, 0.5);
+    padding-left: 0rpx;    padding-right: 80rpx;
 }
 .huise{
 
@@ -253,7 +297,7 @@ transition:all .5s ease-in 0s;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 400rpx;
+    top: 402rpx;
     right: 80rpx;
     z-index: 500;
     background: rgba(0, 0, 0, 0.253);
@@ -298,7 +342,7 @@ transition:all .5s ease-in 0s;
     width: 100%;
     vertical-align: top;
     font-size: 30rpx;
-    padding: 5%;
+    padding: calc(69rpx / 1.5);
     box-sizing: border-box;
     text-align: left;
    
@@ -306,8 +350,10 @@ transition:all .5s ease-in 0s;
 }
 
 .card_content{
-    height: 300rpx;
+    height: 260rpx;
     background:#1d2e4a;
+
+
    
 }
 .card_photo{
@@ -326,6 +372,8 @@ transition:all .5s ease-in 0s;
 .card_name {
     color: white;
     font-size: 40rpx;
+    margin-top: 30rpx;
+
 }
 
 .card_about{
@@ -343,7 +391,7 @@ transition:all .5s ease-in 0s;
     padding: 10rpx;
     background: white;
     position: absolute;
-    bottom: 120rpx;
+    bottom: 65rpx;
     right: 40rpx;
     
 }
@@ -418,11 +466,20 @@ transition:all .5s ease-in 0s;
     left: 0rpx !important; */
     z-index: 9999;
     padding: 0px  10rpx !important;
-    height: 60rpx !important;
+    height: calc(96rpx / 1.5) !important;
     line-height:  60rpx !important;
-    width: 44%;
-
+    width: calc(400rpx / 1.5);
+    font-weight: bold;
     color: #041736 !important;
-    background-color:#e3b66b !important;
+    background: linear-gradient(45deg,#ebbc70,#bc9355) !important;
     display: inline-block !important;
+}
+.fjdsi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42rpx;
+}
+.dfdsf{
+    line-height: 28rpx
 }

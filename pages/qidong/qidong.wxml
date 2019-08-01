@@ -3,7 +3,7 @@
      <image class="qidong_back1" src="{{back}}" mode="scaleToFill" > </image>
 
      <view class="me_logo" >
-          <image class="qidong_back2" src="{{logo}}" mode="widthFix" > </image>
+          <image class="qidong_back2" src="{{logo}}" mode="widthFix" style="height:auto" > </image>
      </view>
     <view class="me_rukou" >
           <i-button i-class="jiojw2 dsib fl verm" class="joijiw " shape="circle" bind:tap="game">
@@ -18,7 +18,7 @@
             <!-- 记时 -->
 
             <view class="jishi" bind:tap="tiaoguo">
-                    跳过  <text class="kkkos">{{time}}</text>
+                    跳过    <text class="kkkos" style="margin-left:9rpx">  {{time}}</text>
             </view>
 
  </view>

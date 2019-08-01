@@ -1,7 +1,7 @@
 <!--pages/navbar/renwu/renwu.wxml-->
-<loading wx:if="{{yeman}}"></loading>
+<!-- <loading wx:if="{{yeman}}"></loading> -->
 <view class="rw_all">
-    <image class="rw_background" src="{{renwuback}}" mode="widthFix" >
+    <image class="rw_background" src="{{renwuback}}" mode="widthFix" style="height:auto" >
         
     </image>
 
@@ -14,14 +14,19 @@
                 153
             </view>
               <!-- 兑换消息 -->
-             <view class="message_s flex3" >
+             <view class="message_ss flex3" >
                         <view class="text_info">
                                   兑换精美礼盒咖啡
                                 <text class="font_color_b">{{num}}</text>
                            
                         </view>
-                        
-                        <image class="icon_right" src="{{rightb}}" mode="widthFix"></image>
+                        <view>
+                           <i-badge dot count = "{{hb_count}}">
+                                        <view class="demo-badge"></view>
+                        </i-badge>
+                        <image class="icon_right" src="{{rightb}}" mode="widthFix" style="height:auto"></image>
+                        </view>
+                         
                 </view>
     </view>
     <!-- 主体 -->
@@ -33,11 +38,11 @@
                         <view class="rw_content_item" wx:for="{{rw_list}}">
               <!-- logo -->
                             <view class="rw_content_item_logo dsib" >
-                                <image class="item_logo_image" src="{{item.img}}" mode="widthFix"></image>       
+                                <image class="item_logo_image" src="{{item.img}}" mode="widthFix" style="height:auto"></image>       
                             </view>
                             <!-- 内容 -->
                             <view class="rw_item_content dsib" hover-class="none" >
-                                <view class="rw_item_content_first">
+                                <view class="rw_item_content_first fs42 dfsdf" >
                                     {{item.cont}} <text class="font_color_b">{{item.award}}</text>
                                 </view>
                                 <view class="rw_item_content_sed">
@@ -48,16 +53,21 @@
                                    
                                 </view>
 
-                                <view class="rw_item_content_three font_color_a fs24">
+                                <view class="rw_item_content_three font_color_a fsss30">
                                     <!-- 进度 -->
-                                     <i-progress i-class="jiooiwf" percent="65" status="wrong" hide-info="false"></i-progress>
-                                     <text class="font_color_b"> {{item.zt.down}} </text> / {{item.zt.all}}
+                                     <i-progress i-class="jiooiwf" percent="65" stroke-width="8" status="wrong" hide-info="false"></i-progress>
+                                     <text class="font_color_b"> {{item.zt.down}}</text>/{{item.zt.all}}
                                 </view>
                             </view>
 
 
                         </view>
                 </view>
-                  
+                   <view class="dontworry font_color_a">
+            别着急，暂时还没有更多任务了
         </view>
+        </view>
+       
 </view>
+<tab wx:if="{{game}}" current="remind" game></tab>
+<tab wx:else current="remind"></tab>

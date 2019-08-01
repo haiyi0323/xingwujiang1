@@ -1,0 +1,14 @@
+<!--compontens/kaiguan2/kaiguan2.wxml-->
+<!-- 圆 -->
+<view class="content" bind:tap="kaiguan">
+
+<view class="yuan {{state ? 'kaile' : 'guanle'}}" hover-class="none" hover-stop-propagation="false" >
+    
+</view>
+<!-- 长条 -->
+<view class="tiao {{state ? 'back' : ''}}" hover-class="none" hover-stop-propagation="false">
+    
+</view>
+
+
+</view>

@@ -23,7 +23,7 @@
     width: 90%;
     margin-top: 80rpx;
     margin: 0 auto;
-    border-radius: 30rpx;
+    border-radius:calc(24rpx / 1.5);
     position: relative;
     z-index: 20;
     overflow: hidden;
@@ -36,15 +36,16 @@
     width: 100%;
     vertical-align: top;
     font-size: 30rpx;
-    padding: 20px;
+    padding: 70rpx 40rpx 50rpx 40rpx;
     box-sizing: border-box;
     text-align: left;
+
    
     
 }
 
 .card_content{
-    height: 200rpx;
+    height: 250rpx;
     background:#1d2e4a;
    
 }
@@ -63,11 +64,11 @@
 }
 .card_name {
     color: white;
-    font-size: 40rpx;
+    font-size:calc(60rpx / 1.5) ;
 }
 
 .card_about{
-    font-size: 24rpx;
+    font-size: calc(42rpx / 1.5);
     color: #6a7aa2;
     margin: 10rpx 0px;
 }
@@ -77,9 +78,9 @@
 }
 .card_ma{
     
-    width: 100rpx;
+    width: calc(120rpx / 1.5);
     position: absolute;
-    bottom: 50rpx;
+    bottom: 90rpx;
     right: 40rpx;
     
 
@@ -99,15 +100,16 @@
 }
 .kaiguan{
     float: right;
-    font-size: 24rpx;
-    color: #6a7aa2
+    font-size: calc(36rpx / 1.5);
+    color: #6a7aa2;
+    margin-right: 30rpx
 }
 .cupdo_list{
     width: 100%;
     background: #1d2e4a;
     border-radius: 20rpx;
     margin: 30rpx 0;
-    padding: 20rpx;
+    padding: 40rpx;
     box-sizing: border-box;
 }
 .dsib{
@@ -117,17 +119,17 @@
     text-align: left;
 }
 .dsds{
-    width: 120rpx;
+    width: calc(180rpx / 1.5);
 }
 .jianto{
     width: 15rpx;
     margin-left: 10rpx;
 }
 .first_{
-    font-size: 30rpx;
+    font-size: calc(42rpx / 1.5);
 }
 .sed_{
-    font-size: 24rpx;
+    color: #6a7aa2
  
 }
 .kooks{
@@ -140,5 +142,5 @@
     margin-right: 20rpx;
 }
 .first_image{
-    margin: 0px 15rpx;
+    margin: 0px 7rpx;
 }

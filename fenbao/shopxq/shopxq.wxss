@@ -56,7 +56,8 @@
     margin-right: 20rpx
 }
 .fdsfdsfrw{
-    text-decoration:line-through
+    text-decoration:line-through;
+    font-size: calc(38rpx / 1.5)
 }
 .dfdsff{
     position: relative;
@@ -82,4 +83,32 @@
     width: 100%;
     height: 100%;
     background:linear-gradient(rgba(248, 248, 248, 0),rgba(22, 68, 105, 0.288),rgba(21, 47, 97, 0.699),rgb(7, 29, 63));
+}
+.dots {
+    text-align: right;
+    width: 100rpx;
+    height: 20rpx;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: -65rpx;
+    transform: translateX(-50%);
+    bottom: 30rpx;
+  
+}
+
+.dot {
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 50%;
+    margin-right: 10rpx;
+    background-color: rgba(255, 255, 255, 0.301);
+}  
+.active {
+    width: 10rpx;
+    height: 10rpx;
+    background-color: white;
+}  
+.jijoss{
+    position: relative;
 }

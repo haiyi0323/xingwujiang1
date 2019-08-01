@@ -72,8 +72,9 @@
     
 }
 .whereicon{
-    width: 18rpx;
-    margin-right: 10rpx;
+    width: calc(23rpx / 1.5);
+    height: calc(30rpx / 1.5);
+    margin-right: 20rpx;
 
 }
 .font_color_a{
@@ -82,9 +83,10 @@
   .font_color_b{
     color: #ebbd70;
   }
+ 
   .jiooiwf{
-      width: 20% !important;
-      margin-right: 10rpx;
+    width: calc(135rpx / 1.5) !important;
+      margin-right: 10rpx !important;
   }
   .dsib{
       display: inline-block;
@@ -114,6 +116,7 @@
   }
   .kuai_img{
       width: 100%;
+      vertical-align: top;
   }
   .fu_xkuai{
       width: 90%;
@@ -121,13 +124,13 @@
       left: 5%;
       bottom: -60rpx;
       background: #1d2e4a;
-      border-radius: 30rpx;
+      border-radius: calc(24rpx / 1.5);
       padding: 30rpx 40rpx;
       box-sizing: border-box;
   }
   .fu_kuai{
       width: 100%;
-      border-radius: 30rpx;
+      border-radius: 20rpx;
       overflow: hidden;
       position: relative;
 
@@ -149,7 +152,7 @@
   }
   .scoll{
         padding: 20rpx 0;
-      padding-left: 5%;
+
       height: 430rpx;
       overflow: auto;
       white-space: nowrap;
@@ -250,10 +253,11 @@
 
 }
 .contentlist{
-    width: 48%;
+    width: calc(482rpx / 1.5);
+    height: calc(580rpx / 1.5);
     position: relative;
     margin: 20rpx 0rpx;
-    border-radius: 30rpx;
+    border-radius:calc(24rpx / 1.5) ;
     overflow: hidden;
 }
 .listimg{
@@ -266,7 +270,7 @@
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),#293b5e,#1f3053);
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(41, 59, 94, 0.664), #293b5e,#1f3053);
 }
 .mask2{
     width: 100%;
@@ -275,7 +279,7 @@
     top: 0px;
     left: 0px;
     z-index: 100;
-    background:linear-gradient(rgba(0,0,0,0),#0a1b419d,#0d1c41b7,#0c1e3f,#05112c);
+    background:linear-gradient(rgba(0,0,0,0),rgba(10,27,65,0.5),rgba(11,30,77,0.75),rgba(6,21,49,1),rgba(5,17,44,1));
 }
 
 .jfdh{
@@ -318,3 +322,27 @@
     width: 100%;
     
     }
+
+    .wx-switch-input{
+        width:80rpx !important;
+        height:30rpx !important;
+        background: #6a7aa2 !important;
+        border: #6a7aa2 !important; /* 2018-07-18 重置开关边框颜色 */
+        }
+        /*白色样式（false的样式）*/
+        .wx-switch-input::before{
+        width:80rpx !important;
+        height: 30rpx !important;
+        background: #484c58 !important;
+   
+        }
+
+        /*绿色样式（true的样式）*/
+        .wx-switch-input::after{
+
+        width: 40rpx !important;
+        height: 30rpx !important;
+        background: #8998c0 !important;
+      
+        }
+    

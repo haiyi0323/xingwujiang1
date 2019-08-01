@@ -1,41 +1,72 @@
-<!--fenbao/message/message.wxml-->
-<view class="all" hover-class="none" hover-stop-propagation="false">
-    <view class="topbar" hover-class="none" hover-stop-propagation="false">
-        <view class="tap1 dsib" style="color:{{color1}}" hover-class="" hover-stop-propagation="false" bind:tap="qiehuan">
-            消息
-            <view wx:if="{{hkkk}}" class="huakuai" hover-class="none" hover-stop-propagation="false"></view>
-        </view>
-
-         <view class="tap2 dsib" style="color:{{color2}}" hover-class="none" hover-stop-propagation="false" bind:tap="qiehuan2">
-            动态
-            <view wx:if="{{!hkkk}}" class="huakuai" hover-class="none" hover-stop-propagation="false"></view>
-        </view>
-    </view>
-
-
-    <!-- 消息内容 -->
-            <view class="message" hover-class="none" hover-stop-propagation="false">
-                <image class="message_back" src="{{back_mes}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
-                  <!-- 消息渲染 -->
-
-                  <view class="mes_list" hover-class="none" hover-stop-propagation="false">
-                      <view class="mes_item" hover-class="none" hover-stop-propagation="false" wx:for="{{mes_list}}" wx:key="index">
-                          <view class="mes_head dsib" hover-class="none" hover-stop-propagation="false">
-                                <image class="head_img" src="{{item.touxiang}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
-                          </view>
-                          <view class="mes_content dsib" hover-class="none" hover-stop-propagation="false">
-                              <view class="mes_time" hover-class="none" hover-stop-propagation="false">
-                                  {{item.time}}
-                              </view>
-                               <view class="mes_info" hover-class="none" hover-stop-propagation="false">
-                                  {{item.content}}
-                              </view>
-                                
-                          </view>
-                      </view>
+<view class="all">
+      <view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+            <view class="jifjwfe">
+            <block wx:for-items="{{newsTab}}" >
+                  <i-badge dot i-class="jojijw">
+                        <view class="demo-badge"></view>
+                  </i-badge>
+                  <view data-current="{{index}}" class="tab-item {{currentTab == index ?'active':''}}" bindtap="swichNav">
+                        {{item}}
                   </view>
+            </block>
             </view>
+           
+      </view>
 
 
+      
+      <swiper class="tab-content" current="{{currentTab}}" duration="500" bindchange="reLaunch" style="height:{{winHeight}}rpx">
+            <swiper-item>
+                  <image class="message_back" src="{{back_mes}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+                  <scroll-view scroll-y="true" class="scoll-h">
+                        <block>
+                        
+                                    <view class="mes_item" hover-class="none" hover-stop-propagation="false" wx:for="{{[0,1]}}" wx:key="index">
+                                          <view class="mes_head dsib" hover-class="none" hover-stop-propagation="false">
+                                                <image class="head_img" src="{{mes_list.touxiang}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+                                          </view>
+                                          <view class="mes_content dsib" hover-class="none" hover-stop-propagation="false">
+                                                <view class="mes_time fs42" hover-class="none" hover-stop-propagation="false">
+                                                     公告 {{mes_list.time}}
+                                                </view>
+                                                <view class="mes_info fs42" hover-class="none" hover-stop-propagation="false">
+                                                      {{mes_list.content}}
+                                                </view>
+                                          </view>
+                                    </view>
+                     
+                          
+                        </block>
+                  </scroll-view>
+            </swiper-item>
 
+            <swiper-item class="" item-id="">
+                   <image class="message_back" src="{{back_mes}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+                  <scroll-view  scroll-y="true" class="scoll-h">
+                        
+<view class="mes_item" hover-class="none" hover-stop-propagation="false" wx:for="{{[0,1]}}" wx:key="index">
+                                    <view class="doinginfo dsib vert">
+                                          <view class="doing_tit fs54" hover-class="none" hover-stop-propagation="false">
+                                                {{doing.tit}}
+                                          </view>
+                                          <view class="doingtime">
+                                                <view class=" sdfsdf dsib verm">
+                                                      <image class="yonghu" src="{{doing.yhimg}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload=""></image>
+                                                </view>
+                                                <view class="doingname dsib verm">
+                                                      {{doing.name}}
+                                                </view>
+                                                <view class="times dsib verm">{{doing.time}}</view>
+                                          </view>
+                          
+                                    
+                              </view>
+                                          <view class="doing_imgs dsib vert">
+                                          <image class="doing_img" src="{{doing.ggimg}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+                                    </view>
+                   </view>
+                        
+                  </scroll-view>
+            </swiper-item>
+      </swiper>
 </view>

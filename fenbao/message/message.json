@@ -1,5 +1,7 @@
 {
   "usingComponents": {
 
+
+    "i-badge": "../../dist/badge/index"
   }
 }

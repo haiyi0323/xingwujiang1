@@ -1,6 +1,12 @@
 <!--pages/navbar/my/my.wxml-->
-<loading wx:if="{{yeman}}"></loading>
-        <image class="my_back " src="{{my_back}}" mode="widthFix" > </image>
+<!-- <loading wx:if="{{yeman}}"></loading> -->
+
+<!-- <view class="container" wx:if="{{yeman}}">
+    <i-spin fix></i-spin>
+</view> -->
+
+
+        <image class="my_back " src="{{my_back}}" mode="widthFix" style="height:auto" > </image>
 <view class="my_all_content" >
         <view class="my_card">
       
@@ -8,13 +14,13 @@
 
 
               <!-- 名字 -->
-                <view class="my_nickname dsib" >
+                <view class="my_nickname dsib fs72" >
                     DevinSteve
                 </view>
             <!-- 会员 -->
                 <view class="my_vip font_color_a" bind:tap="supfw">
-                    333汽车人会员    <text class="font_color_b">  升级服务</text> 
-                    <image class="icon_sj" src="{{xsjiantou}}" mode="widthFix" ></image>
+                    333汽车人会员  <text class="jiiiwew">  |  </text>   <text class="font_color_b">   升级服务</text> 
+                    <image class="icon_sj" src="{{xsjiantou}}" mode="widthFix" style="height:auto" ></image>
                     <view class="my_jdt">
 
 
@@ -24,18 +30,18 @@
 
                 <!-- 头像 -->
                 <view class="my_head">
-                    <image class="my_head_img" src="{{headimage}}" mode="widthFix" ></image>
+                    <image class="my_head_img" src="{{headimage}}" mode="widthFix" style="height:auto" ></image>
 
                 </view>
 
                 <!-- 积分 -->
                 <view class="my_jifen">
-                    <text class="font_color_b my_numjifen" bind:tap="wdjifen">
+                    <text class="font_color_b fs72" bind:tap="wdjifen">
                             153
                     </text>
                     <view class="my_jifenr font_color_a" bind:tap="wdjifen">
-                        <view class="verm dsib">我的积分 </view>  
-                        <image class="icon_jiantou verm" src="{{jiantou}}" mode="widthFix"></image>
+                        <view class="verm dsib fs36">我的积分 </view>  
+                        <image class="icon_jiantou verm" src="{{jiantou}}" mode="widthFix" style="height:auto"></image>
                     </view>
                 </view>
                 <!-- 二维码 -->
@@ -43,34 +49,63 @@
        
     </view>
                 <view class="my_erwei" bind:tap="joidjif">
-                    <image class="icon_erwei" src="{{erweima}}" mode="widthFix" ></image>
+                    <image class="icon_erwei" src="{{erweima}}" mode="widthFix" style="height:auto" ></image>
 
                 </view>
 
                   <!-- 用户消息 -->
-             <view class="message_s" bind:tap="mesageto">
+             <view class="message_s flex3 fs42" bind:tap="mesageto">
                         <view class="text_info ">
 
-                            <image class="icon_laba" src="{{laba}}" mode="widthFix"></image>
+                            <image class="icon_laba" src="{{laba}}" mode="widthFix" style="height:auto"></image>
                                 体验成员可使用体验版微信小程序
 
                         </view>
-                        
-                        <image class="icon_right" src="{{jiantou}}" mode="widthFix"></image>
+                            <view >
+                            <i-badge dot count= "{{hb_count}}">
+                                     <view class="demo-badge"></view>
+                        </i-badge>
+                          <image class="icon_right" src="{{jiantou}}" mode="widthFix" style="height:auto"></image>
+                            </view>
+                      
                 </view>
 
                 <view class="setting" >
-                        <!-- 设置列表 -->
-                        <view class="setting_list flex3"  wx:for="{{set_list}}" wx:key="index" hover-stop-propagation="{{true}}" hover-class="huise" data-index="{{index}}" bind:tap="luyou">
+                        <!-- 设置列表  hover-class="huise" -->
+                        <view class="setting_list flex3"  wx:for="{{set_list}}" wx:key="index" hover-stop-propagation="{{true}}" data-index="{{index}}" bind:tap="luyou">
                               
-                                <view class="list_title dsib"> <view class="dsib"><image class="list_icon" src="{{item.img}}" mode="widthFix" ></image></view> <view class="dsib">{{item.left}}</view></view>
-                                <view class="list_cont dsib font_color_a" ><view class="dsib">{{item.right}}</view> <view class="dsib"><image class="lict_jiantou" src="{{item.icon}}" mode="widthFix"></image></view> </view>
+                                <view class="list_title  fkessf"> <view class="dsib"><image class="list_icon" src="{{item.img}}" mode="widthFix" style="height:auto" ></image></view> <view class="dsib">{{item.left}}</view></view>
+                         
+                                     <view class="list_cont dsib font_color_a {{item.right_text ? 'fjdsi' :''}}" >
+
+                                         <view class="dsib  fsdfsdf {{item.color == 5 ? 'yello' :''}} {{item.right_text ? 'dfdsf' :''}}">
+                                             {{item.right}}
+                                                 <view wx:if="{{item.right_text}}" class="rightbt">
+                                                                {{item.right_text}}
+                                                        </view>
+                                         </view> 
+                                                    
+                              
+                              
+                              <view class="dsib">
+                                     <i-badge dot ="{{item.hb_count}}">
+                                     <view class="demo-badge"></view>
+                                 </i-badge>
+                                <image class="lict_jiantou" src="{{item.icon}}" mode="widthFix" style="height:auto"></image>
+                                
+                                </view> 
+                                
+                                </view>
                               
                         </view>
                         
                 </view>
 
+
 </view>
+<tab wx:if="{{game}}" current="mine" game></tab>
+<tab wx:else current="mine"></tab>
+
        
 <!-- pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp -->
  
@@ -80,7 +115,7 @@
     <view class="card">
 
             <view class="ssooo">
-                   <image class="card_photo" src="{{photo}}" mode="widthFix" ></image>
+                   <image class="card_photo" src="{{photo}}" mode="widthFix" style="height:auto" ></image>
             </view>
 
    
@@ -90,14 +125,14 @@
 
                 <view class="card_name" >
                     DevinSteve
-                    <image class="sex" src="{{sex}}" mode="widthFix" ></image>
+                    <image class="sex" src="{{sex}}" mode="widthFix" style="height:auto" ></image>
                 </view>
 
                 <view class="card_about">
                     我们一起撸起袖子~ 加油干！
                 </view>
                 <view class="boximg">
-                      <image class="card_ma" src="{{card_ma}}"  mode="widthFix"/>
+                      <image class="card_ma" src="{{card_ma}}"  mode="widthFix" style="height:auto"/>
                 </view>
               
                   
@@ -106,7 +141,7 @@
     </view>
 
     <!-- 其他 -->
-    <i-button i-class="buttonstyle4" class="dsib veram fr dsfdsf" shape="circle">创建俱乐部</i-button>
+    <i-button i-class="buttonstyle4" class="dsib veram fr dsfdsf" shape="circle">保存到手机</i-button>
 
 
 </view>

@@ -1,27 +1,59 @@
 {
   "pages": [
-  
+      "pages/index/index",
+                "fenbao/shopxq/shopxq",
     "pages/qidong/qidong",
-    "fenbao/indent/indent",
-    "pages/navbar/my/my",
-    "fenbao/shopxq/shopxq",
-    "fenbao/cupjoin/cupjoin",
-    "fenbao/morecup/morecup",
-    "fenbao/share_card/share_card",
-    "fenbao/shop/shop",
-    "pages/index/index",
-    "pages/navbar/cup/cup",
-    "pages/navbar/renwu/renwu",
-    "fenbao/rankinglist/rankinglist",
-    "fenbao/business card/business card",
-    "fenbao/play-by-play/play-by-play",
-    "fenbao/article/article",
-    "fenbao/vip/vip",
-    "fenbao/credit/credit",
-    "fenbao/message/message",
     "fenbao/dynamic/dynamic",
-      "compontens/loading/loading"
    
+    "pages/navbar/my/my",
+      "fenbao/play-by-play/play-by-play",
+
+              "pages/navbar/renwu/renwu",
+            "fenbao/shop/shop",
+     
+        "fenbao/cupjoin/cupjoin",
+        
+            "fenbao/vip/vip",
+        "fenbao/credit/credit",
+
+  
+          
+                     
+          "fenbao/indent/indent",
+        "fenbao/morecup/morecup",
+
+
+  
+     
+
+    "pages/navbar/cup/cup",
+
+
+
+       
+
+
+        "fenbao/share_card/share_card",
+ 
+
+  
+
+    
+
+
+      "fenbao/message/message",
+        
+
+
+
+    "fenbao/rankinglist/rankinglist",
+   
+    "fenbao/article/article",
+
+    "fenbao/business card/business card"
+
+ 
+ 
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,38 +62,6 @@
     "navigationBarTextStyle": "white",
     "backgroundColor": "#11142a"
   },
-  "tabBar": {
-    "color": "#4e5675",
-    "selectedColor": "#be956a",
-    "backgroundColor": "#041736",
-    "position": "bottom",
-    "borderStyle": "black",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "创业",
-        "iconPath": "./img/cy.png",
-        "selectedIconPath": "./img/cy.png"
-      },
-      {
-        "pagePath": "pages/navbar/cup/cup",
-        "text": "俱乐部",
-        "iconPath": "./img/cup (1).png",
-        "selectedIconPath": "./img/cup (1).png"
-      },
-      {
-        "pagePath": "pages/navbar/renwu/renwu",
-        "text": "任务",
-        "iconPath": "./img/rw.png",
-        "selectedIconPath": "./img/rw.png"
-      },
-      {
-        "pagePath": "pages/navbar/my/my",
-        "text": "我的",
-        "iconPath": "./img/my.png",
-        "selectedIconPath": "./img/my.png"
-      }
-    ]
-  },
+ 
   "sitemapLocation": "sitemap.json"
 }

@@ -7,6 +7,11 @@
     font-family: "pingfang"
 
 }
+.youjian{
+  left: 20rpx;
+
+
+}
 .back{
     width: 100%;
     position: fixed;
@@ -28,6 +33,10 @@
     padding: 5%;
     box-sizing: border-box;
 }
+.fdsfdsf{
+    vertical-align: middle;
+    line-height: calc(120rpx / 1.5);
+}
 .dsib{
     display: inline-block;
 }
@@ -37,11 +46,13 @@
 }
 .hearddfj{
     width: 20%;
+    padding-bottom: 20rpx;
+    margin-right: 20rpx;
     
 }
 .hewaeefi{
-    width: 100rpx;
-    height: 100rpx;
+    width: calc(180rpx / 1.5);
+    height: calc(180rpx / 1.5);
     border-radius: 50%;
     overflow: hidden;
 }
@@ -61,14 +72,28 @@
     font-size: 26rpx;
 
 }
+.jijowep .i-progress-inner{
+    height: calc(21rpx / 1.5) !important;
+}
 .jiooiwf{
-    width: 300rpx !important;
+    width: calc(300rpx / 1.5) !important;
+    height: calc(21rpx / 1.5) !important;
     margin: 10rpx 0 !important;
 }
 .dianzano{
-    width: 10%;
-    height: 80rpx;
+    width: calc(56rpx / 1.5);
+    height: calc(66rpx /1.5);
     position: relative;
+    top: -10rpx;
+}
+.fs48{
+    font-size: calc(48rpx / 1.5)
+}
+.fs42{
+    font-size: calc(42rpx / 1.5)
+}
+.fs36{
+    font-size: calc(36rpx / 1.5)
 }
 .iconzan{
     width: 100%;
@@ -79,12 +104,12 @@
     left: 0px;
 }
 .phlist_item{
-    margin: 20rpx 0;
+
     padding: 20rpx 0;
     padding-bottom: 1px solid 
 }
 .conte{
-    padding-bottom: 20rpx;
+    padding-bottom: 35rpx;
 }
 .verb{
     vertical-align: bottom;

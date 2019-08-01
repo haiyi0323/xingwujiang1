@@ -77,7 +77,11 @@ Page({
     })
   },
   allph(){
-    ulik.navto('/fenbao/rankinglist/rankinglist')
+    let ffff= 1
+    wx.navigateTo({
+      url: `/fenbao/rankinglist/rankinglist?bz=${ffff}`,
+  })
+
   },
   // 跳转到用户名片
   yonghu(){

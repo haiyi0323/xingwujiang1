@@ -12,9 +12,10 @@ Component({
             value: 99
         },
         dot: {
-            type: Boolean,
-            value: false
+            type: Number,
+            value: 0
         },
+       
     },
     data: {
         finalCount: 0

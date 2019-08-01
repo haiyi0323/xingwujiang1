@@ -1,4 +1,6 @@
-<loading wx:if="{{yeman}}"></loading>
+<import src="../../img-loader/img-loader.wxml"/>
+<template is="img-loader" data="{{ imgLoadList }}"></template>
+<!-- <loading wx:if="{{yeman}}"></loading> -->
 <scroll-view class="all" scroll-y hover-class="none" hover-stop-propagation="false" bindscrolltolower="daodibu">
         <!-- 矩形2 -->
         
@@ -6,22 +8,25 @@
         <view class="topbar" hover-class="none" hover-stop-propagation="false">
                 <i-avatar i-class="jiidd" shape="square" src="{{tuceng7}}" size="small"></i-avatar>
                 <image class="jiiww" mode="{{srctype}}" src="{{src1}}"></image>
+                <view class="jianjuwenti">
                 <view class="fffsd" hover-class="whitef" bind:tap="baoming">我要报名</view>
-                <image class="xiaojian1" mode="widthFix" src="{{jiantou}}"></image>
+                <image class="xiaojian1" mode="widthFix" style="height:auto" src="{{jiantou}}"></image>
+                </view>
+               
         </view>
         <!-- 视频入口 -->
         <view class="fdsfsd">
                 <view class="yuanji">
-                        <!-- <image class="ffds" src="{{video_fen}}" mode="widthFix"></image> -->
+                        <!-- <image class="ffds" src="{{video_fen}}" mode="widthFix" style="height:auto"></image> -->
                         <video class="vidersrc" id="video1" style="height:{{videoheight}}px" src="{{videosrc}}" controls show-center-play-btn="{{false}}"
                         >
                         </video>
 
                         <view wx:if="{{isplay}}" class="fdong yuanji2" hover-class="" hover-stop-propagation="false">
-                                  <image class="fdsfds" src="{{video_fen}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
-                        <image  class="start_v {{donghua == true ? 'donghua' : ''}}" src="{{bofang}}" mode="widthFix" bind:tap="videoplay"></image>
-                        <image class="leftflw" src="{{leftf}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
-                        <image class="rigthflw" src="{{rigthf}}" mode="widthFix" lazy-load="false" binderror="" bindload=""> </image>
+                                  <image class="fdsfds" src="{{video_fen}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+                        <image  class="start_v {{donghua == true ? 'donghua' : ''}}" src="{{bofang}}" mode="widthFix" style="height:auto" bind:tap="videoplay"></image>
+                        <image class="leftflw" src="{{leftf}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload=""></image>
+                        <image class="rigthflw" src="{{rigthf}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload=""> </image>
                           </view>
                       
                      
@@ -33,10 +38,11 @@
                                 <text class="yello">{{num}}</text>
                                 人报名
                         </view>
+                        
                         <view class="vsomep">
                                 <image class="smalllog" wx:for="{{somep}}" wx:key="index" src="{{item}}"></image>
                         </view>
-                        <image class="youjian" src="{{rightb}}" mode="widthFix"></image>
+                        <image class="youjian" src="{{rightb}}" mode="widthFix" style="height:auto"></image>
                 </view>
         </view>
         <!-- 俱乐部 -->
@@ -49,44 +55,49 @@
                 <view class="jjiweo" wx:for="{{cup}}" wx:key="index" bind:tap="julebu">
                         <!-- 图片框 -->
                         <view class="ffssdfe">
-                                <image class="jjoowed" src="{{item.img}}" mode="widthFix"></image>
+                                <image class="jjoowed" src="{{item.img}}" mode="widthFix" style="height:auto"></image>
                                 <view class="people">
-                                        <image class="dfsdf" src="{{xiaoren}}" mode="widthFix"></image>
+                                        <image class="dfsdf" src="{{xiaoren}}" mode="widthFix" style="height:auto"></image>
                                         <view class="fdsf">{{item.pel}}</view>
                                 </view>
                         </view>
                         <!-- 标题等 -->
                         <view class="jlbll">{{item.title}}</view>
-                        <i-button i-class="jiojw" class="joijiw" shape="circle">进入</i-button>
+                        <i-button i-class="jiojw" class="joijiw" shape="circle">加入</i-button>
                 </view>
         </view>
         <!-- 轮播图 -->
         <view class="lunbo">
-                <swiper indicator-dots="{{indicatorDots}}" class="jkoiwe" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular indicator-color="{{contorbackcolor}}" indicator-active-color="{{advicecolor}}">
+                <swiper current="{{currentSwiper}}" class="jkoiwe" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular indicator-color="{{contorbackcolor}}" indicator-active-color="{{advicecolor}}" bind:change="swiperChange">
                         <block wx:for="{{imgUrls}}" class="fdsff" >
-                                <swiper-item bind:tap="news">
-                                        <image src="{{item}}" class="slide-image" style="width:100%" mode="widthFix" />
+                                <swiper-item bind:tap="news" style="border-radius:calc(28rpx / 1.5)">
+                                        <image src="{{item}}" class="slide-image" style="width:110%" mode="widthFix" style="height:auto" />
                                 </swiper-item>
                         </block>
                 </swiper>
+                 <view class="dots">
+                     <block wx:for="{{imgUrls}}" wx:key>
+                       <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>
+                     </block>
+                    </view>
         </view>
         <!-- 活动广告 -->
         <view class="fotter">
                 <!-- 背景图 -->
-                <image class="back_f" src="{{fottre_b}}" mode="widthFix" style="width:100%" />
+                <image class="back_f" src="{{fottre_b}}" mode="widthFix" style="height:auto" style="width:100%" />
                 <!-- 第一展示广告 -->
                 <view class="firstv">
                         <!-- 图片view -->
                         <view class="rongqi tishne" bind:tap="yuyue">
-                                <image class="fsdfdsssv" src="{{firstinfo.img}}" mode="widthFix" style="width:100%"></image>
+                                <image class="fsdfdsssv" src="{{firstinfo.img}}" mode="widthFix" style="height:auto" style="width:100%"></image>
                         </view>
                         <!-- 内容view -->
-                        <view class="neirong tishne" bind:tap="yuyue">
+                        <view class="neirong tishne" bind:tap="yuyue" hover-stop-propagation="{{true}}">
                                 <!-- 第一行 -->
                                 <view class="onecol">
                                         {{firstinfo.zuobiao}}
                                         <view class="rightkm fl">
-                                                <image class="dingweicon verm" src="{{dingweiicon}}" mode="widthFix" style="width:20rpx"></image>
+                                                <image class="dingweicon verm" src="{{dingweiicon}}" mode="widthFix" style="height:auto" style="width:calc(23rpx / 1.5);height:calc(30rpx / 1.5)"></image>
                                                 <view class="juli dsib verm">
                                                         {{firstinfo.juli}}
                                                 </view>
@@ -94,20 +105,24 @@
                                 </view>
                                 <!-- 第二行 -->
                                 <view class="twocol">
-                                        <view class="shengyu dsib verm" style="color:#6a7aa2;font-size:30rpx">
+                                        <view class="shengyu  verm" style="color:#6a7aa2;font-size:calc(42rpx / 1.5)">
+                                               <view class="dsib">
                                                 剩余固定工作位
                                                 <view style="color:#e3b66b" class="dsib">
                                                         {{firstinfo.shengyu}}
                                                 </view>
                                                 个
-                                                <i-progress i-class="jiooiwf" percent="65" status="wrong" hide-info="false"></i-progress>
+                                               </view>
+                                               
+                                              
                                         </view>
-                                        <i-button i-class="jiojw2 dsib fl verm" class="joijiw " shape="circle" bind:tap="yuyue">
+                                          <i-progress i-class="jiooiwf" percent="65" stroke-width="8" status="wrong" hide-info="false"></i-progress>
+                                        <i-button i-class="jiojw2 dsib fl verm" class="joijiw " shape="circle"  >
                                                 预定
                                         </i-button>
                                 </view>
                                 <!-- 第三行 -->
-                                <view class="three" style="color:#6a7aa2 ;font-size:30rpx">
+                                <view class="three" style="color:#6a7aa2 ;font-size:calc(42rpx / 1.5)">
                                         {{firstinfo.xxdz}}
                                 </view>
                         </view>
@@ -127,7 +142,7 @@
                 <!-- 滑动轮播 -->
                 <view class="fsdfj tishne">
                         <view class="dfsd dsib" wx:for="{{laiba}}" bind:tap="news">
-                                <image class="dfsdf2" src="{{item.img}}" mode="widthFix"></image>
+                                <image class="dfsdf2" src="{{item.img}}" mode="widthFix" style="height:auto"></image>
                                 <view class="joiijdsd tishne">{{item.tttt}}</view>
                         </view>
                 </view>
@@ -135,7 +150,7 @@
                 <view class="othewsl" wx:for="{{otherinfo}}">
                         <!-- 图片view -->
                         <view class="rongqi tishne" bind:tap="yuyue">
-                                <image class="fsdfdsssv" src="{{item.img}}" mode="widthFix" style="width:100%"></image>
+                                <image class="fsdfdsssv" src="{{item.img}}" mode="widthFix" style="height:auto" style="width:100%"></image>
                         </view>
                         <!-- 内容view -->
                         <view class="neirong tishne">
@@ -143,30 +158,30 @@
                                 <view class="onecol">
                                         {{item.zuobiao}}
                                         <view class="rightkm fl">
-                                                <image class="dingweicon verm" src="{{dingweiicon}}" mode="widthFix" style="width:20rpx"></image>
+                                                <image class="dingweicon verm" src="{{dingweiicon}}" mode="widthFix" style="height:auto" style="width:calc(23rpx / 1.5);height:calc(30rpx / 1.5)"></image>
                                                 <view class="juli dsib verm">{{item.juli}}</view>
                                         </view>
                                 </view>
                                 <!-- 第二行 -->
                                 <view class="twocol">
-                                        <view class="shengyu dsib verm" style="color:#6a7aa2;font-size:30rpx">
+                                        <view class="shengyu dsib verm" style="color:#6a7aa2;font-size:calc(42rpx / 1.5)">
                                                 剩余固定工作位
                                                 <view style="color:#e3b66b" class="dsib">
                                                         {{item.shengyu}}
                                                 </view>
                                                 个
-                                                <i-progress i-class="jiooiwf" percent="65" status="wrong" hide-info="false"></i-progress>
+                                                <i-progress i-class="jiooiwf" percent="65" stroke-width="8" status="wrong" hide-info="false"></i-progress>
                                         </view>
-                                        <i-button i-class="jiojw2 dsib fl verm" class="joijiw " shape="circle" bind:tap="yuyue">
+                                        <i-button i-class="jiojw3 dsib fl verm" class="joijiw " shape="circle" bind:tap="yuyue">
                                                 预定
                                         </i-button>
                                 </view>
                                 <!-- 第三行 -->
-                                <view class="three" style="color:#6a7aa2 ;font-size:30rpx">
+                                <view class="three" style="color:#6a7aa2 ;font-size:calc(42rpx / 1.5)">
                                         {{item.xxdz}}
                                 </view>
                         </view>
-                        <view class="huodng tishne" bind:tap="shangpin">
+                        <view class="huodng2 tishne" bind:tap="shangpin">
                                 <view class="hd_a">
                                         <view class="hdtit dsib">热门</view>
                                         <text class="fdsffd dsib">|</text>
@@ -174,7 +189,11 @@
                                 </view>
                         </view>
                 </view>
-                <i-load-more tip="更多场地努力建设中" loading="{{ false }}" />
+
+                <view class="longing">
+                        更多场地努力建设中...
+                </view>
+                <!-- <i-load-more tip="" loading="{{ false }}" /> -->
  <!--
 <i-modal title="纵向排列的按钮" visible="{{ssdfff}}" actions="{{ actions4 }}" action-mode="{{ vertical }}" bind:click="handleClick4">
             
@@ -192,3 +211,43 @@
 </i-modal> -->
         </view>
 </scroll-view>
+
+
+<tab wx:if="{{game}}" current="homepage" game></tab>
+<tab wx:else current="homepage"></tab>
+
+
+
+ <!-- "tabBar": {
+    "color": "#4e5675",
+    "selectedColor": "#be956a",
+    "backgroundColor": "#041736",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "创业",
+        "iconPath": "./img/cy.png",
+        "selectedIconPath": "./img/cy.png"
+      },
+      {
+        "pagePath": "pages/navbar/cup/cup",
+        "text": "俱乐部",
+        "iconPath": "./img/cup (1).png",
+        "selectedIconPath": "./img/cup (1).png"
+      },
+      {
+        "pagePath": "pages/navbar/renwu/renwu",
+        "text": "任务",
+        "iconPath": "./img/rw.png",
+        "selectedIconPath": "./img/rw.png"
+      },
+      {
+        "pagePath": "pages/navbar/my/my",
+        "text": "我的",
+        "iconPath": "./img/my.png",
+        "selectedIconPath": "./img/my.png"
+      }
+    ]
+  }, -->

@@ -43,12 +43,12 @@
 }
 .top_one_left{
     color: white;
-    font-size: 40rpx;
+
     font-weight: bold;
 }
 .top_one_right ,.guoqi{
     color: #4e5675;
-    font-size: 26rpx;
+    font-size: calc(42rpx / 1.5);
 }
 .verm{
     vertical-align: middle;
@@ -61,7 +61,7 @@
 }
 .fontcolor1{
     color: #ebbd70;
-    font-size: 60rpx;
+    font-size: calc(84rpx / 1.5)
 }
 .top_two{
     display: flex;
@@ -69,16 +69,23 @@
     align-items: center;
 }
 .top_two{
-    margin-top: 60rpx;
+    margin-top: 35rpx;
 }
 .top_two_right{
-    background: #ebbd70;
-    padding: 20rpx;
+    box-sizing: border-box;
+    padding-left: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(300rpx / 1.5);
+    height: calc(90rpx / 1.5);
+    background: linear-gradient(45deg,#ecbd70,#bb9355);
     color: #041736;
     border-top-left-radius: 60rpx;
     border-bottom-left-radius: 60rpx;
-    font-size: 30rpx;
+    font-size: calc(42rpx / 1.5);
     margin-right: -38rpx;
+
 }
 .content_info{
     color: white;
@@ -89,17 +96,20 @@
 
 }
 .contentlist{
-    width: 48%;
+    width: calc(482rpx / 1.5);
+    height: calc(580rpx / 1.5);
     position: relative;
-    margin: 20rpx 0rpx;
+    margin: 15rpx 0rpx;
     border-radius: 30rpx;
     overflow: hidden;
+    box-sizing: border-box;
 }
 .listimg{
     width: 100%;
 }
 .content_info{
     padding: 40rpx 0rpx;
+    padding-top: 100rpx
 }
 .mask{
     width: 100%;
@@ -107,15 +117,23 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),#293b5e,#1f3053);
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(41, 59, 94, 0.664), #293b5e,#1f3053);
 }
 .jfdh{
     font-size: 30rpx;
     position: absolute;
-    bottom: 25px ;
+    bottom: 20px ;
     left: 0px;
     padding: 0px 20rpx;
 }
 .price{
+    font-size: calc(36rpx / 1.5);
     color: #ebbd70
+}
+.white{
+    color: white
+}
+.imgejsie{
+    width: calc(20rpx / 1.5);
+    margin-right: 30rpx;
 }

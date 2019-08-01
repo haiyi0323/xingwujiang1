@@ -1,5 +1,6 @@
 // fenbao/vip/vip.js
 import config from '../../config'
+import ulik from '../../utils/util'
 Page({
 
   /**
@@ -11,6 +12,7 @@ Page({
     num:'汽车人大礼包',
     qcrlb:[
       {
+        isok:true,
         logo: config.NETWORK_RESOURCE + 'wdrwa1.png',
         where:'汽车人大礼包',
         maney:"333元",
@@ -31,6 +33,7 @@ Page({
         ]
       },
       {
+        isok:false,
         logo: config.NETWORK_RESOURCE + 'wdrwa1.png',
         where:'创业大礼包',
         maney:"3333元",
@@ -62,6 +65,7 @@ Page({
         ]
       },
       {
+        isok:false,
         logo: config.NETWORK_RESOURCE + 'wdrwa1.png',
         where:'超级大礼包',
         maney:"3333元",
@@ -144,5 +148,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  jioncup(){
+    ulik.navto("/fenbao/shopxq/shopxq")
+  }
+,
+  renwudatign(){
+    ulik.navto( "/fenbao/credit/credit")
   }
 })

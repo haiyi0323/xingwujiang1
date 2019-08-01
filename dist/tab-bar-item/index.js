@@ -48,6 +48,9 @@ Component({
     },
 
     methods: {
+
+
+       
         changeCurrent (current) {
             this.setData({ current });
         },

@@ -3,8 +3,9 @@
 
     "i-button": "../../../dist/button/index",
     "i-avatar": "../../../dist/avatar/index",
-    "loading":"../../../compontens/loading/loading"
+    "loading":"../../../compontens/loading/loading",
+    "tabbar":"../../../compontens/tabbar/tabbar"
     
-  },
-  "enablePullDownRefresh":true
+  }
+
 }

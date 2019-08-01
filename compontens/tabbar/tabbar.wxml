@@ -1,0 +1,46 @@
+<!--compontens/tabbar/tabbar.wxml-->
+
+
+
+
+
+
+<view wx:if="{{game}}" class="jiiwe {{ispx ? 'paddingsss' : ''}}">
+   <view >
+<!-- <image class="" src="" mode="aspectFit|aspectFill|" lazy-load="false" binderror="" bindload="" /> -->
+  
+<image class="dfasd" src="../../img/lalala.png" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+        <view class="gamestart dsib">
+            <view style="font-size:calc(30rpx / 1.5)">       距离比赛开始还有</view>
+            <view style="font-size:calc(42rpx / 1.5)">       12:06:58</view>
+     
+        </view>
+            <view class="itembar dsib">
+
+                    <view class="jdifas">
+                <view class="item dsib" bind:tap="tap1">
+                    <image class="kdkks" src="../../img/cy.png" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+                      <view class="text">创业</view>
+                </view>
+                <view class="item dsib" bind:tap="tap2">
+                    <image class="kdkks" src="../../img/rw.png" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+                         <view class="text">任务</view>
+                </view>
+                <view class="item dsib" bind:tap="tap3">
+                    <image class="kdkks" src="../../img/my.png" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
+                         <view class="text">我的</view>
+                </view>
+                    </view>
+             
+            </view>
+
+   </view>
+
+</view>
+
+<i-tab-bar current="{{ current }}" i-class="dfsfsfs {{ispx ? 'paddingsss' : ''}}"  bindchange="handleChange" wx:else>
+    <i-tab-bar-item key="homepage" img="../../img/cy.png" current-img="../../img/cy.png" title="创业"></i-tab-bar-item>
+    <i-tab-bar-item key="group" img="../../img/cup.png" current-img="../../img/cup.png" title="俱乐部"></i-tab-bar-item>
+    <i-tab-bar-item key="remind" img="../../img/rw.png" current-img="../../img/rw.png" title="任务"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" img="../../img/my.png" current-img="../../img/my.png" title="我的"></i-tab-bar-item>
+</i-tab-bar>

@@ -1,109 +1,88 @@
-// fenbao/message/message.js
 import config from '../../config'
+var app = getApp();
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-     hkkk:true,
-     color1:"white",
-     color2:'',
-     back_mes: config.NETWORK_RESOURCE + 'footerl.jpeg',
-     mes_list:[
-          {
-            touxiang: config.NETWORK_RESOURCE + 'baoma.png',
-            time:'06/05 17:09',
-            content:"有道词典在《互联网周刊》发布的“2016年上半年度APP分类排行榜”中获得教育类排行第一名，并荣获“最受用户欢迎在线教育APP奖”。"
-          }
-          ,
-          {
-            touxiang: config.NETWORK_RESOURCE + 'baoma.png',
-            time:'06/05 17:09',
-            content:"有道词典在《互联网周刊》发布的“2016年上半年度APP分类排行榜”中获得教育类排行第一名，并荣获“最受用户欢迎在线教育APP奖”。"
-          }
-          ,  {
-            touxiang: config.NETWORK_RESOURCE + 'baoma.png',
-            time:'06/05 17:09',
-            content:"有道词典在《互联网周刊》发布的“2016年上半年度APP分类排行榜”中获得教育类排行第一名，并荣获“最受用户欢迎在线教育APP奖”。"
-          },
-          {
-            touxiang: config.NETWORK_RESOURCE + 'baoma.png',
-            time:'06/05 17:09',
-            content:"有道词典在《互联网周刊》发布的“2016年上半年度APP分类排行榜”中获得教育类排行第一名，并荣获“最受用户欢迎在线教育APP奖”。"
-          }
-     ]
-       
-     
-  },
+    winHeight: "",//窗口高度
+    currentTab: 0, //预设默认选中的栏目
+    scrollLeft: 0, //tab滚动条距离左侧距离
+    newsTab: ["消息", "动态"],
+    authorList: {
+      img: "http://ookzqad11.bkt.clouddn.com/avatar.png",
+      name: "欢顔",
+      tag: "知名情感博主",
+      answer: 134,
+      listen: 2234
+    },
+    back_mes: config.NETWORK_RESOURCE + 'footerl.jpeg',
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+    mes_list:{
+      
+        touxiang: config.NETWORK_RESOURCE + 'baoma.png',
+        time:'06/05 17:09',
+        content:"有道词典在《互联网周刊》发布的“2016年上半年度APP分类排行榜”中获得教育类排行第一名，并荣获“最受用户欢迎在线教育APP奖”。"
+      
+   
+    },
 
-  },
+ doing:{
+  
+    id:"1",
+    tit:"讯飞输入法皮肤“龙口丛林”",
+    yhimg: config.NETWORK_RESOURCE + 'morentouxiang.jpeg',
+    name:"巴啦啦小魔仙",
+    time:"刚刚",
+    ggimg: config.NETWORK_RESOURCE + "mingpian1.png"
+  
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+ },
+
 
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
-  qiehuan(){
+  // 滚动切换标签样式
+  reLaunch: function (e) {
     this.setData({
-      hkkk:true,
-      color1:"white",
-      color2:""
-    })
+      currentTab: e.detail.current
+    });
+    this.checkCor();
   },
-  qiehuan2(){
-    this.setData({
-      hkkk:false,
-      color1:"",
-      color2:"white"
-    })
+  // 点击tab切换当前页时改变样式
+  swichNav: function (e) {
+    var cur = e.target.dataset.current;
+    if (this.data.currentTab == cur) {
+      return false;
+    }
+    else {
+      this.setData({
+        currentTab: cur
+      })
+    }
+  },
+  //判断当前滚动超过一屏时，设置tab向左滚动。
+  checkCor: function () {
+    if (this.data.currentTab > 4) {
+      this.setData({
+        scrollLeft: 300
+      })
+    } else {
+      this.setData({
+        scrollLeft: 0
+      })
+    }
+  },
+  onLoad: function () {
+    var that = this;
+    //  高度自适应
+    wx.getSystemInfo({
+      success: function (res) {
+        var clientHeight = res.windowHeight,
+          clientWidth = res.windowWidth,
+          rpxR = 750 / clientWidth;
+        var calc = clientHeight * rpxR - 120;
+        that.setData({
+          winHeight: calc
+        });
+      }
+    });
   }
 })

@@ -8,21 +8,24 @@
     width: 120%;
     position: fixed;
     left: -120rpx;
-    top: -30px;
+    top: -160px;
+    z-index: 55;
 }
 .particular{
     width: 100vw;
-    height: 101vh;
+    height: 100vh;
     position: relative;
     color: white;
     overflow: auto;
     font-family: "pingfang";
+    background:#0d1729;
+
 
 }
 .pelinfo{
     width: 100%;
     position: absolute;
-    top: 30%;
+    top: 190px;
     left: 0px;
     z-index: 55;
 
@@ -44,6 +47,10 @@
 .verm{
     vertical-align: middle;
 }
+.jiooiwf{
+    width: calc(135rpx / 1.5) !important;
+      margin-right: 10rpx !important;
+  }
 .pelhead{
     margin: 20rpx  0px;
 }
@@ -52,17 +59,21 @@
     font-size: 26rpx;
     color: #aba3a6;
 }
+.dsib{
+    display: inline-block;
+}
 .dong{
     width: 100%;
 }
 .touming{
-    width: 100%;
+    width: 88%;
     padding: 0px 5%;
     box-sizing: border-box;
 }
 .allput{
     position: relative;
     overflow: hidden;
+    height: 750rpx;
 }
 .dong{
    margin-top: -350rpx
@@ -83,7 +94,7 @@
     padding: 5% 0;
 }
 .allput_top{
-    width: 90%;
+    width: 95%;
     position: absolute;
     top: 0px;
     left: 5%;
@@ -111,6 +122,9 @@
 }
 .dsfdsf{
     font-size: 26rpx;
+    float: right;
+    margin-top: 30rpx;
+    margin-right: 5%
 }
 .msgradio{
     display: inline-block;
@@ -119,6 +133,13 @@
     background: rgba(255, 255, 255, 0.1);
     margin: 10rpx 0rpx;
     font-size: 30rpx;
+}
+.dfsdafs{
+    font-size: calc(42rpx / 1.5)
+}
+.jioowee{
+   position: relative;
+   bottom: -8rpx
 }
 .headerbox{
     width: 50rpx;
@@ -146,7 +167,7 @@
 .radioboxs{
     width: 100%;
     padding: 20rpx 40rpx;
-    background: rgba(255, 255, 255, 0.1);
+    background: #1d2e4a;
     border-radius: 60rpx;
     box-sizing: border-box;
     display: flex;

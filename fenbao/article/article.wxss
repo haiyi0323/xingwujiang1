@@ -24,8 +24,8 @@
     display: inline-block;
 }
 .boximg{
-    width: 70rpx;
-    height: 70rpx;
+    width: calc(60rpx / 1.5);
+    height: calc(60rpx / 1.5);
     border-radius: 50%;
     background: #ffffff;
     overflow: hidden;
@@ -35,20 +35,22 @@
     width: 100%;
 }
 .antherna,.times{
-    font-size: 24rpx;
+    font-size: calc(36rpx / 1.5);
     color: #4e5675;
     margin: 0px 15rpx;
     vertical-align: middle;
 }
 .anther{
    margin: 30rpx 0;
+   margin-bottom: calc(100rpx / 1.5)
 }
 .wenan{
     font-size: 30rpx;
 }
 .p1 ,.p2 ,.p3 ,.p4{
     margin: 20rpx 0rpx;
-    color: #cfd1d5;
+    color: rgba(255, 255, 255, 0.8);
+ 
 }
 .backcontent{
     position: fixed;

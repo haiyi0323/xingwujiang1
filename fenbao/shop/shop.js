@@ -1,6 +1,7 @@
 // fenbao/shop/shop.js
 import config from '../../config'
 import ulik from '../../utils/util'
+
 Page({
 
   /**
@@ -41,50 +42,50 @@ Page({
     duihuanlist:[
       {
         img: config.NETWORK_RESOURCE + '图层 104.png',
-        price:"2000",
-        title:"LOL英雄联盟职业联赛单次入场券",
+        price:"125元/100g",
+        title:"知味观中华老字号知味 礼粽端午粽子礼盒",
       },
 
       {
         img: config.NETWORK_RESOURCE + '图层 104.png',
-        price:"2000",
-        title:"LOL英雄联盟职业联赛单次入场券",
+        price:"125元/100g",
+        title:"知味观中华老字号知味 礼粽端午粽子礼盒",
       },
 
 
       {
         img: config.NETWORK_RESOURCE + '图层 104.png',
-        price:"2000",
-        title:"LOL英雄联盟职业联赛单次入场券",
+             price:"125元/100g",
+        title:"知味观中华老字号知味 礼粽端午粽子礼盒",
       },
       {
         img: config.NETWORK_RESOURCE + '图层 104.png',
-        price:"2000",
-        title:"LOL英雄联盟职业联赛单次入场券",
-      },
-
-      {
-        img: config.NETWORK_RESOURCE + '图层 104.png',
-        price:"2000",
-        title:"LOL英雄联盟职业联赛单次入场券",
+             price:"125元/100g",
+        title:"知味观中华老字号知味 礼粽端午粽子礼盒",
       },
 
       {
         img: config.NETWORK_RESOURCE + '图层 104.png',
-        price:"2000",
-        title:"LOL英雄联盟职业联赛单次入场券",
+             price:"125元/100g",
+        title:"知味观中华老字号知味 礼粽端午粽子礼盒",
       },
 
       {
         img: config.NETWORK_RESOURCE + '图层 104.png',
-        price:"2000",
-        title:"LOL英雄联盟职业联赛单次入场券",
+             price:"125元/100g",
+        title:"知味观中华老字号知味 礼粽端午粽子礼盒",
       },
 
       {
         img: config.NETWORK_RESOURCE + '图层 104.png',
-        price:"2000",
-        title:"LOL英雄联盟职业联赛单次入场券",
+             price:"125元/100g",
+        title:"知味观中华老字号知味 礼粽端午粽子礼盒",
+      },
+
+      {
+        img: config.NETWORK_RESOURCE + '图层 104.png',
+             price:"125元/100g",
+        title:"知味观中华老字号知味 礼粽端午粽子礼盒",
       },
 
 
@@ -145,6 +146,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  shopxq(){
+    ulik.navto("/fenbao/shopxq/shopxq")
   },
   huadongso(e){
     const that = this;

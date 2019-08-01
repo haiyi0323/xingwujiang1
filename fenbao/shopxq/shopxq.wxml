@@ -1,15 +1,27 @@
 <!--fenbao/shopxq/shopxq.wxml-->
 <view class="shopxq">
-    <image class="backspxq" src="{{back}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <image class="backspxq" src="{{back}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
       <view class="shopxq_cont">
-            <!-- 轮播图 -->
-              <swiper indicator-dots="{{indicatorDots}}" class="jkoiwe" style="height:{{height}}px" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular indicator-color="{{contorbackcolor}}" indicator-active-color="{{advicecolor}}">
+
+      <view class="jijoss">
+         <!-- 轮播图 -->
+              <swiper  class="jkoiwe" style="height:{{height}}px" current="{{currentSwiper}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular indicator-color="{{contorbackcolor}}" indicator-active-color="{{advicecolor}}" bindchange="swiperChange">
                         <block wx:for="{{imgUrls}}" class="fdsff" >
                                 <swiper-item bind:tap="news">
-                                        <image src="{{item}}" class="slide-image" style="width:100%" mode="widthFix" />
+                                        <image src="{{item}}" class="slide-image" style="width:100%; height:auto" mode="widthFix"  />
                                 </swiper-item>
                         </block>
+ 
                 </swiper>
+                  <view class="dots">
+                     <block wx:for="{{imgUrls}}" wx:key>
+                       <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>
+                     </block>
+                    </view>
+      </view>
+         
+
+
                 <!-- 标题分类 -->
                 <view class="titl">
                     {{goos.title}}
@@ -29,11 +41,11 @@
                              
                         </view>
                       
-                        <image class="youjian" src="{{rightb}}" mode="widthFix"></image>
+                        <image class="youjian" src="{{rightb}}" mode="widthFix" style="height:auto"></image>
                 </view>
                 <!-- 详情图片 -->
                 <view class="xqimg">
-                    <image class="xq_img1" src="{{xiang}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                    <image class="xq_img1" src="{{xiang}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
                       
                 </view>
                 <!-- 支付按钮 -->

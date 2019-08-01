@@ -13,6 +13,11 @@ Page({
       config.NETWORK_RESOURCE +'swiper2.jpeg',
       config.NETWORK_RESOURCE +'swiper3.jpeg'
     ],
+
+    
+    currentSwiper: 0,
+    indicatorColor:'white',
+    indicatorActivecolor:'red',
     height:"",
     indicatorDots: true,
     autoplay: true,
@@ -34,6 +39,11 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  swiperChange: function(e) {
+    this.setData({
+      currentSwiper: e.detail.current
+    })
+  },
   onLoad: function (options) {
     let _this = this;
     ulik.getscollma(_this)

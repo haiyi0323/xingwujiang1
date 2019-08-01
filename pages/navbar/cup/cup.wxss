@@ -1,5 +1,7 @@
 /* pages/navbar/cup/cup.wxss */
-
+.youjian{
+    left: 20rpx;
+}
 .font_color_a{
     color: #6a7aa2;
 }
@@ -29,20 +31,15 @@
 .flex2{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
-.buttonstyle{
-    position: relative;
-    z-index: -1;
-    padding: 0px  10rpx !important;
-    height: 60rpx !important;
-    line-height:  60rpx !important;
-    width: 110rpx;
-    margin-left: 0px !important;
-    color: #041736 !important;
-    background-color:#e3b66b !important;
-    display: inline-block !important;
+.flex3{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
 }
+
+
 .buttonstyle2{
     position: absolute !important;
     top: 80rpx !important;
@@ -54,7 +51,7 @@
     width: 44%;
     margin-left: 28% !important;
     color: #041736 !important;
-    background-color:#e3b66b !important;
+    background: linear-gradient(45deg,#ebbd70,#bc9355) !important;
     display: inline-block !important;
 }
 .veram{
@@ -62,13 +59,14 @@
 }
 .global_all{
     width: 100vw;
-    height: 100vh;
+    height: 93vh;
     overflow: auto;
     color: white;
     position: relative;
     padding: 5%;
     font-family: "pingfang";
     box-sizing: border-box;
+    margin-bottom:90rpx
 }
 .background_global{
     width: 100%;
@@ -81,27 +79,15 @@
     float: left;
 }
 .header_t{
-    font-size: 50rpx;
+    font-size: calc(72rpx / 1.5);
 }
 .small_t{
-    font-size: 20rpx;
+    font-size: calc(36rpx / 1.5);
     margin-top: 15rpx;
    
 }
 
-.message_s{
-    width: 100%;
-    height: 80rpx;
-    background-color: #1d2e4a;
-    border-radius: 30px;
-    line-height: 80rpx;
-    font-size: 30rpx;
-    color: white;
-    text-align: left;
-    padding: 0px 30rpx;
-    box-sizing: border-box;
-    margin-top: 40rpx;
-  }
+
 
   .text_info{
     display: inline-block;
@@ -109,16 +95,13 @@
   }
   .img_num{
     display: inline-block;
-    margin-top: 10rpx;
+    margin-top: 16rpx;
     margin-left: 30rpx;
     vertical-align: top
   
   }
-  .smalllog{
-    width: 50rpx;
-    height: 50rpx;
-    margin: 0 -10rpx;
-    
+  .message_s{
+      margin-top: calc(95rpx / 1.5)
   }
   .icon_right{
     width: 20rpx;
@@ -127,14 +110,19 @@
   }
   .rd_cup_list{
       width: 100%;
+   
+  }
+  .rd_cup_item:last-child{
+    border-bottom: 1px solid #00102785;
   }
   .rd_cup_item{
       width: 100%;
       padding: 20rpx 0rpx;
   }
   .cup_left_k{
-      width: 25%;
-      margin-right: 5%;
+      width: calc(194rpx / 1.5);
+      height:calc(291rpx / 1.5);
+      margin-right: calc(35rpx / 1.5);
   }
   .cup_image{
       width: 100%;
@@ -143,16 +131,16 @@
       width: 70%;
   }
   .rd_cup_title_top{
-      font-size: 35rpx;
+      font-size: calc(48rpx / 1.5);
   }
   .rd_cup_title_top2{
     font-size: 30rpx;
 }
   .icon_xiaoren{
-      width: 30rpx;
+      width: calc(30rpx / 1.5);
   }
   .title_top2_son{
-    max-width: 60%;
+    max-width: 80%;
   
   }
   .son_one{
@@ -170,13 +158,11 @@
   }
   .rd_cup_list{
       margin-top: 50rpx;
-      margin-bottom: 190rpx;
   }
   .bottom_createcup{
-      position: fixed;
-      bottom: 0px;
-      width: 100%;
-      left: 0px;
+   position: absolute;
+   left: 0rpx;
+   width: 100%;
   }
   .back_fotter{
       width: 100%;
@@ -210,7 +196,7 @@
   .back_topimg{
       width: 100%;
       position: absolute;
-      top: 0px;
+      top: -20px;
       z-index: 5555;
   }
   .xl_top_title{
@@ -225,7 +211,7 @@
   .title_text{
       text-align: center;
       margin-top: 80rpx;
-      margin-bottom: 80rpx;
+      margin-bottom: 60rpx;
   }
   .firstzj{
       font-size: 24rpx;
@@ -240,20 +226,30 @@
       padding: 0px 6%;
   }
   .rm_label{
-      width: 25%;
+      width: calc(145rpx / 1.5);
+      height: calc(145rpx / 1.5);
       text-align: center;
-      margin-bottom: 50rpx;
+      margin-bottom: 120rpx;
+      white-space : normal nowrap ;
+      margin-right: calc(139rpx / 1.5)
+
 
      
   }
+  .rm_label:nth-child(4){
+      margin-right: 0rpx;
+  }
   .cup_logo{
-      width: 60%;
+      width: 100%;
       border-radius: 50%;
   }
   .rm_label_text{
       font-size: 26rpx;
+      width: 136%;
       margin-top: 10rpx;
-      line-height: 26rpx
+      line-height: 26rpx;
+      position: relative;
+      left: -18%;
   }
   .kuang{
       width: 70%;

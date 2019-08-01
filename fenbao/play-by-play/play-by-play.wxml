@@ -1,7 +1,7 @@
 <!--fenbao/play-by-play/play-by-play.wxml-->
     <view class="play-by-play" hover-class="none" hover-stop-propagation="false">
         <view class="play_info" hover-class="none" hover-stop-propagation="false">
-             <image class="top_img" src="{{play_img}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+             <image class="top_img" src="{{play_img}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
                 <view class="play_title" hover-class="none" hover-stop-propagation="false">
                     {{title}}
                 </view>
@@ -10,7 +10,7 @@
                 </view>
         </view>
         <view class="consnslls">
-            <image class="backss" src="{{back}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+            <image class="backss" src="{{back}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="">
                 
             </image>
                     <!--排行榜  -->
@@ -19,29 +19,29 @@
                             排行榜
                         </view>
                               <view class="phlist">
-            <view class="phlist_item" wx:for="{{yonghuxx}}" wx:key="index">
+            <view class="phlist_item flex3" wx:for="{{yonghuxx}}" wx:key="index">
             <view class="dsib hearddfj verm">
                 <view class="hewaeefi" bind:tap="yonghu">
-                    <image class="touxiang" src="{{item.img}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+                    <image class="touxiang" src="{{item.img}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload=""></image>
                 </view>
               
             </view>
             <view class="dsib conte verm borderbottom">
                 <view class="flex3">
-                    <view class="name">{{item.name}}</view>
+                    <view class="name fs48">{{item.name}}</view>
                     <view class="howmany font_color_1">{{item.daqi}}人为他打气</view>
                 </view>
                 <view>
                     <!-- 进度条 -->
-                        <i-progress i-class="jiooiwf" percent="65" status="wrong" hide-info="false"></i-progress>
+                        <i-progress i-class="jiooiwf" percent="65"stroke-width="8" status="wrong" hide-info="false"></i-progress>
                 </view>
-                <view class="flex3 dsfdsf">
-                    <view class="font_color_1 al">
+                <view class="flex3">
+                    <view class="font_color_1 al fs42">
                         已获得 <view class=" dsib font_color_b">{{item.meili}}魅力值</view>
                     </view>
                     <view class="dianzano verb">
-                        <image   class="iconzan" src="{{item.iszan == true ? zan : yizan }}" mode="widthFix" lazy-load="false" binderror="" bindload="" bind:tap="zan" data-index="{{index}}"></image>
-                          <!-- <image  wx:else  class="iconzan" src="{{yizan}}" mode="widthFix" lazy-load="false" binderror="" bindload="" bind:tap="zan" data-index="{{index}}"></image> -->
+                        <image   class="iconzan" src="{{item.iszan == true ? zan : yizan }}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" bind:tap="zan" data-index="{{index}}"></image>
+                          <!-- <image  wx:else  class="iconzan" src="{{yizan}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" bind:tap="zan" data-index="{{index}}"></image> -->
                     </view>
                 </view>
             </view>
@@ -51,7 +51,7 @@
         </view>
                     
                     <!-- 查看更多 -->
-                    <i-button i-class="buttonstyle3" bind:click="handleClick" bind:click="allph">查看全部排行</i-button>
+                    <i-button i-class="buttonstyle553"  bind:tap="allph">查看全部排行</i-button>
                     </view>
                     <!-- 比赛 详情-->
                     <view class="bisaixq">
@@ -61,25 +61,25 @@
                         <view class="bs_content">
                             <view class="firstxq">
                                 <view class="dsib imgbox vert">
-                                    <image class="imgbox_img" src="{{time}}" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+                                    <image class="imgbox_img" src="{{time}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload=""></image>
                                 </view>
-                                <view class="dsib bs_itemifo vert">
-                                    <view>{{bsxq.opentime}}</view>
-                                    <view>{{bsxq.qdtime}}</view>
-                                    <view>{{bsxq.zshd}}</view>
+                                <view class="dsib bs_itemifo vert fs42">
+                                    <view> 启动时间 {{bsxq.opentime}}</view>
+                                    <view> 签到时间 {{bsxq.qdtime}}</view>
+                                    <view> 正式活动 {{bsxq.zshd}}</view>
                                 </view>
                             </view>
                             <view>
                                 <view class="dsib imgbox vert">
-                                    <image class="imgbox_img" src="{{where}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+                                    <image class="imgbox_img" src="{{where}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="" />
                                 </view>
-                                <view class="dsib vert">{{bsxq.where}}</view>
+                                <view class="dsib vert fs42">{{bsxq.where}}</view>
                             </view>
                         </view>
                     </view>
                     <!-- 单位 -->
                     <view class="danwei" hover-class="none" hover-stop-propagation="false">
-                        <image class="dibu" src="{{dibu}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+                        <image class="dibu" src="{{dibu}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="">
                             
                         </image>
                         <view>
@@ -87,7 +87,7 @@
                                 主办单位
                             </view>
                             <view class="imageboxss1">
-                                <image class="imgsseew" src="{{zhuban}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+                                <image class="imgsseew" src="{{zhuban}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="">
                                     
                                 </image>
                             </view>
@@ -98,12 +98,12 @@
                             </view>
                             <view class="" hover-class="none" hover-stop-propagation="false">
                                 <view class="imageboxss2 dsib">
-                                    <image class="imgsseew" src="{{cheng1}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+                                    <image class="imgsseew" src="{{cheng1}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="">
                                         
                                     </image>
                                 </view>
-                                <view class="imageboxss2 dsib">
-                                     <image class="imgsseew" src="{{cheng2}}" mode="widthFix" lazy-load="false" binderror="" bindload="">
+                                <view class="imageboxss3 dsib">
+                                     <image class="imgsseew" src="{{cheng2}}" mode="widthFix" style="height:auto" lazy-load="false" binderror="" bindload="">
                                         
                                     </image>
                                 </view>

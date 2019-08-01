@@ -1,4 +1,7 @@
 /**app.wxss**/
+page{
+  background: #021431;
+}
 .container {
   height: 100%;
   display: flex;
@@ -24,11 +27,10 @@
   vertical-align: top;
 }
 .message_s{
-  width: 100%;
-  height: 70rpx;
+  width: calc(1005rpx / 1.5);
+  height: calc(120rpx / 1.5);
   background-color: #1d2e4a;
   border-radius: 30px;
-
   left: 5%;
   line-height: 70rpx;
   font-size: 30rpx;
@@ -54,7 +56,12 @@
   padding: 0px 30rpx;
   box-sizing: border-box;
 }
+.fdsfdsf{
+  vertical-align: middle;
+  line-height: calc(120rpx / 1.5);
+}
 .ffffs{
+  line-height: calc(120rpx / 1.5);
   display: inline-block;
   vertical-align: top
 }
@@ -65,20 +72,23 @@
   display: inline-block;
   margin-top: 10rpx;
   margin-left: 30rpx;
-  vertical-align: top
+  vertical-align: top;
+  line-height: calc(120rpx / 1.5);
 
 }
 .smalllog{
-  width: 50rpx;
-  height: 50rpx;
-  margin: 0 -10rpx;
+  width: calc(64rpx / 1.5);
+  height:  calc(64rpx / 1.5);
+  margin: 0 -8rpx;
   
 }
 
 .youjian{
-  width: 20rpx;
-  vertical-align: middle;
+  width:  calc(20rpx / 1.5);
+  height: calc(36rpx / 1.5);
   margin-left: 20rpx;
+  position: relative;
+  right: -10rpx;
 }
 
 
@@ -131,26 +141,43 @@
   bottom: 20rpx !important;
   left: 0rpx;
   padding: 0px  20rpx !important;
-  width: 80%;
+  width: calc(1005rpx / 1.5);
   height: 70rpx !important;
   line-height:  70rpx !important;
-  margin-left: 0px !important;
+  font-size: calc(42rpx / 1.5) !important;
   color: #041736 !important;
-  background-color:#e3b66b !important;
+  background: linear-gradient(45deg,#ecbd70,#bb9354) !important; 
   display: inline-block !important;
-  margin-left: 10% !important;
+  margin-left: 5% !important;
 }
 .buttonstyle{
   position: relative;
-  z-index: -1;
+  bottom: 20rpx;
+  left: 60rpx;
   padding: 0px  10rpx !important;
-  height: 60rpx !important;
-  line-height:  60rpx !important;
-  width: 110rpx;
+  width: calc(150rpx / 1.5);
+  height:calc(84rpx / 1.5) !important;
+  line-height: calc(84rpx / 1.5) !important;
   margin-left: 0px !important;
   color: #041736 !important;
   background-color:#e3b66b !important;
   display: inline-block !important;
+  font-size: calc(36rpx / 1.5) !important
+}
+.buttonstyl{
+  position: relative;
+  bottom: 20rpx;
+  left: 20rpx;
+  padding: 0px  10rpx !important;
+  width: calc(150rpx / 1.5);
+  height:calc(84rpx / 1.5) !important;
+  line-height: calc(84rpx / 1.5) !important;
+  margin-left: 0px !important;
+  color: #041736 !important;
+  font-weight: bold !important;
+  background: linear-gradient(45deg,#ebbc70,#bc9355) !important;
+  display: inline-block !important;
+  font-size: calc(36rpx / 1.5) !important
 }
 .buttonstyle2{
   position: absolute !important;
@@ -161,6 +188,7 @@
   height: 60rpx !important;
   line-height:  60rpx !important;
   width: 44%;
+  font-size: calc(42rpx / 1.5) !important;
   margin-left: 28% !important;
   color: #041736 !important;
   background-color:#e3b66b !important;
@@ -174,6 +202,21 @@
   line-height:  60rpx !important;
   width: 44%;
   margin-left: 28% !important;
+  color: white !important;
+  font-size: calc(42rpx / 1.5) !important;
+  background-color:rgba(255, 255, 255, 0.1) !important;
+  display: inline-block !important;
+  border-radius: 40rpx !important;
+}
+.buttonstyle553{
+  
+  z-index: 9999;
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: calc(340rpx / 1.5);
+  font-size: calc(42rpx / 1.5) !important;
+  margin-left: 33% !important;
   color: white !important;
   background-color:rgba(255, 255, 255, 0.1) !important;
   display: inline-block !important;
@@ -192,6 +235,19 @@
   display: inline-block !important;
   border-radius: 40rpx !important;
 }
+.buttonstyle23{
+
+
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 200rpx;
+  font-size: calc(42rpx / 1.5) !important;
+  color: white !important;
+  background-color:rgba(255, 255, 255, 0.1) !important;
+  display: inline-block !important;
+  border-radius: 40rpx !important;
+}
 .buttonstyle15{
 
 
@@ -199,9 +255,22 @@
   height: 60rpx !important;
   line-height:  60rpx !important;
   width: 100rpx;
-
+  font-size: calc(42rpx / 1.5) !important;
   color: #041736 !important;
-  background-color:#e3b66b !important;
+  background: linear-gradient(45deg,#ebbc70,#bc9355) !important;
+  display: inline-block !important;
+  border-radius: 40rpx !important;
+}
+.buttonstyle25{
+
+
+  padding: 0px  10rpx !important;
+  height: 60rpx !important;
+  line-height:  60rpx !important;
+  width: 200rpx;
+  font-size: calc(42rpx / 1.5) !important;
+  color: #041736 !important;
+  background: linear-gradient(45deg,#ebbc70,#bc9355) !important;
   display: inline-block !important;
   border-radius: 40rpx !important;
 }
@@ -211,12 +280,13 @@
   padding: 0px  10rpx !important;
   height: 60rpx !important;
   line-height:  60rpx !important;
-  width: 44%;
-  margin-left: 28% !important;
+  width: calc(520rpx / 1.5);
+  margin-left: 24% !important;
   color: #041736 !important;
   background-color:#e3b66b !important;
   display: inline-block !important;
   border-radius: 40rpx !important;
+  font-size: calc(42rpx / 1.5) !important;
 }
 .veram{
   vertical-align: middle;
@@ -242,4 +312,57 @@
 }
 .margin5{
   margin: 10rpx 0px
+}
+
+
+/* gggggg */
+
+.jijowep .i-progress-inner{
+  height: calc(21rpx / 1.5) !important;
+}
+.jiooiwf{
+  width: calc(300rpx / 1.5) !important;
+  height: calc(21rpx / 1.5) !important;
+  margin: 10rpx 0 !important;
+}
+.dianzano{
+  width: calc(56rpx / 1.5);
+  height: calc(66rpx /1.5);
+  position: relative;
+  top: -10rpx;
+}
+.fs54{
+  font-size: calc(54rpx / 1.5)
+}
+.fsss30{
+  font-size: calc(30rpx / 1.5)
+}
+.fs72{
+  font-size: calc(72rpx / 1.5)
+}
+.fs48{
+  font-size: calc(48rpx / 1.5)
+}
+.fs42{
+  font-size: calc(42rpx / 1.5)
+}
+.fs36{
+  font-size: calc(36rpx / 1.5)
+}
+.fs54{
+  font-size: calc(54rpx / 1.5)
+}.fs43{
+  font-size: calc(43rpx / 1.5)
+}
+.hewaeefi{
+  width: calc(180rpx / 1.5);
+  height: calc(180rpx / 1.5);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.hearddfj{
+  width: 20%;
+  padding-bottom: 20rpx;
+  margin-right: 20rpx;
+  
 }

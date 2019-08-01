@@ -19,12 +19,14 @@ Page({
    */
  
   onLoad() {
+    let a;
     // this.bindload();
     let that = this
     this.setData({
       jishiqi:   setInterval(() => {
-        let a = 1
+     a = 1
         if (that.data.time == 0) {
+          a = 0
           this.bindload();
         }
   
@@ -36,10 +38,14 @@ Page({
   
     },
     game(){
+      
       this.setData({
         tiem :0
       })
-      ulik.navto("/fenbao/play-by-play/play-by-play")
+      wx.reLaunch({
+        url: '/pages/index/index?type=qidong'
+        })
+    
     },
 
     indess(){
@@ -48,6 +54,13 @@ Page({
       })
      this.tiaoguo()
      
+    },
+
+    tiaoguo() {
+      wx.reLaunch({
+      url: '/pages/index/index'
+      })
+  
     },
   
   /**
@@ -68,7 +81,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-   
+ 
   },
 
   /**
@@ -105,10 +118,5 @@ Page({
   
     },
 
-    tiaoguo() {
-    wx.switchTab({
-    url: '/pages/index/index'
-    })
 
-  }
 })

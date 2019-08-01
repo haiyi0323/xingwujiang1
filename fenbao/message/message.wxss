@@ -1,3 +1,115 @@
+.tab-h {
+    height: 100rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80rpx;
+    background: #101c2e;
+    font-size: 16px;
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: #6a7aa2;
+  }
+  .tab-item {
+    margin: 0 36rpx;
+    display: inline-block;
+    font-size: calc(54rpx / 1.5)
+
+  }
+  .tab-item.active {
+    color: #fff;
+    position: relative;
+  }
+  .tab-item.active:after {
+    content: "";
+    display: block;
+    height: calc(14rpx / 1.5);
+    width: calc(64rpx / 1.5);
+    background: #d6aa64;
+    position: absolute;
+    bottom: 0;
+    left: 17rpx;
+    border-radius: 16rpx;
+  }
+  .tab-content {
+    margin-top: 120rpx;
+    position: relative;
+  }
+  .tab-content .author-info{
+    font-size: 12px;
+    flex-grow: 3;
+    color: #b0b0b0;
+    line-height: 1.5em;
+  }
+  .tab-content .author-info .name {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 6px;
+  }
+  .item {
+    display: flex;
+    width: 100%;
+    padding: 30rpx;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .img {
+    width: 100rpx;
+    height: 100rpx;
+    position: relative;
+    padding-right: 30rpx;
+  }
+  .img image {
+    width: 100%;
+    height: 100%;
+  }
+  .jifjwfe{
+      position: absolute;
+      bottom: 0rpx;
+      left: calc(50rpx / 1.5);
+  }
+  .shouting {
+    width: 120rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 60rpx;
+    border: 1px solid #4675f9;
+    color: #4675f9;
+  }
+  .scoll-h {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 0 calc(60rpx / 1.5) calc(60rpx / 1.5) 
+  }
+  .message_back{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
 /* fenbao/message/message.wxss */
 .dsib{
     display: inline-block;
@@ -14,14 +126,16 @@
     width: 100vw;
     height: 100vh;
     overflow: auto;
+    overflow-x: hidden;
     position: relative;
     font-family: "pingfang";
+    color: white;
 
 }
 .topbar{
     width: 100%;
     padding: 60rpx 30rpx 10rpx;
-    background: #101c2e;
+    background: #091a33;
     color: #6a7aa2;
     margin-bottom: 34rpx;
 
@@ -48,6 +162,7 @@
     z-index: 2300;
 }
 .message_back{
+    width: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -78,10 +193,140 @@
 }
 .mes_time{
     color: #6a7aa2;
+    margin-bottom: calc(25rpx / 1.5)
     
 }
 .mes_item{
     padding: 40rpx 0rpx;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-right: calc(60rpx / 1.5)
 
 }
+
+
+.jojijw {
+    position:relative !important;
+    display:inline-block !important;
+    line-height:1 !important;
+    vertical-align:middle !important;
+    right:-120rpx !important;
+    top:-20rpx !important;
+    
+    
+}
+
+
+
+/* 
+ */
+
+
+ .liu{
+    color: #6a7aa2;
+    font-size: calc(36rpx / 1.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30rpx;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+}
+.fdfffd{
+    margin: 0px 30rpx 0 0;
+}
+.cupitem{
+    color: white;
+}
+.cupiti{
+    margin: 20rpx 0rpx;
+}
+.cupitimg{
+    width: 90%;
+    display: inline-block;
+  
+}
+.diandian{
+    width: 80%;
+}
+
+.cupitimglist{
+    width: calc(130rpx / 1.5);
+    height: calc(130rpx / 1.5);
+    margin: 10rpx 30rpx 0 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.chegnyuan{
+    width: 100%;
+}
+.doing{
+    width: 100%;
+    color: white;
+    position: relative;
+    padding-top: 1rpx
+}
+.doingtitle{
+    margin: 20rpx 0;
+}
+.doinginfo{
+    width: 55%;
+
+}
+.doing_imgs{
+    width: calc(384rpx / 1.5);
+    border-radius: calc(24rpx / 1.5);
+    overflow: hidden;
+
+}
+.doing_img{
+    width: 100%;
+}
+.sdfsdf{
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.yonghu{
+    width: 100%;
+}
+.doingsome{
+    margin: 50rpx 0rpx;
+    font-size: 40rpx;
+    position: relative;
+    padding-left:30rpx;
+
+}
+.doinginfo{
+    height: 100%;
+    padding: 0px 5% 0 0;
+}
+.vert{
+    vertical-align: top
+}
+.doingtime{
+    margin-top: calc(60rpx / 1.5);
+    font-size: calc(36rpx / 1.5);
+    color: #6a7aa2;
+    display: flex;
+    align-items: center;
+
+}
+.doingname{
+    margin: 0rpx 20rpx
+}
+.morecy{
+    width: 60rpx;
+    height: 60rpx;
+    background: rgba(255, 255, 255, 0.103);
+    border-radius: 50%;
+    text-align: center;
+}    ::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+    }
+   
+
+
+
+
